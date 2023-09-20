@@ -1,0 +1,199 @@
+
+.footerContainer {
+    width: 100%;
+    height: 617px;
+    background-image:
+    url(
+  "/public/footer2.png");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    padding:0;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.footer-background {
+    position: absolute;
+    overflow: visible;
+    margin: auto;
+
+  }
+
+.topFooterContainer {
+    width: 85%;
+    height: 290px;
+    display: flex;
+    align-items: end;
+}
+
+.topFooterBox{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topFooterBox1 {
+    width: 22%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.smatchedLogoIcon {
+    position: relative;
+    width: 29px;
+    height: 41px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.smatchedUnleash {
+    position: relative;
+    line-height: 30px;
+    display: inline-block;
+    width: 286.32px;
+    height: 30.22px;
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+.socialMediaIconfacebook {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.social {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.social {
+    align-self: stretch;
+    flex-direction: row;
+}
+.frame {
+    flex: 1;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.topFooterBox2 {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    position: relative;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: start;
+    font-family: Inter;
+}
+.srhHeidelbergGrnderInstitutIcon {
+    position: relative;
+    width: 100px;
+    height: 36.79px;
+    object-fit: cover;
+}
+.startProTectNeg95x3521Icon,
+.xsosuj1p4uyke1i1q8fo1Icon {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+}
+.startProTectNeg95x3521Icon {
+    height: 35px;
+}
+.company,
+.links,
+.supportedBy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.supportedBy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company {
+    height: 65px;
+}
+.ourMission {
+    font-size: 15px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    height: 123px;
+    justify-content: space-between;
+}
+
+.links, .link1 {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.link1 {
+    gap: 11px;
+}
+
+.legal {
+    width: 25%;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lowerFooterContainer {
+    width: 100%;
+    height: 90px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 100%;
+    background-color: #513A8D;
+    height: 1px;
+    border: 0;
+}
+
+.lowerFooterBox {
+    height: 90px;
+    width: 85%;
+
+}
+
+.copyRights {
+    height: 100px;
+    width: 100%;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #F7F7FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
