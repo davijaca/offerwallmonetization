@@ -195,13 +195,13 @@ const Home = ({ ...props }) => {
         </span>{" "}
       </div>
       <div className={styles["section-3-image"]}>
-        <img className={styles.rectangle6} src="rectangle6.png" />
+        <img className={styles.rectangle6} src="/images/rectangle6.png" />
         <div className={styles["group-1000004484"]}>
           <div className={styles["rectangle-1191"]}></div>
           <div className={styles["rectangle-1192"]}></div>
           <div className={styles["group-16"]}>
             <div className={styles["rectangle-1189"]}></div>
-            <img className={styles.survey} src="survey.png" />
+            <img className={styles.survey} src="/images/survey.png" />
           </div>
           <div className={styles.coins}>
             <svg
@@ -276,7 +276,7 @@ const Home = ({ ...props }) => {
       </div>
       <div className={styles["section-4-gradient"]}></div>
       <div className={styles["section-4-background"]}></div>
-      <img className={styles["section-4-image"]} src="section4image.png" />
+      <img className={styles["section-4-image"]} src="/images/section4image.png" />
     </section>
 
     <section className={styles["section-5"]}>
@@ -865,7 +865,7 @@ const Home = ({ ...props }) => {
         
       </div>
     </section>
-      
+
       <svg
         className={styles["app-lovin-hybrid-monetization-blog-1440-x-810-templates-3"]}
         width="1512"
