@@ -19,8 +19,8 @@ function App() {
       return(
         <div className={styles.app}>
             < Header />
-            {/*< Outlet />*/}
-            < Footer />
+            < Outlet />
+            {/*< Footer />*/}
         </div>
       );
 

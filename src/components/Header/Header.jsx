@@ -68,7 +68,7 @@ const Header = () => {
 
                         <nav className={styles.topMenu}>
                             <a className={styles.topMenuItem} href="/">Home</a>
-                            <a className={styles.topMenuItem}>How it Works</a>
+                            {/*<a className={styles.topMenuItem}>How it Works</a>*/}
                             <a className={styles.topMenuItem} href="/blog">Blog</a>
                             <a className={styles.topMenuItem}>About Us</a>
                         </nav>

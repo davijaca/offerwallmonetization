@@ -44,7 +44,7 @@
 .topMenu {
     display: flex;
     flex-direction: row;
-    gap: 81px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     position: absolute;
