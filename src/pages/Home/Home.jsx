@@ -9,7 +9,7 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div style={{ backgroundImage: "url(/images/fj1.png)", display: "flex", justifyContent: "center"}}>
+                  <div style={{ backgroundImage: "url(/images/fj1.png)", height: "900px",display: "flex", justifyContent: "center"}}>
                       <div className={styles.mainFirst}>
                         <div className={styles.rightMain}>
                             <div className={styles.text}>
@@ -48,12 +48,51 @@ const Home = () => {
               </div>
 
               <div className={styles.belowFirst}>
-                <div className={styles.innerBelowFirst1}></div>
-                <div className={styles.innerBelowFirst2}></div>
+                <div className={styles.innerBelowFirst1}>
+                    <div className={styles.innerBelowBox1}>
+                        <div className={styles.percentage}>50 % </div>
+                        <div className={styles.retention}>retention increase</div>
+                        <div className={styles.study}>A study by App Annie found that adding Offerwalls to your existing monetization strategy increases retention by 50% - Why? The answer is…more choice for the user. </div>
+                    </div>
+                </div>
+                <div className={styles.innerBelowFirst2}>
+                    <div className={styles.innerBelowBox2}>
+                        <div className={styles.blog}>Blog</div>
+                        <div className={styles.explore}>Explore our blog for expert tips, success stories, and industry updates on maximizing your earnings through offerwall monetisation.</div>
+                        <div className={styles.readMore}>
+                            <button>
+                                Read more
+                            </button>
+                        </div>
+                    </div>
+                </div>
               </div>
+
           </div>
 
+          <div className={styles.secondHomeContainer}>
+                <div className= {styles.secondHomeContainerBox1}>
+                    <div className={styles.whatOffer}>
+                        <div className={styles.what}>What Is an </div>
+                        <div className={styles.offerW}>Offerwall?</div>
+                    </div>
+                    <div className={styles.anOfferwall}>
+                        <div className={styles.innerAnOfferwall}>
+                            <div className={styles.anOfferwallParag}>
+                                An Offerwall is a type of in-app advertising
+                                unit that allows users to earn rewards by completing
+                                certain actions like downloading apps, signing up for
+                                newsletters, or conducting surveys. The user earns
+                                in-game currency and the gaming publisher earns revenue.
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div className= {styles.secondHomeContainerBox2}>
+                    <img src="/images/mobileP.png" alt=""/>
+                </div>
+          </div>
 
 
 
