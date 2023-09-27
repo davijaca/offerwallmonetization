@@ -547,8 +547,115 @@ button {
 .fifthHomeContainer {
     width: 100%;
     height: 750px;
-    background-color: #dedede;
 }
+
+.innerFifthHomeContainer1 {
+    width: 47%;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.innerFifthMainBox1 {
+    width: 80%;
+    height: 240px;
+
+}
+
+.innerFifthBox1, .highest {
+    color: var(--White, #FFF);
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    display: flex;
+
+}
+
+.innerFifthMainBox2 {
+    width: 80%;
+    height: 200px;
+}
+
+.engagement {
+    color: var(--White, #E0FF22);
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 50%;
+}
+
+.innerFifthMainBox2 {
+    color: var(--White, #FFF);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 85%;
+    height: 280px;
+}
+
+.appPurchase {
+    width: 85%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.noInAppPurchase {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.appPerc {
+    color: #E0FF22;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2.4px;
+}
+
+.makeInApp {
+    color: #BCBCBC;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.45px;
+    width: 60%;
+}
+
+.onlyMakeOnePurchase {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 
 
 
