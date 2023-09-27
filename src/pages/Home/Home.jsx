@@ -194,7 +194,38 @@ const Home = () => {
 
 
           <div className={styles.fifthHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/rect01.png)", height: "750px"}}>
+              <div style={{ backgroundImage: "url(/images/rect01.png)", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
+
+                  <div className={styles.innerFifthHomeContainer1}>
+                      <div className={styles.innerFifthMainBox1}>
+                          <div className={styles.innerFifthBox1}>
+                              <div>Offerwall</div>&nbsp;
+                              <div className={styles.engagement}>engagement</div> &nbsp;
+                              <div> is </div>
+                          </div>
+                          <div className={styles.highest}> highest among non-paying users.</div>
+                      </div>
+
+                      <div className={styles.innerFifthMainBox2}>
+                          The 2019 <u>Swrve Monetization Report</u> found that only 1.6% of all players
+                          make an in-app purchase and 72% of these only make one.<br />
+                          So what is a developer to do? Well, generally the answer is to slam your
+                          users with ads. But that is what has led the industry to have churn
+                          rates that average around <u>80% after 3 days.</u> That’s not great.
+                      </div>
+
+                      <div className={styles.appPurchase}>
+                            <div className={styles.noInAppPurchase}>
+                                <div className={styles.appPerc}>1.6%</div>
+                                <div className={styles.makeInApp}>make in-app purchase</div>
+                            </div>
+                            <div className={styles.onlyMakeOnePurchase}>
+                                <div className={styles.appPerc}>72%</div>
+                                <div className={styles.makeInApp}>only make one purchase</div>
+                            </div>
+                      </div>
+                  </div>
+
                </div>
           </div>
 
