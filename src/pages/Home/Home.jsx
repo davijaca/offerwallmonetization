@@ -230,6 +230,38 @@ const Home = () => {
           </div>
 
 
+          <div className={styles.sixthHomeContainer}>
+              <div className={styles.sixthBox1}>
+                  <div className={styles.offerwallSolves}>
+                      <div>Offerwalls</div>&nbsp;
+                      <div className={styles.solves}>solve </div>&nbsp;
+                      <div>two key</div>
+                  </div>
+                  <div className={styles.problems}>problems:</div>
+              </div>
+              <div className={styles.sixthBox2}>
+                  <div className={styles.innerSixthBox2}>
+                      <div className={styles.willingUsers}>
+                          <div className={styles.dollar}>
+                              <img src="/images/dollar_sign.png"/>
+                          </div>
+                          <div className={styles.pay}>
+                              Your users aren’t willing to pay to play
+                          </div>
+                      </div >
+                      <div className={styles.hateUsers}>
+                          <div className={styles.megaphone}>
+                              <img src="/images/mega_phone.png"/>
+                          </div>
+                          <div className={styles.ads}>
+                              Your users hate ads and think they interrupt the user experience
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
 
           {/*FOOTER SECTION*/}
           <div className={styles.footerName}>
@@ -243,7 +275,7 @@ const Home = () => {
                                   <div className={styles.imgValuable}>
                                       <img className={styles.footerLogo} src="/images/header_logo.png" alt=""/>
                                       <div className={styles.offerwall}>
-                                          <span>offerwall</span><br />
+                                          <span className={styles.offerwallBox}>offerwall</span>< br/>
                                           <span className={styles.monetization}>monetization</span>
                                       </div>
                                   </div>

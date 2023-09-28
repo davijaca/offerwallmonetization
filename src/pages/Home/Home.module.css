@@ -9,7 +9,7 @@
     background: #ffffff;
     width: 100%;
     /*height: 9850px;*/
-    height: 5300px;
+    height: 6300px;
     position: relative;
     overflow: hidden;
     margin: auto;
@@ -546,7 +546,8 @@ button {
 
 .fifthHomeContainer {
     width: 100%;
-    height: 750px;
+    height: 968px;
+    background-color: maroon;
 }
 
 .innerFifthHomeContainer1 {
@@ -649,7 +650,102 @@ button {
     justify-content: center;
 }
 
+.sixthHomeContainer {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.sixthBox1 {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.offerwallSolves, .problems {
+    color: var(--Primary-Black-1, #1E1E1E);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+}
+
+.solves {
+    color: #8764E3;
+    font-family: Poppins, sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sixthBox2 {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+}
+.innerSixthBox2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 500px;
+}
+
+.willingUsers {
+    width: 48.2%;
+    height: inherit;
+    border-radius: 10px;
+    background: #9AD3CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hateUsers {
+    border-radius: 10px;
+    background: #5C59C0;
+    width: 49.2%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dollar, .megaphone {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.pay, .ads {
+    width: 75%;
+    height: 230px;
+    color: var(--Primary-Black-1, #1E1E1E);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 20px;
+
+}
+
+.ads {
+    color: #FFFF;
+}
 
 
 
@@ -663,7 +759,7 @@ button {
 .footerName {
     height: 500px;
     width: 100%;
-    margin-top: 200px;
+
 }
 .footerInfo {
     position: absolute;
@@ -711,19 +807,21 @@ button {
     width: 220px;
     height: 58px;
     padding-left: 12px;
-    color: var(--White, #FFF);
-    /*font-family: NordiquePro-Bold;*/
-    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 30px;
 
+}
+
+.offerwallBox {
+    color: #FFF;
+    font: 400 30px/0%  "NordiquePro", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 30px;
 }
 
 .monetization {
     color: #E0FF22;
     font: 400 30px/0% "NordiquePro-Bold", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-style: bold;
     font-weight: 500;
     line-height: 30px;
