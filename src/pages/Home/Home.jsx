@@ -237,29 +237,156 @@ const Home = () => {
                       <div className={styles.solves}>solve </div>&nbsp;
                       <div>two key</div>
                   </div>
+
                   <div className={styles.problems}>problems:</div>
               </div>
+
               <div className={styles.sixthBox2}>
                   <div className={styles.innerSixthBox2}>
                       <div className={styles.willingUsers}>
                           <div className={styles.dollar}>
                               <img src="/images/dollar_sign.png"/>
                           </div>
+
                           <div className={styles.pay}>
                               Your users aren’t willing to pay to play
                           </div>
                       </div >
+
                       <div className={styles.hateUsers}>
                           <div className={styles.megaphone}>
                               <img src="/images/mega_phone.png"/>
                           </div>
+
                           <div className={styles.ads}>
                               Your users hate ads and think they interrupt the user experience
                           </div>
+
                       </div>
                   </div>
               </div>
           </div>
+
+
+          <div className={styles.seventhHomeContainer}>
+              <div style={{ backgroundImage: "url(/images/rect_1203.png)", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
+                    {/*<div className={styles.innerSeventhHomeContainer}>*/}
+
+                        <div className={styles.seventhHomeBox1}>
+                            <div className={styles.implementingSoln}>
+                                <div className={styles.implementing}>Implementing </div>&nbsp;
+                                <div className={styles.an}>an offerwall solution provides you </div>
+                            </div>
+
+                             <div className={styles.avenue}>
+                                 an avenue to offer premium content to your users
+                             </div>
+
+                             <div className={styles.priceEngage}>
+                                 <div> without making them pay the price,</div>&nbsp;
+                                 <div className={styles.engage}>engaging more </div>
+                             </div>
+
+                            <div className={styles.usersDecrease}>
+                                <div className={styles.users}>users</div>&nbsp;
+                                <div>and decreasing churn.</div>
+                            </div>
+                        </div>
+
+                        <div className={styles.seventhHomeBox2}>
+                            <div className={styles.innerSeventhBoxContainer}>
+                                <div className={styles.innerSeven1}>
+                                    <span className={styles.innerSevenBlog}>Blog</span>
+                                    <span className={styles.innerSevenArticles}>All articles</span>
+                                </div>
+
+                                <div className={styles.innerSeven2}>
+                                    <div className={styles.sevenRight}>
+                                        <div className={styles.topRightSeven}>
+                                            <img src="/images/img00001.png" alt=""/>
+                                        </div>
+                                        <div className={styles.belowRightSeven}>
+                                            <div className={styles.innerBelowRightSeven}>
+                                                <div className={styles.exploring}>
+                                                    Exploring Offerwall Solutions for
+                                                    Monetization and Retention: a Comparative
+                                                    Analysis
+                                                </div>
+                                                <div className={styles.dateTime}>
+                                                    <div>July 19 2023</div>
+                                                    <div className={styles.imgTime}>
+                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <div className={styles.minRead}>8 min read</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div className={styles.readMoreExplore}>
+                                                    <div className={styles.readMoreButton}>
+                                                        Read More
+                                                    </div>
+                                                </div>
+
+                                        </div>
+                                    </div>
+                                    <div className={styles.sevenLeft}>
+                                        <div className={styles.topLeftSeven}>
+                                            <img src="/images/img0002.png" alt=""/>
+                                            <div className={styles.topLeftSevenBox1}>
+                                                <div className={styles.mastering}>
+                                                    Mastering Offerwall Monetisation: <br />
+                                                    Strategies to Boost Your Earnings
+                                                </div>
+                                                <div className={styles.leftDateTime}>
+                                                    <div>July 19 2023</div>
+                                                    <div className={styles.leftImgTime}>
+                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <div className={styles.minRead}>8 min read</div>
+                                                    </div>
+                                                </div>
+                                                <div className={styles.LeftReadMoreExplore}>
+                                                    <div className={styles.readMoreButton}>
+                                                        Read More
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div className={styles.belowLeftSeven}>
+                                            <img src="/images/img0003.png" alt=""/>
+                                            <div className={styles.topLeftSevenBox1}>
+                                                <div className={styles.mastering}>
+                                                    Behind the Scenes: How Advertisers <br />
+                                                    Create Irresistible Offerwall Campaigns
+                                                </div>
+                                                <div className={styles.leftDateTime}>
+                                                    <div>July 19 2023</div>
+                                                    <div className={styles.leftImgTime}>
+                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <div className={styles.minRead}>8 min read</div>
+                                                    </div>
+                                                </div>
+                                                <div className={styles.LeftReadMoreExplore}>
+                                                    <div className={styles.readMoreButton}>
+                                                        Read More
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className={styles.seventhHomeBox3}></div>
+                    {/*</div>*/}
+              </div>
+
+          </div>
+
+
+
+
 
 
 
