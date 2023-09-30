@@ -270,7 +270,6 @@ const Home = () => {
 
           <div className={styles.seventhHomeContainer}>
               <div style={{ backgroundImage: "url(/images/rect_1203.png)", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
-                    {/*<div className={styles.innerSeventhHomeContainer}>*/}
 
                         <div className={styles.seventhHomeBox1}>
                             <div className={styles.implementingSoln}>
@@ -332,10 +331,12 @@ const Home = () => {
                                         <div className={styles.topLeftSeven}>
                                             <img src="/images/img0002.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1}>
+
                                                 <div className={styles.mastering}>
                                                     Mastering Offerwall Monetisation: <br />
                                                     Strategies to Boost Your Earnings
                                                 </div>
+
                                                 <div className={styles.leftDateTime}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTime}>
@@ -343,21 +344,25 @@ const Home = () => {
                                                         <div className={styles.minRead}>8 min read</div>
                                                     </div>
                                                 </div>
+
                                                 <div className={styles.LeftReadMoreExplore}>
                                                     <div className={styles.readMoreButton}>
                                                         Read More
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                         </div>
                                         <div className={styles.belowLeftSeven}>
                                             <img src="/images/img0003.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1}>
+
                                                 <div className={styles.mastering}>
                                                     Behind the Scenes: How Advertisers <br />
                                                     Create Irresistible Offerwall Campaigns
                                                 </div>
+
                                                 <div className={styles.leftDateTime}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTime}>
@@ -365,11 +370,13 @@ const Home = () => {
                                                         <div className={styles.minRead}>8 min read</div>
                                                     </div>
                                                 </div>
+
                                                 <div className={styles.LeftReadMoreExplore}>
                                                     <div className={styles.readMoreButton}>
                                                         Read More
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -378,21 +385,44 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className={styles.seventhHomeBox3}></div>
-                    {/*</div>*/}
+                        <div className={styles.seventhHomeBox3}>
+                            <div className={styles.innerSeventhHome}>
+                                <div className={styles.rightSevenBox3}>
+                                    <div className={styles.getInTouch}>
+                                        <div> Get </div>&nbsp;
+                                        <div className={styles.inTouch}>in touch</div>
+                                    </div>
+                                    <div className={styles.schedule}>Learn more or schedule a call for advice
+                                        on how you can maximize the impact of offerwall
+                                        monetization on your own mobile games. </div>
+                                    <div>
+                                        <div className={styles.contactImg}>
+                                            <img src="/images/contact.png" alt=""/>
+                                        </div>
+                                        <div className={styles.contactLayOut}>
+                                            <div className={styles.contactUs}>
+                                                contact us
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  className={styles.leftSevenBox3}>
+                                    <div className={styles.mobile005}>
+                                        <img src="/images/mobile005.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
               </div>
 
           </div>
 
 
 
-
-
-
-
           {/*FOOTER SECTION*/}
           <div className={styles.footerName}>
-              <div style={{ backgroundImage: "url(/images/footerBG.png)", width: "100%", height: "617px", }}>
+              <div style={{ backgroundImage: "url(/images/footerBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
 
                   <div className={styles.footerInfo}>
                       <div className={styles.innerFooterInfo}>
