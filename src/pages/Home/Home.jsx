@@ -16,7 +16,7 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div style={{ backgroundImage: "url(/images/fj1.png)", height: "900px",display: "flex", justifyContent: "center"}}>
+                  <div style={{ backgroundImage: "url(/images/top_background.png)", height: "982px", display: "flex", justifyContent: "center"}}>
                       <div className={styles.mainFirst}>
                         <div className={styles.rightMain}>
                             <div className={styles.text}>
@@ -422,7 +422,7 @@ const Home = () => {
 
           {/*FOOTER SECTION*/}
           <div className={styles.footerName}>
-              <div style={{ backgroundImage: "url(/images/footerBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
+              <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
 
                   <div className={styles.footerInfo}>
                       <div className={styles.innerFooterInfo}>
