@@ -10,6 +10,7 @@ import Blog from "./pages/Blog/Blog";
 import Articles from "./pages/Articles/Articles";
 import BlogArticle from "./pages/BlogArticle/BlogArticle";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
 
       return(
         <div className={styles.app}>
-          < Header />
-          < Outlet />
+            < Header />
+            < Outlet />
+            < Footer />
         </div>
       );
 
