@@ -6,29 +6,81 @@ import styles from "./Blog.module.css";
 
 const Blog = () => {
     return (
-        <div className={styles.BlogMain}>
-            <div>
+        <div className={styles.blogMain}>
+            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", height: "736px"}}>
+            </div>
 
-                <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", height: "736px"}}>
+            <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", height: "982px"}}>
+            </div>
+
+            <div className={styles.blogThirdContainer}>
+
+            </div>
+
+            <div className={styles.blogFourthContainer}>
+
+            </div>
+
+
+
+            {/*FOOTER SECTION*/}
+            <div className={styles.footerName}>
+                <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
+
+                    <div className={styles.footerInfo}>
+                        <div className={styles.innerFooterInfo}>
+                            <div className={styles.TopFooterInfo}>
+                                <div className={styles.rightFooterInfo}>
+
+                                    <div className={styles.imgValuable}>
+                                        <img className={styles.footerLogo} src="/images/header_logo.png" alt=""/>
+                                        <div className={styles.offerwall}>
+                                            <span className={styles.offerwallBox}>offerwall</span>< br/>
+                                            <span className={styles.monetization}>monetization</span>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.valuable}>
+                                        <span> A Valuable Tool for Monetizing Mobile Games </span>
+                                    </div>
+
+                                </div>
+
+                                <div className={styles.leftFooterInfo}>
+                                    <div className={styles.info}>
+                                        <div className={styles.rightInfo}>
+                                            <span>FAQs</span>
+                                            <span>BLOG</span>
+                                            <span>PARTNERSHIPS</span>
+                                            <span>PRIVACY POLICY</span>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.leftInfo}>
+                                        <img src="/images/lnkdn.svg"/>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div className={styles.footerDivider }>
+                                <hr />
+                            </div>
+
+                            <div className={styles.downFooterInfo}>
+                                <span> © Copyright 2023 Offerwall Monetization. All Rights Reserved. </span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
-                {/*<div style={{backgroundImage: "url(/images/blog_secondBg.png)", height: "982px"}}>*/}
-
-
-                {/*</div>*/}
-                <div className={styles.blogSecondContainer}>
-                    <div className={styles.blogRight}>
-                        <img src="/images/blog_rightBg.png" alt=""/>
-
-                    </div>
-                    <div className={styles.blogLeft}>
-                        <img src="/images/blog_leftBg.png" alt=""/>
-
-                    </div>
-                </div>
             </div>
 
         </div>
+
+
 
     )
 }

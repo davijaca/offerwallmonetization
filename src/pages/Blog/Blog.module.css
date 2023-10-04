@@ -3,7 +3,12 @@
   box-sizing: border-box;
 }
 
-.BlogMain > img {
+.blogMain {
+  width: 100vw;
+  height: 100%;
+}
+
+.blogMain > img {
   width: 100%;
 }
 
@@ -32,6 +37,170 @@
   width: 100%;
 
 }
+
+.blogThirdContainer {
+  width: 100%;
+  height: 982px;
+  background-color: #E7CAA2;
+}
+
+.blogFourthContainer {
+  width: 100%;
+  height: 982px;
+  background-color: #dedede;
+  padding-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footerName {
+  display: flex;
+  align-items: flex-end;
+  background-color: #F7F8FC;;
+
+}
+.footerInfo {
+  position: absolute;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+}
+
+.innerFooterInfo {
+  width: 80%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.TopFooterInfo {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightFooterInfo {
+  width: 100%;
+  height: 100px;
+
+}
+
+.imgValuable {
+  width: 50%;
+  height: 70px;
+  display: flex;
+
+}
+
+.footerLogo {
+  width: 50px;
+  height: 58px;
+}
+
+.offerwall {
+  width: 220px;
+  height: 58px;
+  padding-left: 12px;
+
+}
+
+.offerwallBox {
+  color: #FFF;
+  font: 400 30px/0%  "NordiquePro", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.monetization {
+  color: #E0FF22;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+  font-size: 28px;
+  font-style: bold;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.valuable {
+  width: 100%;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131.5%;
+  color: #FFF;
+}
+
+.leftFooterInfo {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+
+}
+
+.info {
+  width: 100%;
+  height: 20px;
+}
+
+.rightInfo {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Modal-grey-1, #DBDAD7);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+}
+
+.leftInfo {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+.footerDivider {
+  width: 100%;
+  height: 30px;
+
+}
+
+.footerDivider > hr {
+  border: 0.5px solid #DEDEDE
+}
+
+.downFooterInfo {
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /*.blog {*/
 /*  background: var(--white, #ffffff);*/

@@ -16,7 +16,7 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div style={{ backgroundImage: "url(/images/top_background.png)", height: "982px", display: "flex", justifyContent: "center"}}>
+                  <div style={{ backgroundImage: "url(/images/home_background.png)", width: "100vw", height: "982px", display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
                       <div className={styles.mainFirst}>
                         <div className={styles.rightMain}>
                             <div className={styles.text}>
@@ -46,8 +46,8 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={styles.leftMain}>
-                            <div className={styles.leftMainImg}>
-                                <img className={styles.imgInfo} src="images/iPhone_14 _Pro.png" alt=""/>
+                            <div className={styles.leftImgInfo}>
+                                <img className={styles.leftImg} src="/images/iPhone_14%20_Pro.png"/>
                             </div>
                         </div>
                     </div>
