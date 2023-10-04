@@ -101,17 +101,21 @@ const Home = () => {
                     </div>
                 </div>
                 <div className= {styles.secondHomeContainerBox2}>
-                    <img src="/images/mobileP.png" alt=""/>
+                    <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
+                    <img className= {styles.image2} src="/images/mobileP_Hover.png" alt=""/>
                 </div>
           </div>
 
 
           <div className={styles.thirdHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "750px"}}>
+              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "982px", width: "100vw"}}>
                 <div className={styles.thirdHomeContainerBox}>
                     <div className={styles.mobileProblem}>
-                        <div className={styles.mobileProblem1}>The Problem</div>
-                        <div className={styles.mobileProblem2}> With Modern Mobile Game Monetization</div>
+                        <div className={styles.innerMobileProblem}>
+                            <div className={styles.mobileProblem1}>The Problem </div>&nbsp;&nbsp;
+                            <div className={styles.with}>With</div>
+                        </div>
+                        <div className={styles.mobileProblem2}> Modern Mobile Game Monetization</div>
                     </div>
 
                     <div className={styles.gameDeveloper}>
@@ -129,6 +133,7 @@ const Home = () => {
 
 
           <div className={styles.fourthHomeContainer}>
+              <div className={styles.SubFourthHomeContainer}>
                 <div className={styles.fourthHomeBox1}>
                     <div>Why</div>&nbsp;
                     <div className={styles.innerFourthHomeBox1}>Mobile </div> &nbsp;
@@ -159,7 +164,8 @@ const Home = () => {
                         </div>
 
                         <div className={styles.fourthImg}>
-                            <img src="/images/phone01.png" alt=""/>
+                            <img className={styles.fourthImg1} src="/images/phone01.png" alt=""/>
+                            <img className={styles.fourthImg2} src="/images/phone02.png" alt=""/>
                         </div>
 
                         <div className={styles.fourth24}>
@@ -167,18 +173,22 @@ const Home = () => {
                                 <div className={styles.innerOne}>
                                     <img src="/images/two.png" alt="" />
                                     <div className={styles.fourth13Integration}>
-                                        Offerwall integration is seamless with existing ad monetization or paywall structures
-                                    </div>
+                                        Offerwalls have a proven track record of increasing
+                                        customer lifetime value and monthly recurring revenue                                    </div>
                                 </div>
                             </div>
                             <div className={styles.fourth24Two}>
                                 <div className={styles.innerTwoSecond}>
                                     <img src="/images/four.png" alt="" />
                                     <div className={styles.fourth13Integration}>
-                                        At the point where users decline to pay
-                                        for premium content in your online shop you
-                                        can redirect them to an offerwall giving
-                                        them a different way to make the same payment                                    </div>
+                                        There are offerwall solution providers
+                                        <div className={styles.likeSmatchedWork}>
+                                            <div>like</div>&nbsp;
+                                            <div className={styles.fourth13Smatched}>Smatched</div>&nbsp;
+                                            <div>that work with you to </div>
+                                        </div>
+                                        customise the service for a seamless integration
+                                        within your app to maximize the profit from your offerwall monetization                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -190,6 +200,7 @@ const Home = () => {
                         OK… But Do Offerwalls Work?
                     </div>
                 </div>
+              </div>
           </div>
 
 
@@ -200,10 +211,11 @@ const Home = () => {
                       <div className={styles.innerFifthMainBox1}>
                           <div className={styles.innerFifthBox1}>
                               <div>Offerwall</div>&nbsp;
-                              <div className={styles.engagement}>engagement</div> &nbsp;
-                              <div> is </div>
+                              <div className={styles.engagement}>engagement</div>
+                              <div>is </div>
                           </div>
-                          <div className={styles.highest}> highest among non-paying users.</div>
+                          <div className={styles.highest}> highest among non- <br/>
+                              paying users.</div>
                       </div>
 
                       <div className={styles.innerFifthMainBox2}>
@@ -422,7 +434,7 @@ const Home = () => {
 
           {/*FOOTER SECTION*/}
           <div className={styles.footerName}>
-              <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
+              <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100vw", height: "617px", display: "flex", alignItems: "flex-end"}}>
 
                   <div className={styles.footerInfo}>
                       <div className={styles.innerFooterInfo}>
