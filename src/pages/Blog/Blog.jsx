@@ -7,11 +7,73 @@ import styles from "./Blog.module.css";
 const Blog = () => {
     return (
         <div className={styles.blogMain}>
-            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", height: "736px"}}>
+            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", height: "736px", display: "flex"}}>
+                <div className={styles.firstRight}>
+                    <div className={styles.firstRight1}>
+
+                        <div className={styles.exploreBlog}>
+                            <div>Explore our </div>&nbsp;
+                           <div className={styles.blogE}> blog.</div>
+                        </div>
+
+                        <div className={styles.expertTips}>
+                            Explore our blog for expert tips, success stories,
+                            and industry updates on maximizing your earnings through
+                            offerwall monetisation.
+                        </div>
+
+                        <div className={styles.searchLayout}>
+                            <div className={styles.search}>
+                                <div className={styles.searchBox}>Search blog</div>
+                                <img src="/images/search.png" alt=""/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div className={styles.firstLeft}>
+                    <div className={styles.firstLeft1}>
+
+                        <div className={styles.signUpNews}>
+                            Sign Up for Newsletter
+                        </div>
+
+                        <div className={styles.expertTips}>
+                            Explore our blog for expert tips, success stories,
+                            and industry updates on maximizing your earnings through
+                            offerwall monetisation.
+                        </div>
+
+                        <div className={styles.searchLayoutEmail}>
+                            <div className={styles.yourEmail}>Your-Email</div>
+                            <div className={styles.searchEmail}></div>
+                        </div>
+
+                        <div className={styles.signUpE}>
+                           <div className={styles.signUpEmail}>
+                               Sign Up
+                           </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
+
+
 
             <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", height: "982px"}}>
             </div>
+
+            {/*<div>*/}
+            {/*    <div className={styles.blogRight}>*/}
+            {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.blogLeft}>*/}
+            {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
             <div className={styles.blogThirdContainer}>
 
@@ -26,6 +88,10 @@ const Blog = () => {
             {/*FOOTER SECTION*/}
             <div className={styles.footerName}>
                 <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
+
+
+
+
 
                     <div className={styles.footerInfo}>
                         <div className={styles.innerFooterInfo}>
