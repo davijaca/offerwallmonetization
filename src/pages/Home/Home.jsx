@@ -16,7 +16,7 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div style={{ backgroundImage: "url(/images/home_background.png)", width: "100vw", height: "982px", display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
+                  <div style={{ backgroundImage: "url(/images/home_background.png)", width: "100vw", maxWidth: "1512px", height: "982px", display: "flex", justifyContent: "center"}}>
                       <div className={styles.mainFirst}>
                         <div className={styles.rightMain}>
                             <div className={styles.text}>
@@ -108,7 +108,7 @@ const Home = () => {
 
 
           <div className={styles.thirdHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "982px", width: "100vw"}}>
+              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "982px", width: "100vw", maxWidth: "1512px"}}>
                 <div className={styles.thirdHomeContainerBox}>
                     <div className={styles.mobileProblem}>
                         <div className={styles.innerMobileProblem}>
@@ -205,7 +205,7 @@ const Home = () => {
 
 
           <div className={styles.fifthHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/rect01.png)", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
+              <div style={{ backgroundImage: "url(/images/rect01.png)", width: "100vw", maxWidth: "1512px", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
 
                   <div className={styles.innerFifthHomeContainer1}>
                       <div className={styles.innerFifthMainBox1}>
@@ -281,7 +281,7 @@ const Home = () => {
 
 
           <div className={styles.seventhHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/rect_1203.png)", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
+              <div style={{ backgroundImage: "url(/images/rect_1203.png)", width: "100vw", maxWidth: "1512px", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
 
                         <div className={styles.seventhHomeBox1}>
                             <div className={styles.implementingSoln}>
@@ -434,7 +434,7 @@ const Home = () => {
 
           {/*FOOTER SECTION*/}
           <div className={styles.footerName}>
-              <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100vw", height: "617px", display: "flex", alignItems: "flex-end"}}>
+              <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100vw", maxWidth: "1512px", height: "617px", display: "flex", alignItems: "flex-end"}}>
 
                   <div className={styles.footerInfo}>
                       <div className={styles.innerFooterInfo}>

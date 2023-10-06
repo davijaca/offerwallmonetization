@@ -7,7 +7,7 @@ import styles from "./Blog.module.css";
 const Blog = () => {
     return (
         <div className={styles.blogMain}>
-            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", height: "736px", display: "flex"}}>
+            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", maxWidth: "1512px", height: "736px", display: "flex"}}>
                 <div className={styles.firstRight}>
                     <div className={styles.firstRight1}>
 
@@ -24,7 +24,7 @@ const Blog = () => {
 
                         <div className={styles.searchLayout}>
                             <div className={styles.search}>
-                                <div className={styles.searchBox}>Search blog</div>
+                                <div className={styles.searchBox}> Search blog</div>
                                 <img src="/images/search.png" alt=""/>
                             </div>
                         </div>
@@ -48,13 +48,15 @@ const Blog = () => {
 
                         <div className={styles.searchLayoutEmail}>
                             <div className={styles.yourEmail}>Your-Email</div>
-                            <div className={styles.searchEmail}></div>
+                            <div className={styles.searchEmail}>
+                                <input className={styles.inputE} />
+                            </div>
                         </div>
 
                         <div className={styles.signUpE}>
-                           <div className={styles.signUpEmail}>
-                               Sign Up
-                           </div>
+                               <div className={styles.signUpEmail}>
+                                   Sign Up
+                               </div>
                         </div>
 
                     </div>
@@ -63,87 +65,246 @@ const Blog = () => {
 
 
 
-            <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", height: "982px"}}>
+            <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", maxWidth: "1512px", height: "982px"}}>
+
+                {/*<div>*/}
+                {/*    <div className={styles.blogRight}>*/}
+                {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
+                {/*    </div>*/}
+                {/*    <div className={styles.blogLeft}>*/}
+                {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+
+                <div className={styles.secondBlog}>
+                    <div className={styles.subSecondBlog}>
+                        <div className={styles.recentArticle}>
+                            Recent Article
+                        </div>
+
+                        <div className={styles.unlockingProfit}>
+                            Unlocking Profit Potential: The Power of Offerwall
+                            Monetization in Mobile Apps
+                        </div>
+
+                        <div className={styles.dateTimeManyGames1}>
+                            <div className={styles.dateTime1}>
+                                <div>July 19 2023</div>
+                                <div className={styles.imgTime1}>
+                                    <img src="/images/TimeBlog.png"  alt=""/>
+                                    <div className={styles.minRead1}>8 min read</div>
+                                </div>
+                            </div>
+
+                            <div className={styles.manyGames}>Many game developers struggle with understanding
+                                the best way to monetize a mobile game, resorting
+                                to flooding their users with ads that interrupt the
+                                user experience and cause their users to write negative
+                                reviews.
+                            </div>
+                        </div>
+
+                        <div className={styles.signUpE2}>
+                            <div className={styles.subSignUpE2}>
+                                <div className={styles.signUpEmail2}>
+                                    Read More
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
-            {/*<div>*/}
-            {/*    <div className={styles.blogRight}>*/}
-            {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
-            {/*    </div>*/}
-            {/*    <div className={styles.blogLeft}>*/}
-            {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+
 
             <div className={styles.blogThirdContainer}>
 
+                <div className={styles.innerThirdBoxContainer}>
+                    <div className={styles.innerThird1}>
+                        <span className={styles.innerThirdBlog}>Browse</span>
+                        <span className={styles.innerThirdArticles}>All articles</span>
+                    </div>
+
+                    <div className={styles.innerThird2}>
+                        <div className={styles.thirdRight}>
+                            <div className={styles.topRightThird}>
+                                <img src="/images/img000012.png" alt=""/>
+                            </div>
+                            <div className={styles.belowRightThird}>
+                                <div className={styles.innerBelowRightThird}>
+                                    <div className={styles.exploring}>
+                                        Exploring Offerwall Solutions for
+                                        Monetization and Retention: a Comparative
+                                        Analysis
+                                    </div>
+                                    <div className={styles.dateTime}>
+                                        <div>July 19 2023</div>
+                                        <div className={styles.imgTime}>
+                                            <img src="/images/Time.png"  alt=""/>
+                                            <div className={styles.minRead}>8 min read</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={styles.readMoreExplore}>
+                                    <div className={styles.readMoreButton}>
+                                        Read More
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className={styles.thirdLeft}>
+                            <div className={styles.topLeftThird}>
+                                <img src="/images/img0002.png" alt=""/>
+                                <div className={styles.topLeftThirdBox1}>
+
+                                    <div className={styles.mastering}>
+                                        Mastering Offerwall Monetisation: <br />
+                                        Strategies to Boost Your Earnings
+                                    </div>
+
+                                    <div className={styles.leftDateTime}>
+                                        <div>July 19 2023</div>
+                                        <div className={styles.leftImgTime}>
+                                            <img src="/images/Time.png"  alt=""/>
+                                            <div className={styles.minRead}>8 min read</div>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.LeftReadMoreExplore}>
+                                        <div className={styles.readMoreButton}>
+                                            Read More
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className={styles.belowLeftThird}>
+                                <img src="/images/img0003.png" alt=""/>
+                                <div className={styles.topLeftThirdBox1}>
+
+                                    <div className={styles.mastering}>
+                                        Behind the Scenes: How Advertisers <br />
+                                        Create Irresistible Offerwall Campaigns
+                                    </div>
+
+                                    <div className={styles.leftDateTime}>
+                                        <div>July 19 2023</div>
+                                        <div className={styles.leftImgTime}>
+                                            <img src="/images/Time.png"  alt=""/>
+                                            <div className={styles.minRead}>8 min read</div>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.LeftReadMoreExplore}>
+                                        <div className={styles.readMoreButton}>
+                                            Read More
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
             <div className={styles.blogFourthContainer}>
 
-            </div>
+                <div className={styles.blogFourthBox1}>
+                    <div className={styles.innerBlogFourthBox1}>
+                        <div className={styles.blogSignUpNews}>
+                            <div>Sign Up for</div> &nbsp;
+                            <div className={styles.newsLetter}>Newsletter</div>
+                        </div>
 
-
-
-            {/*FOOTER SECTION*/}
-            <div className={styles.footerName}>
-                <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100%", height: "617px", display: "flex", alignItems: "flex-end"}}>
-
-
-
-
-
-                    <div className={styles.footerInfo}>
-                        <div className={styles.innerFooterInfo}>
-                            <div className={styles.TopFooterInfo}>
-                                <div className={styles.rightFooterInfo}>
-
-                                    <div className={styles.imgValuable}>
-                                        <img className={styles.footerLogo} src="/images/header_logo.png" alt=""/>
-                                        <div className={styles.offerwall}>
-                                            <span className={styles.offerwallBox}>offerwall</span>< br/>
-                                            <span className={styles.monetization}>monetization</span>
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.valuable}>
-                                        <span> A Valuable Tool for Monetizing Mobile Games </span>
-                                    </div>
-
-                                </div>
-
-                                <div className={styles.leftFooterInfo}>
-                                    <div className={styles.info}>
-                                        <div className={styles.rightInfo}>
-                                            <span>FAQs</span>
-                                            <span>BLOG</span>
-                                            <span>PARTNERSHIPS</span>
-                                            <span>PRIVACY POLICY</span>
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.leftInfo}>
-                                        <img src="/images/lnkdn.svg"/>
-                                    </div>
-
-                                </div>
-
+                        <div className={styles.blogExpertTipsBox}>
+                            <div className={styles.blogExpertTips}>
+                                Sign up for our newsletter to receive exclusive updates
+                                and the latest news delivered directly to your inbox.
                             </div>
-
-                            <div className={styles.footerDivider }>
-                                <hr />
+                        </div>
+                        <div className={styles.blogNewsImageBox}>
+                            <div className={styles.innerBlogNewsImageBox}>
+                                <img src="/images/blogDownBtn.png" alt=""/>
+                                <div className={styles.blogSignUpnews}>Sign Up</div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div className={styles.downFooterInfo}>
-                                <span> © Copyright 2023 Offerwall Monetization. All Rights Reserved. </span>
-                            </div>
-
+                <div className={styles.blogFourthBox2}>
+                    <div className={styles.searchLayoutEmail3}>
+                        <div className={styles.yourEmail3}>Your-Email</div>
+                        <div className={styles.searchEmail3}>
+                            <input className={styles.inputE3} />
                         </div>
                     </div>
                 </div>
 
             </div>
 
+
+
+
+
+                {/*FOOTER SECTION*/}
+                <div className={styles.footerName}>
+                    <div style={{ backgroundImage: "url(/images/new_FooterBG.png)", width: "100vw", maxWidth: "1512px", height: "617px", display: "flex", alignItems: "flex-end"}}>
+
+                        <div className={styles.footerInfo}>
+                            <div className={styles.innerFooterInfo}>
+                                <div className={styles.TopFooterInfo}>
+                                    <div className={styles.rightFooterInfo}>
+
+                                        <div className={styles.imgValuable}>
+                                            <img className={styles.footerLogo} src="/images/header_logo.png" alt=""/>
+                                            <div className={styles.offerwall}>
+                                                <span className={styles.offerwallBox}>offerwall</span>< br/>
+                                                <span className={styles.monetization}>monetization</span>
+                                            </div>
+                                        </div>
+
+                                        <div className={styles.valuable}>
+                                            <span> A Valuable Tool for Monetizing Mobile Games </span>
+                                        </div>
+
+                                    </div>
+
+                                    <div className={styles.leftFooterInfo}>
+                                        <div className={styles.info}>
+                                            <div className={styles.rightInfo}>
+                                                <span>FAQs</span>
+                                                <span>BLOG</span>
+                                                <span>PARTNERSHIPS</span>
+                                                <span>PRIVACY POLICY</span>
+                                            </div>
+                                        </div>
+
+                                        <div className={styles.leftInfo}>
+                                            <img src="/images/lnkdn.svg"/>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div className={styles.footerDivider }>
+                                    <hr />
+                                </div>
+
+                                <div className={styles.downFooterInfo}>
+                                    <span> © Copyright 2023 Offerwall Monetization. All Rights Reserved. </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
 
 
