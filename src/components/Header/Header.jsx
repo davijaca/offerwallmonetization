@@ -22,7 +22,7 @@ const Header = () => {
                 <div className={styles.headerBox}>
                     <div className={styles.right}>
                         <div className={styles.rightImg}>
-                        <img src="/images/header_logo.png" alt="Logo"/>
+                            <img src="/images/header_logo.png" alt="Logo"/>
 
                         </div>
                         <div className={styles.headerTitle}>

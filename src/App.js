@@ -18,9 +18,9 @@ function App() {
 
       return(
         <div className={styles.app}>
-            < Header />
-            < Outlet />
-            < Footer />
+          < Header />
+          < Outlet />
+          < Footer />
         </div>
       );
 

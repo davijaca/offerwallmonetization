@@ -2,951 +2,920 @@
 .blog * {
   box-sizing: border-box;
 }
-
-.BlogMain > img {
-  width: 100%;
-}
-
-.blogSecondContainer {
-  width: 100%;
-  height: 982px;
-  display: flex;
-}
-
-.blogRight {
-  width: 80%;
-  height: 982px;
+.blog {
+  background: var(--white, #ffffff);
+  width: 1512px;
+  height: 4100px;
   position: relative;
-  z-index: 2;
+  overflow: hidden;
+  margin: auto;
 }
-
-.blogLeft {
-  width: 50%;
+.section-4 {
+  position: absolute;
+  inset: 0;
+}
+.section-4-background {
+  background: #5b56bd;
+  width: 1512px;
+  height: 750px;
+  position: absolute;
+  left: 0px;
+  top: 2965px;
+}
+.sign-up-box {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 320px;
+  height: 45px;
+  position: absolute;
+  left: 991px;
+  top: 3217px;
+}
+.your-e-mail {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 988px;
+  top: 3191px;
+}
+.sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 3224px;
+  width: 441px;
+}
+.sign-up-for-newsletter {
+  text-align: left;
+  font: 700 55px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 3126px;
+  width: 646px;
+  height: 68px;
+}
+.sign-up-for-newsletter-span {
+  color: #ffffff;
+  font: 700 55px "Poppins", sans-serif;
+}
+.sign-up-for-newsletter-span2 {
+  color: #e0ff22;
+  font: 700 55px "Poppins", sans-serif;
+}
+.sign-up {
+  color: #ffffff;
+  text-align: center;
+  font: 500 30px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 650px;
+  top: 3534px;
+  width: 207px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 72px);
+  top: 3484px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.rectangle-1173 {
+  background: #e0ff22;
+  border-radius: 134px;
+  flex-shrink: 0;
+  width: 144px;
+  height: 144px;
+  position: relative;
+}
+.next {
+  flex-shrink: 0;
+  position: absolute;
+  left: 111px;
+  top: 33px;
+  transform: translate(0px, 0px);
+  overflow: visible;
+}
+.hero {
+  position: absolute;
+  inset: 0;
+}
+.hero-background {
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  overflow: visible;
+}
+.sign-up-for-newsletter2 {
+  color: #ffffff;
+  text-align: right;
+  font: 700 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 842px;
+  top: 212px;
+  width: 469px;
+  height: 68px;
+}
+.sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox2 {
+  color: #ffffff;
+  text-align: right;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 860px;
+  top: 301px;
+  width: 451px;
+}
+.explore-our-blog {
+  text-align: left;
+  font: 700 55px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 195px;
+  width: 668px;
+  height: 76px;
+}
+.explore-our-blog-span {
+  color: #ffffff;
+  font: 700 55px "Poppins", sans-serif;
+}
+.explore-our-blog-span2 {
+  color: #e0ff22;
+  font: 700 55px "Poppins", sans-serif;
+}
+.explore-our-blog-for-expert-tips-success-stories-and-industry-updates-on-maximizing-your-earnings-through-offerwall-monetisation {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 301px;
+  width: 451px;
+}
+.search-bar {
+  background: linear-gradient(
+      to left,
+      rgba(42, 42, 255, 0.11),
+      rgba(42, 42, 255, 0.11)
+    ),
+    linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.48),
+      rgba(255, 255, 255, 0.48)
+    );
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 320px;
+  height: 56px;
+  position: absolute;
+  left: 201px;
+  top: 433px;
+  overflow: hidden;
+}
+.state-layer {
+  padding: 4px 30px 4px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.supporting-text {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 16px/24px "Poppins", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._1st-trailing-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 467px;
+  top: 437px;
+}
+.container {
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.state-layer2 {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.icons-search-24-px {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.group-1000004488 {
+  width: 192px;
+  height: 45px;
+  position: static;
+}
+.rectangle-1177 {
+  background: #e0ff22;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  width: 192px;
+  height: 45px;
+  position: absolute;
+  left: 1119px;
+  top: 535px;
+}
+.sign-up2 {
+  color: #1e1e1e;
+  text-align: center;
+  font: 500 15px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1159px;
+  top: 547px;
+  width: 112px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.your-e-mail2 {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 991px;
+  top: 417px;
+}
+.rectangle-1227 {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 320px;
+  height: 45px;
+  position: absolute;
+  left: 991px;
+  top: 443px;
+}
+.line-17 {
+  border-style: solid;
+  border-color: #dedede;
+  border-width: 1px 0 0 0;
+  width: 1110px;
+  height: 0px;
+  position: absolute;
+  left: 201px;
+  top: 102px;
+}
+.section-2 {
+  position: absolute;
+  inset: 0;
+}
+.section-2-background {
+  background: linear-gradient(
+    90deg,
+    rgba(30, 30, 30, 1) 0%,
+    rgba(30, 30, 30, 1) 52.64902710914612%,
+    rgba(30, 30, 30, 0.84) 55.75513243675232%,
+    rgba(30, 30, 30, 0.71) 58.87749791145325%,
+    rgba(30, 30, 30, 0.29) 68.96513104438782%,
+    rgba(30, 30, 30, 0) 100%
+  );
+  width: 1513px;
   height: 982px;
   position: absolute;
-  z-index: 1;
-  left: 700px;
+  left: 0px;
+  top: 735px;
 }
-
-.blogLeft > img {
-  width: 100%;
-
+.unlocking-profit-potential-the-power-of-offerwall-monetization-in-mobile-apps {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: 700 50px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 923px;
+  width: 585px;
 }
-
-/*.blog {*/
-/*  background: var(--white, #ffffff);*/
-/*  width: 1512px;*/
-/*  height: 4100px;*/
-/*  position: relative;*/
-/*  overflow: hidden;*/
-/*  margin: auto;*/
-/*}*/
-/*.section-4 {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.section-4-background {*/
-/*  background: #5b56bd;*/
-/*  width: 1512px;*/
-/*  height: 750px;*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: 2965px;*/
-/*}*/
-/*.sign-up-box {*/
-/*  border-style: solid;*/
-/*  border-color: #ffffff;*/
-/*  border-width: 1px;*/
-/*  width: 320px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 991px;*/
-/*  top: 3217px;*/
-/*}*/
-/*.your-e-mail {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 400 15px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 988px;*/
-/*  top: 3191px;*/
-/*}*/
-/*.sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 400 15px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 3224px;*/
-/*  width: 441px;*/
-/*}*/
-/*.sign-up-for-newsletter {*/
-/*  text-align: left;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 3126px;*/
-/*  width: 646px;*/
-/*  height: 68px;*/
-/*}*/
-/*.sign-up-for-newsletter-span {*/
-/*  color: #ffffff;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*}*/
-/*.sign-up-for-newsletter-span2 {*/
-/*  color: #e0ff22;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*}*/
-/*.sign-up {*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font: 500 30px "Inter", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 650px;*/
-/*  top: 3534px;*/
-/*  width: 207px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.sign-up-button {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 10px;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  position: absolute;*/
-/*  left: calc(50% - 72px);*/
-/*  top: 3484px;*/
-/*  transform-origin: 0 0;*/
-/*  transform: rotate(-90deg) scale(1, 1);*/
-/*}*/
-/*.rectangle-1173 {*/
-/*  background: #e0ff22;*/
-/*  border-radius: 134px;*/
-/*  flex-shrink: 0;*/
-/*  width: 144px;*/
-/*  height: 144px;*/
-/*  position: relative;*/
-/*}*/
-/*.next {*/
-/*  flex-shrink: 0;*/
-/*  position: absolute;*/
-/*  left: 111px;*/
-/*  top: 33px;*/
-/*  transform: translate(0px, 0px);*/
-/*  overflow: visible;*/
-/*}*/
-/*.hero {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.hero-background {*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: -1px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.sign-up-for-newsletter2 {*/
-/*  color: #ffffff;*/
-/*  text-align: right;*/
-/*  font: 700 40px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 842px;*/
-/*  top: 212px;*/
-/*  width: 469px;*/
-/*  height: 68px;*/
-/*}*/
-/*.sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox2 {*/
-/*  color: #ffffff;*/
-/*  text-align: right;*/
-/*  font: 400 15px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 860px;*/
-/*  top: 301px;*/
-/*  width: 451px;*/
-/*}*/
-/*.explore-our-blog {*/
-/*  text-align: left;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 195px;*/
-/*  width: 668px;*/
-/*  height: 76px;*/
-/*}*/
-/*.explore-our-blog-span {*/
-/*  color: #ffffff;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*}*/
-/*.explore-our-blog-span2 {*/
-/*  color: #e0ff22;*/
-/*  font: 700 55px "Poppins", sans-serif;*/
-/*}*/
-/*.explore-our-blog-for-expert-tips-success-stories-and-industry-updates-on-maximizing-your-earnings-through-offerwall-monetisation {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 400 15px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 301px;*/
-/*  width: 451px;*/
-/*}*/
-/*.search-bar {*/
-/*  background: linear-gradient(*/
-/*      to left,*/
-/*      rgba(42, 42, 255, 0.11),*/
-/*      rgba(42, 42, 255, 0.11)*/
-/*    ),*/
-/*    linear-gradient(*/
-/*      to left,*/
-/*      rgba(255, 255, 255, 0.48),*/
-/*      rgba(255, 255, 255, 0.48)*/
-/*    );*/
-/*  border-radius: 4px;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 4px;*/
-/*  align-items: center;*/
-/*  justify-content: flex-start;*/
-/*  width: 320px;*/
-/*  height: 56px;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 433px;*/
-/*  overflow: hidden;*/
-/*}*/
-/*.state-layer {*/
-/*  padding: 4px 30px 4px 30px;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 4px;*/
-/*  align-items: center;*/
-/*  justify-content: flex-start;*/
-/*  align-self: stretch;*/
-/*  flex: 1;*/
-/*  position: relative;*/
-/*}*/
-/*.content {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 10px;*/
-/*  align-items: center;*/
-/*  justify-content: flex-start;*/
-/*  align-self: stretch;*/
-/*  flex: 1;*/
-/*  position: relative;*/
-/*}*/
-/*.supporting-text {*/
-/*  color: #1e1e1e;*/
-/*  text-align: left;*/
-/*  font: 400 16px/24px "Poppins", sans-serif;*/
-/*  position: relative;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: flex-start;*/
-/*}*/
-/*._1st-trailing-icon {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  gap: 10px;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  width: 48px;*/
-/*  height: 48px;*/
-/*  position: absolute;*/
-/*  left: 467px;*/
-/*  top: 437px;*/
-/*}*/
-/*.container {*/
-/*  border-radius: 100px;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 10px;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  flex-shrink: 0;*/
-/*  position: relative;*/
-/*  overflow: hidden;*/
-/*}*/
-/*.state-layer2 {*/
-/*  padding: 8px;*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 10px;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  flex-shrink: 0;*/
-/*  position: relative;*/
-/*}*/
-/*.icons-search-24-px {*/
-/*  flex-shrink: 0;*/
-/*  position: relative;*/
-/*  overflow: visible;*/
-/*}*/
-/*.group-1000004488 {*/
-/*  width: 192px;*/
-/*  height: 45px;*/
-/*  position: static;*/
-/*}*/
-/*.rectangle-1177 {*/
-/*  background: #e0ff22;*/
-/*  border-radius: 4px;*/
-/*  border-style: solid;*/
-/*  border-color: transparent;*/
-/*  border-width: 1px;*/
-/*  width: 192px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 1119px;*/
-/*  top: 535px;*/
-/*}*/
-/*.sign-up2 {*/
-/*  color: #1e1e1e;*/
-/*  text-align: center;*/
-/*  font: 500 15px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 1159px;*/
-/*  top: 547px;*/
-/*  width: 112px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.your-e-mail2 {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 400 15px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 991px;*/
-/*  top: 417px;*/
-/*}*/
-/*.rectangle-1227 {*/
-/*  border-style: solid;*/
-/*  border-color: #ffffff;*/
-/*  border-width: 1px;*/
-/*  width: 320px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 991px;*/
-/*  top: 443px;*/
-/*}*/
-/*.line-17 {*/
-/*  border-style: solid;*/
-/*  border-color: #dedede;*/
-/*  border-width: 1px 0 0 0;*/
-/*  width: 1110px;*/
-/*  height: 0px;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 102px;*/
-/*}*/
-/*.section-2 {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.section-2-background {*/
-/*  background: linear-gradient(*/
-/*    90deg,*/
-/*    rgba(30, 30, 30, 1) 0%,*/
-/*    rgba(30, 30, 30, 1) 52.64902710914612%,*/
-/*    rgba(30, 30, 30, 0.84) 55.75513243675232%,*/
-/*    rgba(30, 30, 30, 0.71) 58.87749791145325%,*/
-/*    rgba(30, 30, 30, 0.29) 68.96513104438782%,*/
-/*    rgba(30, 30, 30, 0) 100%*/
-/*  );*/
-/*  width: 1513px;*/
-/*  height: 982px;*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: 735px;*/
-/*}*/
-/*.unlocking-profit-potential-the-power-of-offerwall-monetization-in-mobile-apps {*/
-/*  color: var(--white, #ffffff);*/
-/*  text-align: left;*/
-/*  font: 700 50px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 923px;*/
-/*  width: 585px;*/
-/*}*/
-/*.many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews {*/
-/*  color: var(--white, #ffffff);*/
-/*  text-align: left;*/
-/*  font: 400 18px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 1293px;*/
-/*  width: 474px;*/
-/*}*/
-/*.recent-article {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 700 30px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 828px;*/
-/*  width: 668px;*/
-/*}*/
-/*.jul-19-2023 {*/
-/*  color: #b3acac;*/
-/*  text-align: left;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 1249px;*/
-/*}*/
-/*.section-2-read-time {*/
-/*  width: 113px;*/
-/*  height: 24px;*/
-/*  position: absolute;*/
-/*  left: 562px;*/
-/*  top: 1246px;*/
-/*}*/
-/*._8-min-read {*/
-/*  color: #b3acac;*/
-/*  text-align: left;*/
-/*  font: 400 14px/24px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 37px;*/
-/*  top: 0px;*/
-/*}*/
-/*.time {*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: 0px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.section-2-button {*/
-/*  width: 191px;*/
-/*  height: 45px;*/
-/*  position: static;*/
-/*}*/
-/*.rectangle-1176 {*/
-/*  background: #e0ff22;*/
-/*  border-radius: 4px;*/
-/*  width: 191px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 594px;*/
-/*  top: 1498px;*/
-/*}*/
-/*.read-more {*/
-/*  color: #1e1e1e;*/
-/*  text-align: center;*/
-/*  font: 600 15px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 613px;*/
-/*  top: 1510px;*/
-/*  width: 153px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.section-3 {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.browse {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 700 40px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 1850px;*/
-/*  width: 668px;*/
-/*}*/
-/*.section-3-box-1 {*/
-/*  background: #9ad3cc;*/
-/*  border-radius: 10px;*/
-/*  width: 602px;*/
-/*  height: 805px;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 1922px;*/
-/*}*/
-/*.section-3-box-2 {*/
-/*  background: #dfdfde;*/
-/*  border-radius: 10px;*/
-/*  width: 488px;*/
-/*  height: 392px;*/
-/*  position: absolute;*/
-/*  left: 823px;*/
-/*  top: 1922px;*/
-/*}*/
-/*.section-3-box-3 {*/
-/*  background: #e7caa2;*/
-/*  border-radius: 10px;*/
-/*  width: 488px;*/
-/*  height: 392px;*/
-/*  position: absolute;*/
-/*  left: 823px;*/
-/*  top: 2335px;*/
-/*}*/
-/*.all-articles {*/
-/*  color: #2a2aff;*/
-/*  text-align: right;*/
-/*  font: 500 25px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 1075px;*/
-/*  top: 1866px;*/
-/*  width: 236px;*/
-/*}*/
-/*.exploring-offerwall-solutions-for-monetization-and-retention-a-comparative-analysis {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 700 30px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 258px;*/
-/*  top: 2314px;*/
-/*  width: 470px;*/
-/*}*/
-/*.frame-23-4-1 {*/
-/*  border-radius: 10px 10px 0px 0px;*/
-/*  width: 602px;*/
-/*  height: 342px;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 1922px;*/
-/*}*/
-/*.jul-19-20232 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 258px;*/
-/*  top: 2514px;*/
-/*  width: 184px;*/
-/*}*/
-/*.behind-the-scenes-how-advertisers-create-irresistible-offerwall-campaigns {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 700 18px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 871px;*/
-/*  top: 2504px;*/
-/*  width: 394px;*/
-/*}*/
-/*.jul-28-2023 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 871px;*/
-/*  top: 2578px;*/
-/*  width: 117px;*/
-/*}*/
-/*.mastering-offerwall-monetisation-strategies-to-boost-your-earnings {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 700 18px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 871px;*/
-/*  top: 2091px;*/
-/*  width: 382px;*/
-/*}*/
-/*.jul-28-20232 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 871px;*/
-/*  top: 2165px;*/
-/*  width: 117px;*/
-/*}*/
-/*.rectangle {*/
-/*  border-radius: 10px 10px 0px 0px;*/
-/*  width: 488px;*/
-/*  height: 149px;*/
-/*  position: absolute;*/
-/*  left: 823px;*/
-/*  top: 1922px;*/
-/*}*/
-/*.rectangle2 {*/
-/*  border-radius: 10px 10px 0px 0px;*/
-/*  width: 488px;*/
-/*  height: 149px;*/
-/*  position: absolute;*/
-/*  left: 823px;*/
-/*  top: 2335px;*/
-/*}*/
-/*._8-min-read2 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: left;*/
-/*  font: 400 14px/24px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 656px;*/
-/*  top: 2514px;*/
-/*}*/
-/*.time2 {*/
-/*  position: absolute;*/
-/*  left: 619px;*/
-/*  top: 2514px;*/
-/*  overflow: visible;*/
-/*}*/
-/*._8-min-read3 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: right;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 1168px;*/
-/*  top: 2165px;*/
-/*  width: 85px;*/
-/*}*/
-/*.time3 {*/
-/*  position: absolute;*/
-/*  left: 1141px;*/
-/*  top: 2164px;*/
-/*  overflow: visible;*/
-/*}*/
-/*._8-min-read4 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: right;*/
-/*  font: 400 14px "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 1168px;*/
-/*  top: 2578px;*/
-/*  width: 85px;*/
-/*}*/
-/*.time4 {*/
-/*  position: absolute;*/
-/*  left: 1141px;*/
-/*  top: 2577px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.button-2 {*/
-/*  width: 192px;*/
-/*  height: 45px;*/
-/*  position: static;*/
-/*}*/
-/*.rectangle-11772 {*/
-/*  border-radius: 4px;*/
-/*  border-style: solid;*/
-/*  border-color: #1e1e1e;*/
-/*  border-width: 1px;*/
-/*  width: 192px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 560px;*/
-/*  top: 2642px;*/
-/*}*/
-/*.read-more2 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: center;*/
-/*  font: 500 15px "Inter", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 600px;*/
-/*  top: 2654px;*/
-/*  width: 112px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.rectangle-11773 {*/
-/*  border-radius: 4px;*/
-/*  border-style: solid;*/
-/*  border-color: #1e1e1e;*/
-/*  border-width: 1px;*/
-/*  width: 192px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 1073px;*/
-/*  top: 2647px;*/
-/*}*/
-/*.read-more3 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: center;*/
-/*  font: 500 15px "Inter", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 1113px;*/
-/*  top: 2659px;*/
-/*  width: 112px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.rectangle-11774 {*/
-/*  border-radius: 0px;*/
-/*  position: absolute;*/
-/*  left: 1073px;*/
-/*  top: 2234px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.read-more4 {*/
-/*  color: var(--primary-black-1, #1e1e1e);*/
-/*  text-align: center;*/
-/*  font: 500 15px "Inter", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 1113px;*/
-/*  top: 2246px;*/
-/*  width: 112px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.footer {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.footer-background-3 {*/
-/*  position: absolute;*/
-/*  left: 1512px;*/
-/*  top: 3518px;*/
-/*  transform: translate(-1512px, 0px);*/
-/*  overflow: visible;*/
-/*  background-image:*/
-/*  url(*/
-/*"/public/footer2.png");*/
-/*}*/
-/*.footer-background-2 {*/
-/*  opacity: 0.20000000298023224;*/
-/*  position: absolute;*/
-/*  left: 1512px;*/
-/*  top: 3555.41px;*/
-/*  transform: translate(-1512px, 0px);*/
-/*  overflow: visible;*/
-/*}*/
-/*.footer-background-1 {*/
-/*  opacity: 0.20000000298023224;*/
-/*  position: absolute;*/
-/*  left: 1512px;*/
-/*  top: 3484px;*/
-/*  transform: translate(-1512px, 0px);*/
-/*  overflow: visible;*/
-/*}*/
-/*.copyright-2023-offerwall-monetization-all-rights-reserved {*/
-/*  color: var(--modal-grey-1, #dbdad7);*/
-/*  text-align: center;*/
-/*  font: 400 16px "Rubik", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 526.5px;*/
-/*  bottom: 68.45px;*/
-/*}*/
-/*.frame-414 {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 15px;*/
-/*  align-items: flex-start;*/
-/*  justify-content: center;*/
-/*  position: absolute;*/
-/*  left: 779px;*/
-/*  top: 3817.55px;*/
-/*}*/
-/*.fa-qs {*/
-/*  color: var(--modal-grey-1, #dbdad7);*/
-/*  text-align: center;*/
-/*  font: 400 18px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*  width: 53px;*/
-/*}*/
-/*.blog2 {*/
-/*  color: var(--modal-grey-1, #dbdad7);*/
-/*  text-align: center;*/
-/*  font: 400 18px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*  width: 55px;*/
-/*}*/
-/*.partnerships {*/
-/*  color: var(--modal-grey-1, #dbdad7);*/
-/*  text-align: center;*/
-/*  font: 400 18px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*  width: 143px;*/
-/*}*/
-/*.privacy-policy {*/
-/*  color: var(--modal-grey-1, #dbdad7);*/
-/*  text-align: center;*/
-/*  font: 400 18px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*  width: 159px;*/
-/*}*/
-/*.linked-in {*/
-/*  position: absolute;*/
-/*  left: 1281px;*/
-/*  top: 3809.55px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.footer-title {*/
-/*  text-align: left;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 262px;*/
-/*  top: 3783.55px;*/
-/*}*/
-/*.footer-title-span {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.footer-title-span2 {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.footer-title-span3 {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.footer-title-span4 {*/
-/*  color: #e0ff22;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.footer-slogan {*/
-/*  color: #ffffff;*/
-/*  text-align: left;*/
-/*  font: 400 15px/131.5% "Poppins", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 3860.55px;*/
-/*  width: 681px;*/
-/*  height: 36px;*/
-/*}*/
-/*.footer-logo {*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 3789.55px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.footer-divider {*/
-/*  border-style: solid;*/
-/*  border-color: #dedede;*/
-/*  border-width: 1px 0 0 0;*/
-/*  width: 1110px;*/
-/*  height: 0px;*/
-/*  position: absolute;*/
-/*  left: 201px;*/
-/*  top: 3909.55px;*/
-/*}*/
-/*.header {*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*}*/
-/*.rectangle-1175 {*/
-/*  background: linear-gradient(*/
-/*    90deg,*/
-/*    rgba(81, 79, 177, 1) 0%,*/
-/*    rgba(76, 117, 183, 1) 24.304988980293274%,*/
-/*    rgba(53, 159, 173, 1) 77.56538987159729%,*/
-/*    rgba(44, 175, 168, 1) 98.4375%*/
-/*  );*/
-/*  opacity: 0.8999999761581421;*/
-/*  width: 1512px;*/
-/*  height: 101px;*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: 0px;*/
-/*  backdrop-filter: blur(2px);*/
-/*}*/
-/*.request-contact-button {*/
-/*  width: 191px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 1250px;*/
-/*  top: 32px;*/
-/*}*/
-/*.rectangle-11762 {*/
-/*  background: #e0ff22;*/
-/*  border-radius: 4px;*/
-/*  width: 191px;*/
-/*  height: 45px;*/
-/*  position: absolute;*/
-/*  left: 0px;*/
-/*  top: 0px;*/
-/*}*/
-/*.request-contact {*/
-/*  color: #130e5b;*/
-/*  text-align: center;*/
-/*  font: 500 15px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: absolute;*/
-/*  left: 19px;*/
-/*  top: 12px;*/
-/*  width: 153px;*/
-/*  height: 20px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.frame-413 {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  gap: 81px;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  position: absolute;*/
-/*  left: 490px;*/
-/*  top: 42px;*/
-/*}*/
-/*.ho-me {*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font: 500 16px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*}*/
-/*.how-it-works {*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font: 500 16px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*}*/
-/*.blog3 {*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font: 500 16px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*}*/
-/*.about-us {*/
-/*  color: #ffffff;*/
-/*  text-align: center;*/
-/*  font: 500 16px "Poppins", sans-serif;*/
-/*  text-transform: uppercase;*/
-/*  position: relative;*/
-/*}*/
-/*.group-3 {*/
-/*  position: absolute;*/
-/*  left: 73px;*/
-/*  top: 25px;*/
-/*  overflow: visible;*/
-/*}*/
-/*.offfferwall-monetization {*/
-/*  text-align: left;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*  position: absolute;*/
-/*  left: 134px;*/
-/*  top: 22px;*/
-/*}*/
-/*.offfferwall-monetization-span {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.offfferwall-monetization-span2 {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.offfferwall-monetization-span3 {*/
-/*  color: #ffffff;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
-/*.offfferwall-monetization-span4 {*/
-/*  color: #e0ff22;*/
-/*  font: 400 30px/0% "NordiquePro-Bold", sans-serif;*/
-/*}*/
+.many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews {
+  color: var(--white, #ffffff);
+  text-align: left;
+  font: 400 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1293px;
+  width: 474px;
+}
+.recent-article {
+  color: #ffffff;
+  text-align: left;
+  font: 700 30px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 201px;
+  top: 828px;
+  width: 668px;
+}
+.jul-19-2023 {
+  color: #b3acac;
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1249px;
+}
+.section-2-read-time {
+  width: 113px;
+  height: 24px;
+  position: absolute;
+  left: 562px;
+  top: 1246px;
+}
+._8-min-read {
+  color: #b3acac;
+  text-align: left;
+  font: 400 14px/24px "Poppins", sans-serif;
+  position: absolute;
+  left: 37px;
+  top: 0px;
+}
+.time {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.section-2-button {
+  width: 191px;
+  height: 45px;
+  position: static;
+}
+.rectangle-1176 {
+  background: #e0ff22;
+  border-radius: 4px;
+  width: 191px;
+  height: 45px;
+  position: absolute;
+  left: 594px;
+  top: 1498px;
+}
+.read-more {
+  color: #1e1e1e;
+  text-align: center;
+  font: 600 15px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 613px;
+  top: 1510px;
+  width: 153px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-3 {
+  position: absolute;
+  inset: 0;
+}
+.browse {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 700 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1850px;
+  width: 668px;
+}
+.section-3-box-1 {
+  background: #9ad3cc;
+  border-radius: 10px;
+  width: 602px;
+  height: 805px;
+  position: absolute;
+  left: 201px;
+  top: 1922px;
+}
+.section-3-box-2 {
+  background: #dfdfde;
+  border-radius: 10px;
+  width: 488px;
+  height: 392px;
+  position: absolute;
+  left: 823px;
+  top: 1922px;
+}
+.section-3-box-3 {
+  background: #e7caa2;
+  border-radius: 10px;
+  width: 488px;
+  height: 392px;
+  position: absolute;
+  left: 823px;
+  top: 2335px;
+}
+.all-articles {
+  color: #2a2aff;
+  text-align: right;
+  font: 500 25px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1075px;
+  top: 1866px;
+  width: 236px;
+}
+.exploring-offerwall-solutions-for-monetization-and-retention-a-comparative-analysis {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 700 30px "Poppins", sans-serif;
+  position: absolute;
+  left: 258px;
+  top: 2314px;
+  width: 470px;
+}
+.frame-23-4-1 {
+  border-radius: 10px 10px 0px 0px;
+  width: 602px;
+  height: 342px;
+  position: absolute;
+  left: 201px;
+  top: 1922px;
+}
+.jul-19-20232 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 258px;
+  top: 2514px;
+  width: 184px;
+}
+.behind-the-scenes-how-advertisers-create-irresistible-offerwall-campaigns {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 700 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 871px;
+  top: 2504px;
+  width: 394px;
+}
+.jul-28-2023 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 871px;
+  top: 2578px;
+  width: 117px;
+}
+.mastering-offerwall-monetisation-strategies-to-boost-your-earnings {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 700 18px "Poppins", sans-serif;
+  position: absolute;
+  left: 871px;
+  top: 2091px;
+  width: 382px;
+}
+.jul-28-20232 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 871px;
+  top: 2165px;
+  width: 117px;
+}
+.rectangle {
+  border-radius: 10px 10px 0px 0px;
+  width: 488px;
+  height: 149px;
+  position: absolute;
+  left: 823px;
+  top: 1922px;
+}
+.rectangle2 {
+  border-radius: 10px 10px 0px 0px;
+  width: 488px;
+  height: 149px;
+  position: absolute;
+  left: 823px;
+  top: 2335px;
+}
+._8-min-read2 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  font: 400 14px/24px "Poppins", sans-serif;
+  position: absolute;
+  left: 656px;
+  top: 2514px;
+}
+.time2 {
+  position: absolute;
+  left: 619px;
+  top: 2514px;
+  overflow: visible;
+}
+._8-min-read3 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: right;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 1168px;
+  top: 2165px;
+  width: 85px;
+}
+.time3 {
+  position: absolute;
+  left: 1141px;
+  top: 2164px;
+  overflow: visible;
+}
+._8-min-read4 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: right;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 1168px;
+  top: 2578px;
+  width: 85px;
+}
+.time4 {
+  position: absolute;
+  left: 1141px;
+  top: 2577px;
+  overflow: visible;
+}
+.button-2 {
+  width: 192px;
+  height: 45px;
+  position: static;
+}
+.rectangle-11772 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 1px;
+  width: 192px;
+  height: 45px;
+  position: absolute;
+  left: 560px;
+  top: 2642px;
+}
+.read-more2 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: center;
+  font: 500 15px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 600px;
+  top: 2654px;
+  width: 112px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-11773 {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 1px;
+  width: 192px;
+  height: 45px;
+  position: absolute;
+  left: 1073px;
+  top: 2647px;
+}
+.read-more3 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: center;
+  font: 500 15px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1113px;
+  top: 2659px;
+  width: 112px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-11774 {
+  border-radius: 0px;
+  position: absolute;
+  left: 1073px;
+  top: 2234px;
+  overflow: visible;
+}
+.read-more4 {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: center;
+  font: 500 15px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1113px;
+  top: 2246px;
+  width: 112px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  position: absolute;
+  inset: 0;
+}
+.footer-background-3 {
+  position: absolute;
+  left: 1512px;
+  top: 3518px;
+  transform: translate(-1512px, 0px);
+  overflow: visible;
+  background-image:
+  url(
+"/public/footer2.png");
+}
+.footer-background-2 {
+  opacity: 0.20000000298023224;
+  position: absolute;
+  left: 1512px;
+  top: 3555.41px;
+  transform: translate(-1512px, 0px);
+  overflow: visible;
+}
+.footer-background-1 {
+  opacity: 0.20000000298023224;
+  position: absolute;
+  left: 1512px;
+  top: 3484px;
+  transform: translate(-1512px, 0px);
+  overflow: visible;
+}
+.copyright-2023-offerwall-monetization-all-rights-reserved {
+  color: var(--modal-grey-1, #dbdad7);
+  text-align: center;
+  font: 400 16px "Rubik", sans-serif;
+  position: absolute;
+  left: 526.5px;
+  bottom: 68.45px;
+}
+.frame-414 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  left: 779px;
+  top: 3817.55px;
+}
+.fa-qs {
+  color: var(--modal-grey-1, #dbdad7);
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  width: 53px;
+}
+.blog2 {
+  color: var(--modal-grey-1, #dbdad7);
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  width: 55px;
+}
+.partnerships {
+  color: var(--modal-grey-1, #dbdad7);
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  width: 143px;
+}
+.privacy-policy {
+  color: var(--modal-grey-1, #dbdad7);
+  text-align: center;
+  font: 400 18px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  width: 159px;
+}
+.linked-in {
+  position: absolute;
+  left: 1281px;
+  top: 3809.55px;
+  overflow: visible;
+}
+.footer-title {
+  text-align: left;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+  position: absolute;
+  left: 262px;
+  top: 3783.55px;
+}
+.footer-title-span {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.footer-title-span2 {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.footer-title-span3 {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.footer-title-span4 {
+  color: #e0ff22;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.footer-slogan {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px/131.5% "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 3860.55px;
+  width: 681px;
+  height: 36px;
+}
+.footer-logo {
+  position: absolute;
+  left: 201px;
+  top: 3789.55px;
+  overflow: visible;
+}
+.footer-divider {
+  border-style: solid;
+  border-color: #dedede;
+  border-width: 1px 0 0 0;
+  width: 1110px;
+  height: 0px;
+  position: absolute;
+  left: 201px;
+  top: 3909.55px;
+}
+.header {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-1175 {
+  background: linear-gradient(
+    90deg,
+    rgba(81, 79, 177, 1) 0%,
+    rgba(76, 117, 183, 1) 24.304988980293274%,
+    rgba(53, 159, 173, 1) 77.56538987159729%,
+    rgba(44, 175, 168, 1) 98.4375%
+  );
+  opacity: 0.8999999761581421;
+  width: 1512px;
+  height: 101px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  backdrop-filter: blur(2px);
+}
+.request-contact-button {
+  width: 191px;
+  height: 45px;
+  position: absolute;
+  left: 1250px;
+  top: 32px;
+}
+.rectangle-11762 {
+  background: #e0ff22;
+  border-radius: 4px;
+  width: 191px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.request-contact {
+  color: #130e5b;
+  text-align: center;
+  font: 500 15px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 19px;
+  top: 12px;
+  width: 153px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frame-413 {
+  display: flex;
+  flex-direction: row;
+  gap: 81px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 490px;
+  top: 42px;
+}
+.ho-me {
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.how-it-works {
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.blog3 {
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-us {
+  color: #ffffff;
+  text-align: center;
+  font: 500 16px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+.group-3 {
+  position: absolute;
+  left: 73px;
+  top: 25px;
+  overflow: visible;
+}
+.offfferwall-monetization {
+  text-align: left;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+  position: absolute;
+  left: 134px;
+  top: 22px;
+}
+.offfferwall-monetization-span {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.offfferwall-monetization-span2 {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.offfferwall-monetization-span3 {
+  color: #ffffff;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}
+.offfferwall-monetization-span4 {
+  color: #e0ff22;
+  font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+}

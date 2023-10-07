@@ -2,14 +2,14 @@
     position:relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto ;
+    width: 1512px ;
     height: 617px;
-    
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footerName {
     align-items: flex-end;
-    background-color: #F7F8FC;;
 
 }
 
