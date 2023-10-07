@@ -1,199 +1,146 @@
-
-.footerContainer {
-    width: 100%;
-    height: 617px;
-    background-image:
-    url(
-  "/public/footer2.png");
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    overflow: hidden;
-    padding:0;
+.backgroundImage{
+    position:relative;
     background-repeat: no-repeat;
-    justify-content: center;
+    background-size: cover;
+    width: auto ;
+    height: 617px;
+    
 }
 
-.footer-background {
+.footerName {
+    align-items: flex-end;
+
+}
+
+.footerInfo {
     position: absolute;
-    overflow: visible;
-    margin: auto;
-
-  }
-
-.topFooterContainer {
-    width: 85%;
-    height: 290px;
-    display: flex;
-    align-items: end;
-}
-
-.topFooterBox{
-    height: 250px;
     width: 100%;
+    height: 515px;
     display: flex;
-    justify-content: space-between;
-}
-
-.topFooterBox1 {
-    width: 22%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.smatchedLogoIcon {
-    position: relative;
-    width: 29px;
-    height: 41px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.smatchedUnleash {
-    position: relative;
-    line-height: 30px;
-    display: inline-block;
-    width: 286.32px;
-    height: 30.22px;
-    flex-shrink: 0;
-    font-size: 14px;
-}
-
-.socialMediaIconfacebook {
-    position: relative;
-    width: 30px;
-    height: 30px;
-}
-
-.social {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.social {
-    align-self: stretch;
-    flex-direction: row;
-}
-.frame {
-    flex: 1;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-.topFooterBox2 {
-    width: 40%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.text {
-    position: relative;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: start;
-    font-family: Inter;
-}
-.srhHeidelbergGrnderInstitutIcon {
-    position: relative;
-    width: 100px;
-    height: 36.79px;
-    object-fit: cover;
-}
-.startProTectNeg95x3521Icon,
-.xsosuj1p4uyke1i1q8fo1Icon {
-    position: relative;
-    width: 100px;
-    height: 40px;
-    object-fit: cover;
-}
-.startProTectNeg95x3521Icon {
-    height: 35px;
-}
-.company,
-.links,
-.supportedBy {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.supportedBy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.company {
-    height: 65px;
-}
-.ourMission {
-    font-size: 15px;
-}
-
-.services {
-    display: flex;
-    flex-direction: column;
-    height: 123px;
-    justify-content: space-between;
-}
-
-.links, .link1 {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    justify-content: space-between;
-    font-size: 15px;
-}
-
-.link1 {
-    gap: 11px;
-}
-
-.legal {
-    width: 25%;
-    height: 123px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.lowerFooterContainer {
-    width: 100%;
-    height: 90px;
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-hr {
+
+
+.innerFooterInfo {
+    width: 80%;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.TopFooterInfo {
     width: 100%;
-    background-color: #513A8D;
-    height: 1px;
-    border: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.lowerFooterBox {
-    height: 90px;
-    width: 85%;
-
-}
-
-.copyRights {
+.rightFooterInfo {
+    width: 100%;
     height: 100px;
+
+}
+
+.imgValuable {
+    width: 50%;
+    height: 70px;
+    display: flex;
+
+}
+
+.footerLogo {
+    width: 50px;
+    height: 58px;
+}
+
+.offerwall {
+    width: 220px;
+    height: 58px;
+    padding-left: 12px;
+    color: var(--White, #FFF);
+    /*font-family: NordiquePro-Bold;*/
+    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+
+.monetization {
+    color: #E0FF22;
+    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.valuable {
     width: 100%;
-    font-family: Inter;
-    font-size: 12px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    color: #F7F7FC;
+    line-height: 131.5%;
+    color: #FFF;
+}
+
+.leftFooterInfo {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+
+}
+
+.info {
+    width: 100%;
+    height: 20px;
+}
+
+.rightInfo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Modal-grey-1, #DBDAD7);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.leftInfo {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.footerDivider {
+    width: 100%;
+    height: 30px;
+
+}
+
+.footerDivider > hr {
+    border: 0.5px solid #DEDEDE
+}
+
+.downFooterInfo {
+    width: 100%;
+    height: 103px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #DBDAD7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }

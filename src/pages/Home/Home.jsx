@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 import styles from "./Home.module.css";
-import Footer from "../../components/Footer/Footer";
 import ScrollDivider from "../ScrollDivider";
 
 const Home = () => {
@@ -22,77 +21,76 @@ const Home = () => {
 
                             
                             <div className={styles.gradientContainerRight}></div>
-                            <div className={styles.gradientContainerLeft}></div>
-                            <svg 
-                                style={{ backgroundImage: "url(/background3.png)"}}
-                                className={styles["hero-gradient-background"]}
-                                width="50%"
-                                height="900"
-                                viewBox="0 0 795 982"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                            </svg>
-
-                            <svg
-                                className={styles["hero-gradient-background-2"]}
-                                width="50%"
-                                height="900"
-                                viewBox="0 0 784 982"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                            <div className={styles.gradientContainerLeft}>
+                                <svg
+                                    className={styles["hero-gradient-background"]}
+                                    width="200px"
+                                    height="900px"
+                                    preserveAspectRatio="none"
+                                    viewBox="0 0 375 137"
                                 >
-                                <path
-                                    opacity="0.2"
-                                    d="M38.4604 0H784V982H38.5C55.4973 770.731 203.133 688.026 154.612 521.647C118.578 398.088 -37.8396 305.418 8.50974 117C10.9053 107.262 34.9369 10.2674 38.4604 0Z"
-                                    fill="url(#paint0_angular_217_2526)"
-                                />
-                                <defs>
-                                    <radialGradient
-                                    id="paint0_angular_217_2526"
-                                    cx="0"
-                                    cy="0"
-                                    r="1"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="translate(570.989 780.433) rotate(-67.9598) scale(545.673 471.276)"
-                                    >
-                                    <stop offset="0.111924" stopColor="#4981FF" />
-                                    <stop offset="0.632206" stopColor="#5528D8" />
-                                    <stop offset="0.809809" stopColor="#4D71B8" />
-                                    <stop offset="1" stopColor="#28B4A7" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
+                                </svg>
 
-                            <svg
-                                className={styles["hero-gradient-background-3"]}
-                                width="754"
-                                height="900"
-                                viewBox="0 0 754 982"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                                >
-                                <path
-                                    opacity="0.2"
-                                    d="M30.1567 0H754V982H16.5C16.5 982 16.4995 953.288 16.4995 891.5C16.4995 653.724 109.675 612.28 57.4995 438.5C19.0716 310.509 -32.453 207.5 30.1567 0Z"
-                                    fill="url(#paint0_angular_217_2527)"
-                                />
-                                <defs>
-                                    <radialGradient
-                                    id="paint0_angular_217_2527"
-                                    cx="0"
-                                    cy="0"
-                                    r="1"
-                                    gradientUnits="userSpaceOnUse"
-                                    gradientTransform="translate(490 683) rotate(-67.3739) scale(539.726 475.885)"
+                                <svg
+                                    className={styles["hero-gradient-background-2"]}
+                                    width="50%"
+                                    height="900"
+                                    viewBox="0 0 784 982"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
                                     >
-                                    <stop offset="0.111924" stopColor="#0549E3" />
-                                    <stop offset="0.632206" stopColor="#370DAE" />
-                                    <stop offset="0.809809" stopColor="#4D71B8" />
-                                    <stop offset="1" stopColor="#28B4A7" />
-                                    </radialGradient>
-                                </defs>
-                            </svg>
+                                    <path
+                                        opacity="0.2"
+                                        d="M38.4604 0H784V982H38.5C55.4973 770.731 203.133 688.026 154.612 521.647C118.578 398.088 -37.8396 305.418 8.50974 117C10.9053 107.262 34.9369 10.2674 38.4604 0Z"
+                                        fill="url(#paint0_angular_217_2526)"
+                                    />
+                                    <defs>
+                                        <radialGradient
+                                        id="paint0_angular_217_2526"
+                                        cx="0"
+                                        cy="0"
+                                        r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(570.989 780.433) rotate(-67.9598) scale(545.673 471.276)"
+                                        >
+                                        <stop offset="0.111924" stopColor="#4981FF" />
+                                        <stop offset="0.632206" stopColor="#5528D8" />
+                                        <stop offset="0.809809" stopColor="#4D71B8" />
+                                        <stop offset="1" stopColor="#28B4A7" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+
+                                <svg
+                                    className={styles["hero-gradient-background-3"]}
+                                    width="754"
+                                    height="900"
+                                    viewBox="0 0 754 982"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                        opacity="0.2"
+                                        d="M30.1567 0H754V982H16.5C16.5 982 16.4995 953.288 16.4995 891.5C16.4995 653.724 109.675 612.28 57.4995 438.5C19.0716 310.509 -32.453 207.5 30.1567 0Z"
+                                        fill="url(#paint0_angular_217_2527)"
+                                    />
+                                    <defs>
+                                        <radialGradient
+                                        id="paint0_angular_217_2527"
+                                        cx="0"
+                                        cy="0"
+                                        r="1"
+                                        gradientUnits="userSpaceOnUse"
+                                        gradientTransform="translate(490 683) rotate(-67.3739) scale(539.726 475.885)"
+                                        >
+                                        <stop offset="0.111924" stopColor="#0549E3" />
+                                        <stop offset="0.632206" stopColor="#370DAE" />
+                                        <stop offset="0.809809" stopColor="#4D71B8" />
+                                        <stop offset="1" stopColor="#28B4A7" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </div>
 
                         </div>
 
@@ -180,17 +178,20 @@ const Home = () => {
                     </div>
                 </div>
                 <div className= {styles.secondHomeContainerBox2}>
-                    <img src="/images/mobileP.png" alt=""/>
+                    <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
                 </div>
           </div>
 
 
           <div className={styles.thirdHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "750px"}}>
+              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "982px", maxWidth: "1512px"}}>
                 <div className={styles.thirdHomeContainerBox}>
                     <div className={styles.mobileProblem}>
-                        <div className={styles.mobileProblem1}>The Problem</div>
-                        <div className={styles.mobileProblem2}> With Modern Mobile Game Monetization</div>
+                        <div className={styles.innerMobileProblem}>
+                            <div className={styles.mobileProblem1}>The Problem </div>&nbsp;&nbsp;
+                            <div className={styles.with}>With</div>
+                        </div>
+                        <div className={styles.mobileProblem2}> Modern Mobile Game Monetization</div>
                     </div>
 
                     <div className={styles.gameDeveloper}>
@@ -208,6 +209,7 @@ const Home = () => {
 
 
           <div className={styles.fourthHomeContainer}>
+              <div className={styles.SubFourthHomeContainer}>
                 <div className={styles.fourthHomeBox1}>
                     <div>Why</div>&nbsp;
                     <div className={styles.innerFourthHomeBox1}>Mobile </div> &nbsp;
@@ -238,7 +240,7 @@ const Home = () => {
                         </div>
 
                         <div className={styles.fourthImg}>
-                            <img src="/images/phone01.png" alt=""/>
+                            <img className={styles.fourthImg1} src="/images/phone01.png" alt=""/>
                         </div>
 
                         <div className={styles.fourth24}>
@@ -246,18 +248,22 @@ const Home = () => {
                                 <div className={styles.innerOne}>
                                     <img src="/images/two.png" alt="" />
                                     <div className={styles.fourth13Integration}>
-                                        Offerwall integration is seamless with existing ad monetization or paywall structures
-                                    </div>
+                                        Offerwalls have a proven track record of increasing
+                                        customer lifetime value and monthly recurring revenue                                    </div>
                                 </div>
                             </div>
                             <div className={styles.fourth24Two}>
                                 <div className={styles.innerTwoSecond}>
                                     <img src="/images/four.png" alt="" />
                                     <div className={styles.fourth13Integration}>
-                                        At the point where users decline to pay
-                                        for premium content in your online shop you
-                                        can redirect them to an offerwall giving
-                                        them a different way to make the same payment                                    </div>
+                                        There are offerwall solution providers
+                                        <div className={styles.likeSmatchedWork}>
+                                            <div>like</div>&nbsp;
+                                            <div className={styles.fourth13Smatched}>Smatched</div>&nbsp;
+                                            <div>that work with you to </div>
+                                        </div>
+                                        customise the service for a seamless integration
+                                        within your app to maximize the profit from your offerwall monetization                                   </div>
                                 </div>
                             </div>
                         </div>
@@ -269,20 +275,22 @@ const Home = () => {
                         OK… But Do Offerwalls Work?
                     </div>
                 </div>
+              </div>
           </div>
 
 
           <div className={styles.fifthHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/rect01.png)", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
+              <div style={{ backgroundImage: "url(/images/rect01.png)", width: "100vw", maxWidth: "1512px", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
 
                   <div className={styles.innerFifthHomeContainer1}>
                       <div className={styles.innerFifthMainBox1}>
                           <div className={styles.innerFifthBox1}>
                               <div>Offerwall</div>&nbsp;
-                              <div className={styles.engagement}>engagement</div> &nbsp;
-                              <div> is </div>
+                              <div className={styles.engagement}>engagement</div>
+                              <div>is </div>
                           </div>
-                          <div className={styles.highest}> highest among non-paying users.</div>
+                          <div className={styles.highest}> highest among non- <br/>
+                              paying users.</div>
                       </div>
 
                       <div className={styles.innerFifthMainBox2}>
@@ -348,7 +356,7 @@ const Home = () => {
 
 
           <div className={styles.seventhHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/rect_1203.png)", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
+              <div style={{ backgroundImage: "url(/images/rect_1203.png)", width: "100vw", maxWidth: "1512px", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
 
                         <div className={styles.seventhHomeBox1}>
                             <div className={styles.implementingSoln}>
@@ -492,7 +500,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-              </div>
+
+
+          </div>
           </div>
         </div>
 

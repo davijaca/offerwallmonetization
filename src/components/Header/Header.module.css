@@ -17,19 +17,28 @@
 }
 
 .headerBox {
-    height: 70px;
-    width: 85%;
+    height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .right{
     display: flex;
     align-items: center;
     height: 70px;
+    width: 77%;
     gap: 110px;
+}
+
+.rightImg {
+    width: 30%;
+    height: 57px;
+    display: flex;
+    position: absolute;
+    left: 60px;
+
 }
 
 .topMenu {
@@ -56,21 +65,24 @@
     text-align: left;
     font: 400 30px/0% "NordiquePro-Bold", sans-serif;
     position: absolute;
-    left: 134px;
+    left: 120px;
     top: 22px;
   }
 
 .headerTitleItem {
-    color: #ffffff;
-    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
     margin-top: 10%;
     display: flex;
+
 }
 
 .headerTitleItem2 {
     color: #e0ff22;
     font: 400 30px/0% "NordiquePro-Bold", sans-serif;
-    padding-top: 15%;
+    padding-top: 19%;
     display: flex;
 }
 
@@ -111,35 +123,44 @@
     border: 0.5px solid rgb(240, 239, 239);
     border-radius: 0 0 8px 8px ;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
-
 }
 
 .contact {
     background: #e0ff22;
-    border-radius: 5px;
-    width: 190px;
+    color: #130E5B;
+    border-radius: 4px;
+    width: 191px;
     height: 45px;
     position: absolute;
     right: 5%;
     top: 28px;
 }
 
+.contact:hover {
+     cursor: pointer;
+     border-radius: 4px;
+     background: #BEE4FF;
+     color: #130E5B;
+ }
+
+
+
 .contactButton{
-    color: #130e5b;
+    color: var(--Primary-Black-1, #1E1E1E);
     text-align: center;
-    font: 600 15px "Inter", sans-serif;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     text-transform: uppercase;
     position: absolute;
-    top: 33%;
+    top: 27%;
     left: auto;
     right: auto;
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.contactButton:hover {
-    cursor: pointer;
 }
 
 .header-logo {
