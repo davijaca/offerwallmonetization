@@ -3,12 +3,9 @@ import styles from "./Home.module.css";
 import ScrollDivider from "../ScrollDivider";
 
 const Home = () => {
+    
 
-    // const ref = useRef(null);
-    // const handleClick = () => {
-    //     ref.current?.scrollIntoView({ behavior: "smooth"});
-    // }
-
+    
   return (
       <div className={styles.homeContainer}>
           <div className={styles.firstHomeContainer}>
@@ -21,6 +18,22 @@ const Home = () => {
 
                             
                             <div className={styles.gradientContainerRight}></div>
+                            <div className={styles.gradientContainerLeft}>
+                            <svg class={styles.waves} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 30 150 50" preserveAspectRatio="true" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v105h-352z" />
+                                    
+                                </defs>
+                                <g class={styles.parallax}>
+                                    <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(10,0,74, 0.5)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(41,50,133, 0.3)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(91,86,189, 0.2)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="7" fill="rgba(77, 113, 184, 0.1)" />
+                                </g>
+                            </svg>
+                        </div>
+
+                            {/* <div className={styles.gradientContainerRight}></div>
                             <div className={styles.gradientContainerLeft}>
                                 <svg
                                     className={styles["hero-gradient-background"]}
@@ -90,7 +103,7 @@ const Home = () => {
                                         </radialGradient>
                                     </defs>
                                 </svg>
-                            </div>
+                            </div> */}
 
                         </div>
 
