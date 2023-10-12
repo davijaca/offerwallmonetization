@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Blog.module.css";
+import {Link} from "react-router-dom";
 
 /* Code generated with AutoHTML Plugin for Figma */
 
@@ -106,9 +107,11 @@ const Blog = () => {
 
                         <div className={styles.signUpE2}>
                             <div className={styles.subSignUpE2}>
-                                <div className={styles.signUpEmail2}>
-                                    Read More
-                                </div>
+                                <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
+                                    <div className={styles.signUpEmail2}>
+                                        Read More
+                                    </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -148,9 +151,11 @@ const Blog = () => {
                                     </div>
                                 </div>
                                 <div className={styles.readMoreExplore}>
-                                    <div className={styles.readMoreButton}>
-                                        Read More
-                                    </div>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
+                                        <div className={styles.readMoreButton}>
+                                            Read More
+                                        </div>
+                                    </Link>
                                 </div>
 
                             </div>

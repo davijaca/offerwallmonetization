@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./BlogArticle.module.css";
+import styles from "./Blog_Article.module.css";
 
 
-const BlogArticle = () => {
+const Blog_Article = () => {
   return (
       <div className={styles.blogMain}>
         <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", maxWidth: "1512px", height: "736px", display: "flex"}}>
@@ -285,7 +285,7 @@ const BlogArticle = () => {
       </div>
   )
 }
-export default BlogArticle;
+export default Blog_Article;
 
 
 //

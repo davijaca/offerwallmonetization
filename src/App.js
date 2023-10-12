@@ -8,7 +8,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Articles from "./pages/Articles/Articles";
-import BlogArticle from "./pages/BlogArticle/BlogArticle";
+import Blog_Article from "./pages/BlogArticle/Blog_Article";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
@@ -52,8 +52,8 @@ function App() {
               },
 
               {
-                  path: AppRoutes.BLOGARTICLE,
-                  element: < BlogArticle />,
+                  path: AppRoutes.BLOG_ARTICLE,
+                  element: < Blog_Article />,
                   errorElement: <h1> PAGE NOT FOUND</h1>
               },
 
