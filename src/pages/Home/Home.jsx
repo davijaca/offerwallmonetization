@@ -16,7 +16,6 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)", backgroundColor: "green"}}>
 
                   <div className={styles.topFirstBg} style={{ backgroundImage: "url(/images/home_background.png)"}}>
                       <div className={styles.mainFirst}>
@@ -54,6 +53,10 @@ const Home = () => {
                         </div>
                     </div>
                   </div>
+
+                  {/*Mobile Responsiveness*/}
+                  <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)", backgroundColor: "green"}}>
+
                   </div>
               </div>
 
