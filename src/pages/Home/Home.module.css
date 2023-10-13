@@ -22,6 +22,8 @@
 }
 
 
+
+
 .hrLine {
     width: 100%;
     height: 0.2px;
@@ -40,6 +42,19 @@
 .topFirst {
     width: 100%;
     height: 900px;
+}
+
+.topFirstBg {
+    width: 100vw;
+    max-width: 1512px;
+    height: 982px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.mobileTopFirstBg {
+    display: none;
 }
 
 .mainFirst {
@@ -1433,6 +1448,26 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+
+
+
+
+@media only screen and (max-width: 1130px) {
+
+    .topFirstBg{
+        display: none;
+    }
+
+    .mobileTopFirstBg {
+        display: block;
+        height: 1305px;
+        width: 393px;
+        background-repeat: no-repeat ;
+    }
+
+
 }
 
 

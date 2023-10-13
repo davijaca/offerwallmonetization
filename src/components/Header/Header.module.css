@@ -38,7 +38,6 @@
     display: flex;
     position: absolute;
     left: 60px;
-
 }
 
 .topMenu {
@@ -136,6 +135,10 @@
     top: 28px;
 }
 
+.mobileHamburgerMenu {
+    display: none;
+}
+
 .contact:hover {
      cursor: pointer;
      border-radius: 4px;
@@ -169,3 +172,99 @@
     top: 25px;
     overflow: visible;
   }
+
+
+
+/*MOBILE RESPONSIVENESS*/
+@media only screen and (max-width: 1130px) {
+
+    .right{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 152px;
+        gap: 110px;
+    }
+
+    .rightImg {
+        width: 33.1px;
+        height:38.4px;
+        display: flex;
+        position: absolute;
+        left: 15px;
+    }
+
+    .headerTitle {
+        width: 111.333px;
+        height: 42.667px;
+        flex-shrink: 0;
+        position: absolute;
+        left: 55px;
+        top: 20px;
+    }
+
+    .headerTitleItem {
+        color: var(--White, #FFF);
+        font-family: NordiquePro-Bold;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%; /* 20.007px */
+    }
+
+    .headerTitleItem2 {
+        color: #E0FF22;
+        font-family: NordiquePro-Bold;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%;
+        bottom: 20px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .topMenu {
+        display: flex;
+        flex-direction: row;
+        gap: 81px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 490px;
+        top: 42px;
+    }
+
+    .topMenuItem {
+        display: none;
+    }
+
+    .contact {
+        background: none;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        position: absolute;
+        right: 5%;
+        top: 35px;
+    }
+
+    .contact:hover {
+        background: none;
+    }
+
+    .mobileHamburgerMenu{
+        display: inline-block;
+    }
+
+    .mobileHamburgerMenu:hover {
+        cursor: pointer;
+    }
+
+    .contactButton{
+        display: none;
+    }
+
+
+
+}

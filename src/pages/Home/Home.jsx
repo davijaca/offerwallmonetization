@@ -16,7 +16,9 @@ const Home = () => {
                 <hr />
               </div>
               <div className={styles.topFirst}>
-                  <div style={{ backgroundImage: "url(/images/home_background.png)", width: "100vw", maxWidth: "1512px", height: "982px", display: "flex", justifyContent: "center"}}>
+                  <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)", backgroundColor: "green"}}>
+
+                  <div className={styles.topFirstBg} style={{ backgroundImage: "url(/images/home_background.png)"}}>
                       <div className={styles.mainFirst}>
                         <div className={styles.rightMain}>
                             <div className={styles.text}>
@@ -52,7 +54,13 @@ const Home = () => {
                         </div>
                     </div>
                   </div>
+                  </div>
               </div>
+
+              <div>
+
+              </div>
+
 
               {/*<ScrollDivider ref={ref} className={styles.scrollDivider } />*/}
 
