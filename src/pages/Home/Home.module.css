@@ -149,8 +149,8 @@
 }
 
 .downClickImg > img {
-    width: 134px;
-    height: 134px;
+    width: 144px;
+    height: 144px;
 }
 
 /*.scrollDivider {*/
@@ -190,7 +190,6 @@
 .belowFirst {
     width: 100%;
     height: 310px;
-    background: #e7caa2;
     display: flex;
 }
 
@@ -1454,18 +1453,319 @@ button:hover {
 
 
 
-@media only screen and (max-width: 1130px) {
+/*MOBILE RESPONSIVENESS*/
+@media only screen and (max-width: 1130px) and (min-width: 393px){
+
+
+    .homeContainer {
+        background: #ffffff;
+        width: 100vw;
+        height: 10985px;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .firstHomeContainer {
+        width: 100%;
+        height: 1501px;
+        position: relative;
+    }
+
+    .hrLine {
+        display: none;
+    }
 
     .topFirstBg{
         display: none;
     }
 
     .mobileTopFirstBg {
-        display: block;
-        height: 1305px;
+        display: flex;
+        height: 1500px;
         width: 393px;
         background-repeat: no-repeat ;
+        justify-content: center;
     }
+
+
+    .mainFirst {
+        display: flex;
+        width: 352px;;
+        height: 1305px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 160px;
+
+    }
+
+    .rightMain {
+        width: 352px;
+        height: 1150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .text {
+        color: var(--White, #FFF);
+        font-family: Poppins;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .M {
+        color: var(--White, #E0FF22);
+        font-family: Poppins;
+        font-size: 41px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .forMonetize {
+        display: flex;
+    }
+
+    .parag {
+        width: 100%;
+        height: 90px;
+    }
+
+    .innerParag {
+        width: 352px;
+        height: 95px;
+        color: var(--White, #FFF);
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+    }
+
+    .buttonText {
+        width: 352px;
+        height: 100px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 45px;
+        gap: 20px;
+    }
+
+    .buttonText1, .buttonText2{
+        width: 220px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 22px;
+        border: 1px solid #FFF;
+        color: var(--Modal-grey-1, #DBDAD7);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+    }
+
+    .buttonText2 {
+        width: 320px;
+    }
+
+    .downClickImg {
+        width: 99.5%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+    }
+
+    .downClickImg > img {
+        width: 144px;
+        height: 144px;
+    }
+
+
+    /*.scrollDivider {*/
+    /*    position: absolute;*/
+    /*}*/
+
+    .leftMain {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .leftImgInfo {
+        display: flex;
+        width: 358px;
+        height: 450.732px;
+        padding: 1.493px 89.345px 12.066px 89.345px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        padding-top: 30px;
+
+    }
+
+    .leftImg {
+        width: 270.309px;
+        height: 480.174px;
+        flex-shrink: 0;
+    }
+
+
+    .belowFirst {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 455px;
+    }
+
+    .innerBelowFirst1 {
+        width: 100%;
+        height: 270px;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+        border-bottom: 1px solid #212121;
+    }
+
+    .innerBelowBox1 {
+        width: 352px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .percentage, .blog {
+        color: #E0FF22;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-top: 35px;
+        height: 65px;
+
+    }
+
+    .retention {
+        color: var(--White, #FFF);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .study, .explore {
+        width: 352px;
+        color: var(--White, #FFF);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .innerBelowFirst2 {
+        width: 100%;
+        height: 270px;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+
+    }
+
+    .innerBelowBox2 {
+        width: 352px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .blog {
+        color: #E0FF22;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .explore {
+        width: 352px;
+        color: var(--White, #FFF);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 10px;
+    }
+
+    .readMore {
+        height: 60px;
+        width: 68%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px;
+    }
+
+    button {
+        width: 192px;
+        height: 45px;
+        color: var(--White, #FFF);
+        text-align: center;
+        background: #5B56BD;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: 1px solid var(--White, #FFF);
+        text-align: center;
+    }
+
+    button:hover {
+        background: #E0FF22;
+        color: #130E5B;
+        border: none;
+    }
+
+
+    .secondHomeContainerBox2 {
+        height: 1200px;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        position: absolute;
+        right: 13px;
+        z-index: 1;
+    }
+
+
 
 
 }

@@ -55,8 +55,47 @@ const Home = () => {
                   </div>
 
                   {/*Mobile Responsiveness*/}
-                  <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)", backgroundColor: "green"}}>
+                  <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)"}}>
 
+                      <div className={styles.mainFirst}>
+                          <div className={styles.rightMain}>
+                              <div className={styles.text}>
+                                  Offerwalls:
+                                  <br/>
+                                  A Valuable Tool
+                                  <br />
+                                  <div className={styles.forMonetize}>
+                                      <div> for </div>&nbsp;
+                                      <div className={styles.M}>Monetizing</div>
+                                  </div>
+                                  Mobile Games
+                              </div>
+
+                              <div className={styles.leftMain}>
+                                  <div className={styles.leftImgInfo}>
+                                      <img className={styles.leftImg} src="/images/iPhone_14%20_Pro.png"/>
+                                  </div>
+                              </div>
+
+                              <div className={styles.parag}>
+                                  <div className={styles.innerParag}> Offerwalls are a great monetization
+                                      tool primarily because they help gaming
+                                      publishers and developers reach a wider
+                                      audience which in turn…
+                                  </div>
+                              </div>
+                              <div className={styles.buttonText}>
+                                  <div className={styles.buttonText1}>Increases retention</div>
+                                  <div className={styles.buttonText2}>Generates additional revenue</div>
+                              </div>
+                              <div className={styles.downClickImg}>
+                                  <img src="/images/downClick.png" alt=''
+                                      // onClick={handleClick}
+                                  />
+                              </div>
+                          </div>
+
+                      </div>
                   </div>
               </div>
 

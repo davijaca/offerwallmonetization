@@ -176,7 +176,32 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1130px) and (min-width: 393px){
+
+
+    .mainBox {
+        background: linear-gradient(
+                90deg,
+                rgba(81, 79, 177, 1) 0%,
+                rgba(76, 117, 183, 1) 24.304988980293274%,
+                rgba(53, 159, 173, 1) 77.56538987159729%,
+                rgba(44, 175, 168, 1) 98.4375%
+        );
+        opacity: 0.8999999761581421;
+        width: 393px;
+        height: 100px;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        backdrop-filter: blur(2px);
+        z-index: 20;
+    }
+
+    .headerBox {
+        height: 100px;
+        width: 393px;
+        display: flex;
+    }
 
     .right{
         display: flex;
@@ -191,7 +216,7 @@
         height:38.4px;
         display: flex;
         position: absolute;
-        left: 15px;
+        left: 19px;
     }
 
     .headerTitle {
@@ -199,7 +224,7 @@
         height: 42.667px;
         flex-shrink: 0;
         position: absolute;
-        left: 55px;
+        left: 58px;
         top: 20px;
     }
 
@@ -225,14 +250,7 @@
     }
 
     .topMenu {
-        display: flex;
-        flex-direction: row;
-        gap: 81px;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 490px;
-        top: 42px;
+        display: none;
     }
 
     .topMenuItem {
