@@ -1927,6 +1927,8 @@ button:hover {
     .innerMobileProblem {
         display: flex;
         width: 352px;
+        display: flex;
+        justify-content: center;
 
     }
 
@@ -1952,6 +1954,8 @@ button:hover {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        display: flex;
+        justify-content: center;
     }
 
     .gameDeveloper {
