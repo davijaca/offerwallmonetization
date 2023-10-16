@@ -54,7 +54,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  {/*Mobile Responsiveness*/}
+                  {/*Hero Mobile Responsiveness*/}
                   <div className ={ styles.mobileTopFirstBg} style={{ backgroundImage: "url(/images/home_Mobile_background.png)"}}>
 
                       <div className={styles.mainFirst}>
@@ -97,6 +97,9 @@ const Home = () => {
 
                       </div>
                   </div>
+                  <div className={styles.afterDownClick}>
+
+                  </div>
               </div>
 
               <div>
@@ -133,7 +136,7 @@ const Home = () => {
           <div className={styles.secondHomeContainer}>
                 <div className= {styles.secondHomeContainerBox1}>
                     <div className={styles.whatOffer}>
-                        <div className={styles.what}>What Is an </div>
+                        <div className={styles.what}>What Is an </div>&nbsp;
                         <div className={styles.offerW}>Offerwall?</div>
                     </div>
 
@@ -150,6 +153,8 @@ const Home = () => {
 
                     </div>
                 </div>
+
+
                 <div className= {styles.secondHomeContainerBox2}>
                     <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
                     <img className= {styles.image2} src="/images/mobileP_Hover.png" alt=""/>
@@ -157,8 +162,37 @@ const Home = () => {
           </div>
 
 
+          {/*Second Home mobile responsiveness*/}
+          <div className={styles.MobileSecondHomeContainer}>
+              <div className= {styles.secondHomeContainerBox1}>
+                  <div className={styles.whatOffer}>
+                      <div className={styles.what}>What Is an </div>
+                      <div className={styles.offerW}>Offerwall?</div>
+                  </div>
+
+                  <div className= {styles.secondHomeContainerBox2}>
+                      <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
+                      {/*<img className= {styles.image2} src="/images/mobileP_Hover.png" alt=""/>*/}
+                  </div>
+              </div>
+              <div className={styles.anOfferwall}>
+                  <div className={styles.innerAnOfferwall}>
+                      <div className={styles.anOfferwallParag}>
+                          An Offerwall is a type of in-app advertising
+                          unit that allows users to earn rewards by completing
+                          certain actions like downloading apps, signing up for
+                          newsletters, or conducting surveys. The user earns
+                          in-game currency and the gaming publisher earns revenue.
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+
+
           <div className={styles.thirdHomeContainer}>
-              <div style={{ backgroundImage: "url(/images/Th1.png)", height: "982px", width: "100vw", maxWidth: "1512px"}}>
+              <div className={styles.imageThirdHomeContainer} style={{ backgroundImage: "url(/images/Th1.png)", }}>
                 <div className={styles.thirdHomeContainerBox}>
                     <div className={styles.mobileProblem}>
                         <div className={styles.innerMobileProblem}>
@@ -180,6 +214,35 @@ const Home = () => {
               </div>
 
           </div>
+
+
+            {/*Third Home mobile Responsiveness*/}
+          <div className={styles.mobileThirdHomeContainer}>
+              <div className={styles.imageThirdHomeContainer} style={{ backgroundImage: "url(/images/Th1Mobile.png)", }}>
+                  <div className={styles.thirdHomeContainerBox}>
+                      <div className={styles.mobileProblem}>
+                          <div className={styles.innerMobileProblem}>
+                              <div className={styles.mobileProblem1}>The Problem </div>&nbsp;&nbsp;
+                              <div className={styles.with}>With Modern</div>
+                          </div>
+                          <div className={styles.mobileProblem2}> Mobile Game Monetization</div>
+                      </div>
+
+                      <div className={styles.gameDeveloper}>
+                          <div className={styles.gameDeveloper1}>Many game developers struggle with understanding
+                              the best way to monetize a mobile game, resorting
+                              to flooding their users with ads that interrupt the
+                              user experience and cause their users to write negative reviews.
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+
+
+
 
 
           <div className={styles.fourthHomeContainer}>
