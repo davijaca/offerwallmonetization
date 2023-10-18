@@ -317,6 +317,85 @@ const Home = () => {
           </div>
 
 
+          {/*MOBILE FOURTH HOME CONTAINER*/}
+          <div className={styles.mobileFourthHomeContainer}>
+              <div className={styles.SubFourthHomeContainer}>
+
+                  <div className={styles.fourthHomeBox1}>
+                      <div className={styles.subFourthHomeBox1}>
+                          <div>Why</div>&nbsp;
+                          <div className={styles.innerFourthHomeBox1}>Mobile </div> &nbsp;
+                          <div> Offerwall </div>
+                      </div>
+                      <div className={styles.subFourthHomeBox1}> Monetization? </div>
+                  </div>
+
+                  <div className={styles.fourthHomeBox2}>
+                      <div className={styles.fourthBox2Container}>
+
+                          <div className={styles.fourthImg}>
+                              <img className={styles.fourthImg1} src="/images/phone01.png" alt=""/>
+                              {/*<img className={styles.fourthImg2} src="/images/phone02.png" alt=""/>*/}
+                          </div>
+
+                          <div className={styles.fourth13}>
+
+                              <div className={styles.fourth13One}>
+                                  <div className={styles.innerOne}>
+                                      <img src="/images/one.png" alt="" />
+                                      <div className={styles.fourth13Integration}>
+                                          Offerwall integration is seamless with
+                                          existing ad monetization or paywall structures
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div className={styles.fourth13Two}>
+                                  <div className={styles.innerOne}>
+                                      <img src="/images/two.png" alt="" />
+                                      <div className={styles.fourth13Integration}>
+                                          At the point where users decline to pay for
+                                          premium content in your online shop you can
+                                          redirect them to an offerwall giving them a
+                                          different way to make the same payment                                   </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                          <div className={styles.fourth24}>
+                              <div className={styles.fourth24One}>
+                                  <div className={styles.innerOne}>
+                                      <img src="/images/three.png" alt="" />
+                                      <div className={styles.fourth13Integration}>
+                                          Offerwalls have a proven track record of
+                                          increasing customer lifetime value and monthly
+                                          recurring revenue
+                                      </div>
+                                  </div>
+                              </div>
+                              <div className={styles.fourth24Two}>
+                                  <div className={styles.innerTwoSecond}>
+                                      <img src="/images/four.png" alt="" />
+                                      <div className={styles.fourth13Integration}>
+                                          There are offerwall solution providers
+                                          <div className={styles.likeSmatchedWork}>
+                                              <div>like</div>&nbsp;
+                                              <div className={styles.fourth13Smatched}>Smatched</div>&nbsp;
+                                              <div>that work with you to </div>
+                                          </div>
+                                          customise the service for a seamless integration
+                                          within your app to maximize the profit from your offerwall monetization                                   </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
           <div className={styles.fifthHomeContainer}>
               <div style={{ backgroundImage: "url(/images/rect01.png)", width: "100vw", maxWidth: "1512px", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
 
@@ -352,6 +431,45 @@ const Home = () => {
                   </div>
 
                </div>
+          </div>
+
+
+          {/*MOBILE FIFTH HOME CONTAINER*/}
+          <div className={styles.mobileFifthHomeContainer}>
+              <div style={{ backgroundImage: "url(/images/rect01.png)", width: "100vw", maxWidth: "1512px", height: "968px", display: "flex", justifyContent: "flex-end", alignItems: "flex-end"}}>
+
+                  <div className={styles.innerFifthHomeContainer1}>
+                      <div className={styles.innerFifthMainBox1}>
+                          <div className={styles.innerFifthBox1}>
+                              <div>Offerwall</div>&nbsp;
+                              <div className={styles.engagement}>engagement</div>
+                              <div>is </div>
+                          </div>
+                          <div className={styles.highest}> highest among non- <br/>
+                              paying users.</div>
+                      </div>
+
+                      <div className={styles.innerFifthMainBox2}>
+                          The 2019 <u>Swrve Monetization Report</u> found that only 1.6% of all players
+                          make an in-app purchase and 72% of these only make one.<br />
+                          So what is a developer to do? Well, generally the answer is to slam your
+                          users with ads. But that is what has led the industry to have churn
+                          rates that average around <u>80% after 3 days.</u> That’s not great.
+                      </div>
+
+                      <div className={styles.appPurchase}>
+                          <div className={styles.noInAppPurchase}>
+                              <div className={styles.appPerc}>1.6%</div>
+                              <div className={styles.makeInApp}>make in-app purchase</div>
+                          </div>
+                          <div className={styles.onlyMakeOnePurchase}>
+                              <div className={styles.appPerc}>72%</div>
+                              <div className={styles.makeInApp}>only make one purchase</div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
           </div>
 
 
