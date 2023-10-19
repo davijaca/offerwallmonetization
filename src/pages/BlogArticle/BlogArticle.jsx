@@ -278,188 +278,104 @@ const BlogArticle = ({ ...props }) => {
           </div>
         </div>
       </div>
-      <div className={styles.thirdBoxContainer}>
-        <img
-          className={styles['frame-23-4-1']}
-          src='frame-23-4-1.png'
-          alt=''
-        />
-        <img
-          className={styles['rectangle2']}
-          src='rectangle2.png'
-          alt=''
-        />
-        <div className={styles['group-1000004467']}>
-          <div className={styles['rectangle-1169']}></div>
-          <div className={styles['jul-28-2023']}>Jul 28 2023 </div>
-          <div
-            className={
-              styles[
-                'many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews'
-              ]
-            }
-          >
-            Many game developers struggle with understanding the best way to
-            monetize a mobile game, resorting to flooding their users with ads
-            that interrupt the user experience and cause their users to write
-            negative reviews.{' '}
+      <div className={styles.thirdBlogArticleContainer}>
+        <div className={styles.readNextContainer}>
+          <div className={styles.whatToReadNextGroup}>
+            <span>
+              <span className={styles.span700White}>What to </span>
+              <span className={styles.span700Green}>read</span>
+              <span className={styles.span700White}> next</span>
+            </span>{' '}
           </div>
-          <div
-            className={
-              styles[
-                'behind-the-scenes-how-advertisers-create-irresistible-offerwall-campaigns'
-              ]
-            }
-          >
-            Behind the Scenes: How Advertisers Create Irresistible Offerwall
-            Campaigns{' '}
-          </div>
-          <div className={styles['group-40']}>
-            <div className={styles['button-2']}>
-              <div className={styles['rectangle-1177']}></div>
-              <div className={styles['read-more']}>Read more </div>
+          <div className={styles.allArticles}>All articles </div>
+
+          <img
+            className={styles.phoneImg}
+            src='rectangle2.png'
+            alt=''
+          />
+
+          <img
+            className={styles.meetingImg}
+            src='frame-23-4-1.png'
+            alt=''
+          />
+
+          <div className={styles.behindTheScenes}>
+            <div className={styles.cardTitle}>
+              Behind the Scenes: How Advertisers Create Irresistible Offerwall
+              Campaigns{' '}
+            </div>
+            <div className={styles.cardDate}>Jul 28 2023 </div>
+
+            <div className={styles.timeGroup}>
+              <div className={styles.cardReadingTime}>8 min read </div>
+              <img
+                className={styles.cardClock}
+                src='/images/cardClock.svg'
+                alt=''
+              />
+            </div>
+
+            <div className={styles.cardText}>
+              Many game developers struggle with understanding the best way to
+              monetize a mobile game, resorting to flooding their users with ads
+              that interrupt the user experience and cause their users to write
+              negative reviews.{' '}
+            </div>
+            <div className={styles.cardBtn}>
+              <div className={styles.readMore}>Read more </div>
             </div>
           </div>
-        </div>
-        <div className={styles['group-1000004472']}>
-          <div className={styles['_8-min-read2']}>8 min read </div>
-          <svg
-            className={styles['time2']}
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <g clipPath='url(#clip0_266_491)'>
-              <path
-                fillRule='evenodd'
-                clipRule='evenodd'
-                d='M12.004 0.998047C5.94003 0.998047 0.996094 5.93498 0.996094 11.9979C0.996094 18.0608 5.94103 23.0038 12.004 23.0038C18.0669 23.0038 23.0018 18.0608 23.0018 11.9979C23.0018 5.93498 18.0669 0.998047 12.004 0.998047ZM12.004 2.99802C13.1863 2.99605 14.3574 3.2275 15.4501 3.67911C16.5428 4.13072 17.5356 4.7936 18.3715 5.62974C19.2075 6.46588 19.8702 7.45882 20.3215 8.55162C20.7729 9.64441 21.0041 10.8156 21.0018 11.9979C21.0042 13.1806 20.7731 14.3521 20.3219 15.4453C19.8707 16.5385 19.2081 17.5318 18.3722 18.3685C17.5363 19.2051 16.5435 19.8686 15.4507 20.3208C14.3579 20.773 13.1866 21.0051 12.004 21.0038C10.8208 21.0052 9.64895 20.7733 8.55554 20.3213C7.46213 19.8692 6.46862 19.2059 5.6319 18.3694C4.79518 17.5328 4.13167 16.5395 3.67938 15.4462C3.22709 14.3529 2.99488 13.1811 2.99607 11.9979C2.99607 7.01597 7.02202 2.99802 12.004 2.99802ZM11.988 4.984C11.8558 4.98529 11.7252 5.01278 11.6037 5.06487C11.4822 5.11696 11.3722 5.19262 11.2802 5.28747C11.1881 5.38232 11.1158 5.49448 11.0673 5.61747C11.0189 5.74046 10.9953 5.87183 10.998 6.00398V11.9979C10.9985 12.1295 11.025 12.2597 11.076 12.381C11.127 12.5023 11.2014 12.6124 11.295 12.7049L15.2949 16.7069C15.3874 16.8021 15.498 16.8779 15.6201 16.9299C15.7423 16.982 15.8736 17.0092 16.0063 17.0099C16.1391 17.0107 16.2707 16.985 16.3934 16.9344C16.5161 16.8837 16.6275 16.8092 16.7212 16.715C16.8148 16.6209 16.8887 16.5091 16.9386 16.386C16.9886 16.263 17.0135 16.1313 17.012 15.9985C17.0105 15.8658 16.9825 15.7347 16.9298 15.6128C16.8771 15.491 16.8006 15.3809 16.7049 15.2889L12.9999 11.5839V6.00398C13.0026 5.86997 12.9784 5.73679 12.9286 5.61235C12.8787 5.48791 12.8044 5.37475 12.71 5.2796C12.6156 5.18445 12.5031 5.10925 12.379 5.05847C12.255 5.00769 12.122 4.98236 11.988 4.984Z'
-                fill='#1E1E1E'
+
+          <div className={styles.exploringGroup}>
+            <div className={styles.cardTitle}>
+              Exploring Offerwall Solutions for Monetization and Retention: a
+              Comparative Analysis{' '}
+            </div>
+            <div className={styles.timeGroup}>
+              <div className={styles.cardReadingTime}>8 min read </div>
+              <img
+                className={styles.cardClock}
+                src='/images/cardClock.svg'
+                alt=''
               />
-            </g>
-            <defs>
-              <clipPath id='clip0_266_491'>
-                <rect
-                  width='24'
-                  height='24'
-                  fill='white'
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div className={styles['group-1000004473']}>
-          <div className={styles['rectangle-11692']}></div>
-          <div className={styles['jul-28-20232']}>Jul 28 2023 </div>
-          <div
-            className={
-              styles[
-                'many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews2'
-              ]
-            }
-          >
-            Many game developers struggle with understanding the best way to
-            monetize a mobile game, resorting to flooding their users with ads
-            that interrupt the user experience and cause their users to write
-            negative reviews.{' '}
-          </div>
-          <div
-            className={
-              styles[
-                'exploring-offerwall-solutions-for-monetization-and-retention-a-comparative-analysis'
-              ]
-            }
-          >
-            Exploring Offerwall Solutions for Monetization and Retention: a
-            Comparative Analysis{' '}
-          </div>
-          <div className={styles['group-40']}>
-            <div className={styles['button-2']}>
-              <div className={styles['rectangle-11772']}></div>
-              <div className={styles['read-more2']}>Read more </div>
+            </div>
+            <div className={styles.cardText}>
+              Many game developers struggle with understanding the best way to
+              monetize a mobile game, resorting to flooding their users with ads
+              that interrupt the user experience and cause their users to write
+              negative reviews.{' '}
+            </div>
+
+            <div className={styles.cardBtn}>
+              <div className={styles.readMore}>Read more </div>
             </div>
           </div>
-        </div>
-        <div className={styles['group-1000004474']}>
-          <div className={styles['_8-min-read3']}>8 min read </div>
-          <svg
-            className={styles['time3']}
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <g clipPath='url(#clip0_266_504)'>
-              <path
-                fillRule='evenodd'
-                clipRule='evenodd'
-                d='M12.004 0.998047C5.94003 0.998047 0.996094 5.93498 0.996094 11.9979C0.996094 18.0608 5.94103 23.0038 12.004 23.0038C18.0669 23.0038 23.0018 18.0608 23.0018 11.9979C23.0018 5.93498 18.0669 0.998047 12.004 0.998047ZM12.004 2.99802C13.1863 2.99605 14.3574 3.2275 15.4501 3.67911C16.5428 4.13072 17.5356 4.7936 18.3715 5.62974C19.2075 6.46588 19.8702 7.45882 20.3215 8.55162C20.7729 9.64441 21.0041 10.8156 21.0018 11.9979C21.0042 13.1806 20.7731 14.3521 20.3219 15.4453C19.8707 16.5385 19.2081 17.5318 18.3722 18.3685C17.5363 19.2051 16.5435 19.8686 15.4507 20.3208C14.3579 20.773 13.1866 21.0051 12.004 21.0038C10.8208 21.0052 9.64895 20.7733 8.55554 20.3213C7.46213 19.8692 6.46862 19.2059 5.6319 18.3694C4.79518 17.5328 4.13167 16.5395 3.67938 15.4462C3.22709 14.3529 2.99488 13.1811 2.99607 11.9979C2.99607 7.01597 7.02202 2.99802 12.004 2.99802ZM11.988 4.984C11.8558 4.98529 11.7252 5.01278 11.6037 5.06487C11.4822 5.11696 11.3722 5.19262 11.2802 5.28747C11.1881 5.38232 11.1158 5.49448 11.0673 5.61747C11.0189 5.74046 10.9953 5.87183 10.998 6.00398V11.9979C10.9985 12.1295 11.025 12.2597 11.076 12.381C11.127 12.5023 11.2014 12.6124 11.295 12.7049L15.2949 16.7069C15.3874 16.8021 15.498 16.8779 15.6201 16.9299C15.7423 16.982 15.8736 17.0092 16.0063 17.0099C16.1391 17.0107 16.2707 16.985 16.3934 16.9344C16.5161 16.8837 16.6275 16.8092 16.7212 16.715C16.8148 16.6209 16.8887 16.5091 16.9386 16.386C16.9886 16.263 17.0135 16.1313 17.012 15.9985C17.0105 15.8658 16.9825 15.7347 16.9298 15.6128C16.8771 15.491 16.8006 15.3809 16.7049 15.2889L12.9999 11.5839V6.00398C13.0026 5.86997 12.9784 5.73679 12.9286 5.61235C12.8787 5.48791 12.8044 5.37475 12.71 5.2796C12.6156 5.18445 12.5031 5.10925 12.379 5.05847C12.255 5.00769 12.122 4.98236 11.988 4.984Z'
-                fill='#1E1E1E'
-              />
-            </g>
-            <defs>
-              <clipPath id='clip0_266_504'>
-                <rect
-                  width='24'
-                  height='24'
-                  fill='white'
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div className={styles['what-to-read-next']}>
-          <span>
-            <span className={styles['what-to-read-next-span']}>What to </span>
-            <span className={styles['what-to-read-next-span2']}>read</span>
-            <span className={styles['what-to-read-next-span3']}> next</span>
-          </span>{' '}
-        </div>
-        <div className={styles['all-articles']}>All articles </div>
-        <div className={styles['sign-up-for-newsletter']}>
-          <span>
-            <span className={styles['sign-up-for-newsletter-span']}>
-              Sign Up for{' '}
-            </span>
-            <span className={styles['sign-up-for-newsletter-span2']}>
-              Newsletter
-            </span>
-          </span>{' '}
-        </div>
-        <div className={styles['your-e-mail']}>Your E-mail </div>
-        <div className={styles['rectangle-1206']}></div>
-        <div
-          className={
-            styles[
-              'sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox'
-            ]
-          }
-        >
-          Sign up for our newsletter to receive exclusive updates and the latest
-          news delivered directly to your inbox.{' '}
-        </div>
-        <div className={styles['frame-1000004463']}>
-          <div className={styles['rectangle-1173']}></div>
-          <svg
-            className={styles['next']}
-            width='78'
-            height='78'
-            viewBox='0 0 78 78'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M40.546 74.5416L43.9357 71.1519L52.0252 63.0625L61.8513 53.2363L70.2988 44.7888C71.6699 43.4177 73.0638 42.0695 74.4121 40.6755L74.473 40.6146C75.349 39.7386 75.349 38.2609 74.473 37.3849L71.0834 33.9953L62.9939 25.9058L53.1677 16.0796L44.7203 7.63218C43.3492 6.26109 42.0009 4.86714 40.607 3.5189L40.546 3.45796C39.7005 2.61245 38.1466 2.55152 37.3164 3.45796C36.4785 4.37202 36.4099 5.78882 37.3164 6.68765L40.706 10.0773L48.7955 18.1668L58.6216 27.9929L67.0691 36.4404C68.4402 37.8115 69.7808 39.213 71.1824 40.5537L71.2433 40.6146V37.3849L67.8537 40.7746L59.7642 48.864L49.938 58.6902L41.4906 67.1377C40.1195 68.5088 38.7255 69.857 37.3773 71.2509L37.3164 71.3119C36.4709 72.1574 36.4099 73.7113 37.3164 74.5416C38.2228 75.3794 39.6396 75.448 40.546 74.5416Z'
-              fill='#1E1E1E'
+
+          <div className={styles.newsletterGroup}>
+            <span>
+              <span className={styles.signUpSpan1}>Sign Up for </span>
+              <span className={styles.signUpSpan2}>Newsletter</span>
+            </span>{' '}
+          </div>
+          <div className={styles.signUpText}>
+            Sign up for our newsletter to receive exclusive updates and the
+            latest news delivered directly to your inbox.{' '}
+          </div>
+
+          <div className={styles.yourEmail}>Your E-mail </div>
+          <div className={styles.emailBox}></div>
+
+          <div className={styles.signUpBtn}>
+            <div className={styles.signUpBackground}></div>
+            <img
+              className={styles.arrow}
+              src='/images/signUpArrow.svg'
+              alt=''
             />
-            <path
-              d='M72.8733 36.7153H7.88344C7.00746 36.7153 6.12387 36.7077 5.24789 36.7153H5.13363C3.93773 36.7153 2.79516 37.7665 2.84848 39.0005C2.9018 40.2421 3.85394 41.2856 5.13363 41.2856H70.1235C70.9995 41.2856 71.883 41.2932 72.759 41.2856H72.8733C74.0692 41.2856 75.2118 40.2344 75.1584 39.0005C75.0975 37.7589 74.153 36.7153 72.8733 36.7153Z'
-              fill='#1E1E1E'
-            />
-          </svg>
+          </div>
+          <div className={styles['sign-up']}>sign up </div>
         </div>
       </div>
     </div>

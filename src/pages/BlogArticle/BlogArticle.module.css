@@ -172,6 +172,7 @@
   left: 258px;
   top: 1447px;
   width: 999px;
+  height: 3845px;
 }
 
 .articleMainTitle {
@@ -208,313 +209,209 @@
 
 /* Third Container */
 
-.frame-23-4-1 {
-  border-radius: 21px;
-  width: 545px;
-  height: 329px;
-  position: absolute;
-  left: 766px;
-  top: 4609px;
+.thirdBlogArticleContainer {
+  position: relative;
+  height: 1507px;
 }
 
-.rectangle2 {
-  border-radius: 21px;
-  width: 545px;
-  height: 329px;
-  position: absolute;
+.readNextContainer {
+  background: #5b56bd;
+  width: 1512px;
+  height: 1722px;
+  position: relative;
+  margin: auto;
+
+}
+
+.whatToReadNextGroup {
+  text-align: left;
+  position: relative;
   left: 201px;
-  top: 4609px;
-}
-
-.group-1000004467 {
-  position: absolute;
-  inset: 0;
-}
-
-.rectangle-1169 {
-  background: #9ad3cc;
-  border-radius: 21px;
-  width: 545px;
-  height: 437px;
-  position: absolute;
-  left: 201px;
-  top: 4958px;
-}
-
-.jul-28-2023 {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 14px "Poppins", sans-serif;
-  position: absolute;
-  left: 257.48px;
-  top: 5128px;
-  width: 77.29px;
-}
-
-.many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 257.48px;
-  top: 5171px;
-  width: 436px;
-}
-
-.behind-the-scenes-how-advertisers-create-irresistible-offerwall-campaigns {
-  color: var(--primary-black-1, #1e1e1e);
-  text-align: left;
-  font: 700 20px "Poppins", sans-serif;
-  position: absolute;
-  left: 257.48px;
-  top: 4998px;
-  width: 436px;
-}
-
-.group-40 {
-  width: 190.25px;
-  height: 45px;
-  position: static;
-}
-
-.button-2 {
-  width: 190.25px;
-  height: 45px;
-  position: static;
-}
-
-.rectangle-1177 {
-  border-radius: 4px;
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 190.25px;
-  height: 45px;
-  position: absolute;
-  left: 507px;
-  top: 5303px;
-}
-
-.read-more {
-  color: #1e1e1e;
-  text-align: center;
-  font: 500 15px "Inter", sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  left: 546.82px;
-  top: 5315px;
-  width: 110.98px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.group-1000004472 {
-  position: absolute;
-  inset: 0;
-}
-
-._8-min-read2 {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 14px/24px "Poppins", sans-serif;
-  position: absolute;
-  left: 621px;
-  top: 5125px;
-}
-
-.time2 {
-  position: absolute;
-  left: 584px;
-  top: 5125px;
-  overflow: visible;
-}
-
-.group-1000004473 {
-  position: absolute;
-  inset: 0;
-}
-
-.rectangle-11692 {
-  background: #e7caa2;
-  border-radius: 21px;
-  width: 545px;
-  height: 437px;
-  position: absolute;
-  left: 766px;
-  top: 4958px;
-}
-
-.jul-28-20232 {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 14px "Poppins", sans-serif;
-  position: absolute;
-  left: 822.48px;
-  top: 5128px;
-  width: 77.29px;
-}
-
-.many-game-developers-struggle-with-understanding-the-best-way-to-monetize-a-mobile-game-resorting-to-flooding-their-users-with-ads-that-interrupt-the-user-experience-and-cause-their-users-to-write-negative-reviews2 {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 822.48px;
-  top: 5171px;
-  width: 436px;
-}
-
-.exploring-offerwall-solutions-for-monetization-and-retention-a-comparative-analysis {
-  color: var(--primary-black-1, #1e1e1e);
-  text-align: left;
-  font: 700 20px "Poppins", sans-serif;
-  position: absolute;
-  left: 822.48px;
-  top: 4998px;
-  width: 436px;
-}
-
-.rectangle-11772 {
-  border-radius: 4px;
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 190.25px;
-  height: 45px;
-  position: absolute;
-  left: 1067px;
-  top: 5303px;
-}
-
-.read-more2 {
-  color: #1e1e1e;
-  text-align: center;
-  font: 500 15px "Inter", sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  left: 1106.84px;
-  top: 5315px;
-  width: 110.98px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.group-1000004474 {
-  position: absolute;
-  inset: 0;
-}
-
-._8-min-read3 {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 14px/24px "Poppins", sans-serif;
-  position: absolute;
-  left: 1181px;
-  top: 5125px;
-}
-
-.time3 {
-  position: absolute;
-  left: 1144px;
-  top: 5125px;
-  overflow: visible;
-}
-
-.what-to-read-next {
-  text-align: left;
-  font: 700 40px "Poppins", sans-serif;
-  position: absolute;
-  left: 201px;
-  top: 4531px;
+  top: 162px;
   width: 482px;
 }
 
-.what-to-read-next-span {
+.span700White {
   color: #ffffff;
   font: 700 40px "Poppins", sans-serif;
 }
 
-.what-to-read-next-span2 {
+.span700Green {
   color: #e0ff22;
   font: 700 40px "Poppins", sans-serif;
 }
 
-.what-to-read-next-span3 {
-  color: #ffffff;
-  font: 700 40px "Poppins", sans-serif;
-}
 
-.all-articles {
+.allArticles {
   color: #ffffff;
   text-align: right;
   font: 500 20px "Poppins", sans-serif;
   text-transform: uppercase;
   position: absolute;
   left: 1021px;
-  top: 4553px;
+  top: 184px;
   width: 236px;
 }
 
-.app-lovin-hybrid-monetization-blog-1440-x-810-templates-3 {
+
+.phoneImg {
+  border-radius: 21px;
+  width: 545px;
+  height: 329px;
   position: absolute;
-  left: 1512px;
-  top: 5894px;
-  transform: translate(-1512px, 0px);
+  left: 201px;
+  top: 240px;
+}
+
+.meetingImg {
+  border-radius: 21px;
+  width: 545px;
+  height: 329px;
+  position: absolute;
+  left: 766px;
+  top: 240px;
+}
+
+.behindTheScenes {
+  top: 589px;
+  left: 201px;
+  background: #9ad3cc;
+  border-radius: 21px;
+  width: 545px;
+  height: 437px;
+  position: absolute;
+}
+
+.exploringGroup {
+  position: absolute;
+  background: #e7caa2;
+  border-radius: 21px;
+  width: 545px;
+  height: 437px;
+  top: 589px;
+  left: 766px;
+}
+
+.cardTitle {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  position: absolute;
+  font: 700 20px "Poppins", sans-serif;
+  left: 56.48px;
+  top: 40px;
+  width: 436px;
+}
+
+.cardDate {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 56.48px;
+  top: 170px;
+  width: 77.29px;
+}
+
+.cardReadingTime {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px/24px "Poppins", sans-serif;
+  position: absolute;
+  left: 420px;
+  top: 167px;
+}
+
+.cardClock {
+  position: absolute;
+  left: 383px;
+  top: 167px;
   overflow: visible;
 }
 
-.app-lovin-hybrid-monetization-blog-1440-x-810-templates-6 {
-  opacity: 0.20000000298023224;
+.cardText {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
   position: absolute;
-  left: 1512px;
-  top: 5931.41px;
-  transform: translate(-1512px, 0px);
-  overflow: visible;
+  left: 56.48px;
+  top: 213px;
+  width: 436px;
 }
 
-.app-lovin-hybrid-monetization-blog-1440-x-810-templates-7 {
-  opacity: 0.20000000298023224;
-  position: absolute;
-  left: 1512px;
-  top: 5860px;
-  transform: translate(-1512px, 0px);
-  overflow: visible;
+.cardBtn23 {
+  width: 190.25px;
+  height: 45px;
+  position: static;
+
 }
 
-.sign-up-for-newsletter {
+
+.cardBtn {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 1px;
+  width: 190.25px;
+  height: 45px;
+  position: absolute;
+  left: 306px;
+  top: 345px;
+  text-align: center;
+
+
+}
+
+.readMore {
+  color: #1e1e1e;
+  font: 500 15px "Inter", sans-serif;
+  text-transform: uppercase;
+  top: 12px;
+  position: relative;
+  height: 20px;
+
+}
+
+
+.newsletterGroup {
   text-align: left;
   font: 700 55px "Poppins", sans-serif;
   position: absolute;
   left: 201px;
-  top: 5501px;
+  top: 1132px;
   width: 646px;
   height: 68px;
 }
 
-.sign-up-for-newsletter-span {
+.signUpSpan1 {
   color: #ffffff;
   font: 700 55px "Poppins", sans-serif;
 }
 
-.sign-up-for-newsletter-span2 {
+.signUpSpan2 {
   color: #e0ff22;
   font: 700 55px "Poppins", sans-serif;
 }
 
-.your-e-mail {
+.signUpText {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1228px;
+  width: 441px;
+}
+
+.yourEmail {
   color: #ffffff;
   text-align: left;
   font: 400 15px "Poppins", sans-serif;
   position: absolute;
   left: 988px;
-  top: 5566px;
+  top: 1197px;
 }
 
-.rectangle-1206 {
+.emailBox {
   border-style: solid;
   border-color: #ffffff;
   border-width: 1px;
@@ -522,33 +419,24 @@
   height: 45px;
   position: absolute;
   left: 991px;
-  top: 5592px;
+  top: 1223px;
 }
 
-.sign-up-for-our-newsletter-to-receive-exclusive-updates-and-the-latest-news-delivered-directly-to-your-inbox {
-  color: #ffffff;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 201px;
-  top: 5597px;
-  width: 441px;
-}
 
-.frame-1000004463 {
+
+.signUpBtn {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: calc(50% - 72px);
-  top: 5859px;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
+  left: 684px;
+  top: 1345px;
+
 }
 
-.rectangle-1173 {
+.signUpBackground {
   background: #e0ff22;
   border-radius: 134px;
   flex-shrink: 0;
@@ -557,128 +445,12 @@
   position: relative;
 }
 
-.next {
+.arrow {
   flex-shrink: 0;
   position: absolute;
-  left: 111px;
-  top: 33px;
-  transform: translate(0px, 0px);
   overflow: visible;
 }
 
-.footer {
-  padding: 20px 201px 20px 201px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 1512px;
-  height: 157px;
-  position: absolute;
-  left: 0px;
-  top: 6319.55px;
-}
-
-.copyright-2023-offerwall-monetization-all-rights-reserved {
-  color: var(--modal-grey-1, #dbdad7);
-  text-align: center;
-  font: 400 16px "Rubik", sans-serif;
-  position: relative;
-}
-
-.frame-414 {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  left: 779px;
-  top: 6192.55px;
-}
-
-.fa-qs {
-  color: var(--modal-grey-1, #dbdad7);
-  text-align: center;
-  font: 400 18px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-  width: 53px;
-}
-
-.blog {
-  color: var(--modal-grey-1, #dbdad7);
-  text-align: center;
-  font: 400 18px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-  width: 55px;
-}
-
-.partnerships {
-  color: var(--modal-grey-1, #dbdad7);
-  text-align: center;
-  font: 400 18px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-  width: 143px;
-}
-
-.privacy-policy {
-  color: var(--modal-grey-1, #dbdad7);
-  text-align: center;
-  font: 400 18px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-  width: 159px;
-}
-
-.line-16 {
-  border-style: solid;
-  border-color: #dedede;
-  border-width: 1px 0 0 0;
-  width: 1110px;
-  height: 0px;
-  position: absolute;
-  left: 201px;
-  top: 6284.55px;
-}
-
-.vector6 {
-  position: absolute;
-  left: 1281px;
-  top: 6184.55px;
-  overflow: visible;
-}
-
-.group-3 {
-  position: absolute;
-  left: 201px;
-  top: 6164.55px;
-  overflow: visible;
-}
-
-.a-valuable-tool-for-monetizing-mobile-games {
-  color: #ffffff;
-  text-align: left;
-  font: 400 15px/131.5% "Poppins", sans-serif;
-  position: absolute;
-  left: 201px;
-  top: 6235.55px;
-  width: 681px;
-  height: 36px;
-}
-
-.group-33 {
-  position: absolute;
-  inset: 0;
-}
-
-.group-2 {
-  width: 207px;
-  height: 20px;
-  position: static;
-}
 
 .sign-up {
   color: #ffffff;
@@ -687,123 +459,10 @@
   text-transform: uppercase;
   position: absolute;
   left: 650px;
-  top: 5909px;
+  top: 1540px;
   width: 207px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-.group-37 {
-  position: absolute;
-  inset: 0;
-}
-
-.rectangle-1175 {
-  background: linear-gradient(90deg,
-      rgba(81, 79, 177, 1) 0%,
-      rgba(76, 117, 183, 1) 24.304988980293274%,
-      rgba(53, 159, 173, 1) 77.56538987159729%,
-      rgba(44, 175, 168, 1) 98.4375%);
-  opacity: 0.8999999761581421;
-  width: 1512px;
-  height: 101px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  backdrop-filter: blur(2px);
-}
-
-.request-contact-button {
-  width: 191px;
-  height: 45px;
-  position: absolute;
-  left: 1250px;
-  top: 32px;
-}
-
-.rectangle-1176 {
-  background: #e0ff22;
-  border-radius: 4px;
-  width: 191px;
-  height: 45px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.request-contact {
-  color: #130e5b;
-  text-align: center;
-  font: 500 15px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  left: 19px;
-  top: 12px;
-  width: 153px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.frame-413 {
-  display: flex;
-  flex-direction: row;
-  gap: 81px;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 490px;
-  top: 42px;
-}
-
-.ho-me {
-  color: #ffffff;
-  text-align: center;
-  font: 500 16px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.how-it-works {
-  color: #ffffff;
-  text-align: center;
-  font: 500 16px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.blog2 {
-  color: #ffffff;
-  text-align: center;
-  font: 500 16px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.about-us {
-  color: #ffffff;
-  text-align: center;
-  font: 500 16px "Poppins", sans-serif;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.group-32 {
-  position: absolute;
-  left: 73px;
-  top: 25px;
-  overflow: visible;
-}
-
-
-.thirdBoxContainer {
-  background: #5b56bd;
-  width: 1512px;
-  height: 1722px;
-  position: relative;
-  top: 4369px;
 }
