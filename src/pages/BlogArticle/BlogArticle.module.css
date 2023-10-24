@@ -1,9 +1,8 @@
 .blogArticle,
 .blogArticle * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
-/* First Container */
 
 .blogArticle {
   background: #ffffff;
@@ -11,15 +10,27 @@
   max-width: 1530px;
   position: relative;
   margin: auto;
+  margin-top: -100px;
+}
+
+/* First Container */
+
+.firstBlogArticleContainer {
+  width: 100%;
+  max-width: 1530px;
+  position: relative;
+  margin: auto;
+  overflow: visible;
 }
 
 .heroContainer {
   background: #5b56bd;
-  width: 1512px;
+  width: 100vw;
   height: 770px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
+  overflow: visible;
+  margin: auto;
+
 }
 
 .firstBackground {
@@ -139,12 +150,22 @@
   border-radius: 10px;
   width: 1110px;
   height: 632px;
-  position: relative;
-  left: calc(50% - 555px);
+  position: absolute;
+  left: 201px;
   top: 548px;
+  overflow: visible;
 }
 
 /* Second Container */
+
+.secondBlogArticleContainer {
+  width: 100%;
+  max-width: 1530px;
+  position: relative;
+  margin: auto;
+  overflow: visible;
+  top: 500px;
+}
 
 .articleAuthor {
   color: #1e1e1e;
@@ -152,7 +173,6 @@
   font: 400 14px "Poppins", sans-serif;
   position: relative;
   left: 258px;
-  top: 1249px;
 }
 
 .articleIntroText {
@@ -161,7 +181,7 @@
   font: 400 15px "Poppins", sans-serif;
   position: relative;
   left: 258px;
-  top: 1360px;
+  top: 71px;
   width: 999px;
 }
 
@@ -170,9 +190,9 @@
   text-align: left;
   position: relative;
   left: 258px;
-  top: 1447px;
+  top: 129px;
   width: 999px;
-  height: 3845px;
+  height: 3308px;
 }
 
 .articleMainTitle {
@@ -210,16 +230,20 @@
 /* Third Container */
 
 .thirdBlogArticleContainer {
+  width: 100%;
+  max-width: 1530px;
   position: relative;
-  height: 1507px;
+  margin: auto;
+  overflow: visible;
 }
 
 .readNextContainer {
   background: #5b56bd;
-  width: 1512px;
+  width: 100vw;
   height: 1722px;
   position: relative;
   margin: auto;
+  overflow: visible;
 
 }
 
@@ -380,6 +404,7 @@
   top: 1132px;
   width: 646px;
   height: 68px;
+  overflow: visible;
 }
 
 .signUpSpan1 {
@@ -465,4 +490,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './BlogArticle.module.css';
 
-const BlogArticle = ({ ...props }) => {
+const BlogArticle = () => {
   return (
     <div className={styles.blogArticle}>
       <div className={styles.firstBlogArticleContainer}>

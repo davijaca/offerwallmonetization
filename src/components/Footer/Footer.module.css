@@ -1,15 +1,17 @@
-.backgroundImage {
-    position: relative;
+.backgroundImage{
+    position:relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1512px;
+    width: 1550px ;
     height: 617px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
+    overflow-x: hidden;
+    
 }
 
 .footerName {
     align-items: flex-end;
+    background-color: #F7F8FC;
 
 }
 
@@ -131,7 +133,7 @@
 
 }
 
-.footerDivider>hr {
+.footerDivider > hr {
     border: 0.5px solid #DEDEDE
 }
 
