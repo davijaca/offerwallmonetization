@@ -20,21 +20,18 @@ const Home = () => {
                                 
                                 <div className={styles.gradientContainerRight}></div>
                                 <div className={styles.gradientContainerLeft}>
-                                <svg className={styles.waves} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 30 150 50" preserveAspectRatio="xMidYMid meet" shapeRendering="auto">
-                                    <defs>
-                                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v105h-352z"/>
-                                        <linearGradient id="paint0_linear_913_624" x1="364.5" y1="-176.5" x2="235.107" y2="691.672" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0.145833" stopColor="#0549E3"/>
-                                        <stop offset="0.447917" stopColor="#28B4A7"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <g className={styles.parallax}>
-                                        <use xlinkHref="#gentle-wave" x="48" y="0" fill="url(#paint0_linear_913_624)" opacity={0.5} />
-                                        <use xlinkHref="#gentle-wave" x="48" y="3" fill="url(#paint0_linear_913_624)" opacity={0.3} />
-                                        <use xlinkHref="#gentle-wave" x="48" y="5" fill="url(#paint0_linear_913_624)" opacity={0.2}/>
-                                        <use xlinkHref="#gentle-wave" x="48" y="7" fill="url(#paint0_linear_913_624)" opacity={0.1} />
-                                    </g>
-                                </svg>
+                                <svg class={styles.waves} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 30 150 50" preserveAspectRatio="true" shape-rendering="auto">
+                                <defs>
+                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v105h-352z" />
+                                    
+                                </defs>
+                                <g class={styles.parallax}>
+                                    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(58, 108, 222, 0.3)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(100, 131, 201, 0.2)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(46, 67, 141, 0.1)" />
+                                    <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(77, 113, 184, 0.1)" />
+                                </g>
+                            </svg>
                                 </div>
 
                                 {/* <div className={styles.gradientContainerRight}></div>

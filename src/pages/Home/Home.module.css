@@ -3,7 +3,7 @@
 .home,
 .home * {
   box-sizing: border-box;
-  overflow-x: hidden;
+  
 }
 
 .homeContainer {
@@ -37,7 +37,7 @@
   z-index: 1;
   float: right;
   margin-right: 155px;
-  margin-top: -288px;
+  margin-top: -285px;
   min-height: 1300px;
 }
 
@@ -72,7 +72,7 @@
 
 .gradientContainer{
     width: 100%;
-    max-width: 1550px;
+    max-width: 1530px;
     position: absolute;
 }
 
@@ -285,7 +285,7 @@
     width: 100%;
     height: 310px;
     display: flex;
-    max-width: 1550px;
+    max-width: 1530px;
     margin: auto;
     z-index: 10;
     position: relative;
@@ -294,7 +294,7 @@
 .innerBelowFirst1 {
     width: 50%;
     height: inherit;
-    background: #5B56BD;
+    background: #1F1F1F;
     display: flex;
     align-items:  center;
 }
@@ -353,7 +353,7 @@
     display: flex;
     align-items:  center;
     justify-content: flex-end;
-    background: #5B56BD;
+    background: #1F1F1F;
     border-right: 2px solid #212121;
     border-left: 1px solid #212121;
 }
@@ -393,7 +393,7 @@ button {
     height: 45px;
     color: var(--White, #FFF);
     text-align: center;
-    background: #5B56BD;
+    background: #1F1F1F;
     font-family: Poppins;
     font-size: 15px;
     font-style: normal;
@@ -534,7 +534,7 @@ button:hover {
 .imageThirdHomeContainer {
     height: 980px;
     width: 100vw;
-    max-width: 1550px;
+    max-width: 1530px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -801,7 +801,7 @@ button:hover {
 
 .fifthHomeBackground {
     width: 100vw; 
-    max-width: 1550px; 
+    max-width: 1530px; 
     height: 968px; 
     display: flex; 
     justify-content: flex-end; 
@@ -1029,6 +1029,10 @@ button:hover {
 .seventhHomeContainer {
     width: 100%;
     z-index: 1;
+}
+
+.mobileSeventhHomeContainer{
+    display: none;
 }
 
 .innerSeventhHomeContainer {
