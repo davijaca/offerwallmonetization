@@ -170,7 +170,6 @@ const Home = () => {
                 </div>
             </div>
 
-
             <div className={styles.secondHomeContainer}>
                     <div className= {styles.secondHomeContainerBox1}>
                         <div className={styles.whatOffer}>
@@ -508,44 +507,6 @@ const Home = () => {
             </div>
 
 
-            {/* <div className={styles.sixthHomeContainer}>
-                <div className={styles.sixthBox1}>
-                    <div className={styles.offerwallSolves}>
-                        <div>Offerwalls</div>&nbsp;
-                        <div className={styles.solves}>solve </div>&nbsp;
-                        <div>two key</div>
-                    </div>
-
-                    <div className={styles.problems}>problems:</div>
-                </div>
-
-                <div className={styles.sixthBox2}>
-                    <div className={styles.innerSixthBox2}>
-                        <div className={styles.willingUsers}>
-                            <div className={styles.dollar}>
-                                <img src="/images/dollar_sign.png"/>
-                            </div>
-
-                            <div className={styles.pay}>
-                                Your users aren’t willing to pay to play
-                            </div>
-                        </div >
-
-                        <div className={styles.hateUsers}>
-                            <div className={styles.megaphone}>
-                                <img src="/images/mega_phone.png"/>
-                            </div>
-
-                            <div className={styles.ads}>
-                                Your users hate ads and think they interrupt the user experience
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-
             {/*MOBILE SIXTH HOME CONTAINER*/}
             <div className={styles.mobileSixthHomeContainer}>
                 <div className={styles.sixthBox1}>
@@ -737,28 +698,30 @@ const Home = () => {
 
 
             {/*MOBILE SEVENTH HOME CONTAINER*/}
-            <div className={styles.mobileSeventhHomeContainer}>
-                <div style={{ backgroundImage: "url(/images/rect_1203.png)", width: "100vw", maxWidth: "1512px", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
+
+            <div className={styles.seventhMobileHomeContainer}>
+                <div style={{ backgroundImage: "url(/images/rect_1203mobile.png)", width: "100vw", maxWidth: "393px", height: "3260px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", margin:"auto"}}>
 
                             <div className={styles.seventhHomeBox1}>
                                 <div className={styles.implementingSoln}>
                                     <div className={styles.implementing}>Implementing </div>&nbsp;
-                                    <div className={styles.an}>an offerwall solution provides you </div>
+                                    <div className={styles.an}>an</div>
                                 </div>
 
                                 <div className={styles.avenue}>
-                                    an avenue to offer premium content to your users
+                                 offerwall solution provides you an avenue to offer premium content to your users without making them
                                 </div>
 
                                 <div className={styles.priceEngage}>
-                                    <div> without making them pay the price,</div>&nbsp;
-                                    <div className={styles.engage}>engaging more </div>
+                                pay the price,
+                                    <div className={styles.engage}>engaging </div>
                                 </div>
 
                                 <div className={styles.usersDecrease}>
-                                    <div className={styles.users}>users</div>&nbsp;
-                                    <div>and decreasing churn.</div>
+                                    <div className={styles.users}> more users</div>
+                                    <div>and decreasing</div>
                                 </div>
+                                <div className={styles.churn}>churn.</div>
                             </div>
 
                             <div className={styles.seventhHomeBox2}>
@@ -886,6 +849,7 @@ const Home = () => {
                 </div>
 
             </div>
+
             </div>
 
 
