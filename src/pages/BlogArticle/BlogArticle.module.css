@@ -16,11 +16,12 @@
 /* First Container */
 
 .firstBlogArticleContainer {
-  width: 100%;
+  width: 100vw;
   max-width: 1530px;
   position: relative;
   margin: auto;
   overflow: visible;
+
 }
 
 .heroContainer {

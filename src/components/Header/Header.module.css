@@ -1,19 +1,17 @@
 .mainBox {
-    background: linear-gradient(
-        90deg,
-        rgba(81, 79, 177, 1) 0%,
-        rgba(76, 117, 183, 1) 24.304988980293274%,
-        rgba(53, 159, 173, 1) 77.56538987159729%,
-        rgba(44, 175, 168, 1) 98.4375%
-      );
-      opacity: 0.8999999761581421;
-      width: 100%;
-      height: 100px;
-      position: sticky;
-      left: 0px;
-      top: 0px;
-      backdrop-filter: blur(2px);
-      z-index: 20;
+    background: linear-gradient(90deg,
+            rgba(81, 79, 177, 1) 0%,
+            rgba(76, 117, 183, 1) 24.304988980293274%,
+            rgba(53, 159, 173, 1) 77.56538987159729%,
+            rgba(44, 175, 168, 1) 98.4375%);
+    opacity: 0.8999999761581421;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(2px);
+    z-index: 20;
 }
 
 .headerBox {
@@ -24,7 +22,7 @@
     justify-content: space-between;
 }
 
-.right{
+.right {
     display: flex;
     align-items: center;
     height: 70px;
@@ -66,7 +64,7 @@
     position: absolute;
     left: 120px;
     top: 22px;
-  }
+}
 
 .headerTitleItem {
     color: #FFF;
@@ -94,14 +92,14 @@
     width: 132px;
 }
 
-.arrowDown{
+.arrowDown {
     padding-left: 5px;
     width: 22px;
     height: 10px;
     transition: all 0.9s;
 }
 
-.dropDownBtn{
+.dropDownBtn {
     position: absolute;
     width: 260px;
     display: flex;
@@ -111,16 +109,16 @@
     transition: all 0.9s;
 }
 
-.dropDownBtn > ul {
+.dropDownBtn>ul {
     list-style: none;
     padding: 5px;
     font-size: 16px;
 }
 
-.dropDownBtn > ul :hover{
+.dropDownBtn>ul :hover {
     padding: 5px;
     border: 0.5px solid rgb(240, 239, 239);
-    border-radius: 0 0 8px 8px ;
+    border-radius: 0 0 8px 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
 }
 
@@ -140,15 +138,15 @@
 }
 
 .contact:hover {
-     cursor: pointer;
-     border-radius: 4px;
-     background: #BEE4FF;
-     color: #130E5B;
- }
+    cursor: pointer;
+    border-radius: 4px;
+    background: #BEE4FF;
+    color: #130E5B;
+}
 
 
 
-.contactButton{
+.contactButton {
     color: var(--Primary-Black-1, #1E1E1E);
     text-align: center;
     font-family: Poppins, sans-serif;
@@ -171,22 +169,20 @@
     left: 73px;
     top: 25px;
     overflow: visible;
-  }
+}
 
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px){
+@media only screen and (max-width: 1130px) and (min-width: 393px) {
 
 
     .mainBox {
-        background: linear-gradient(
-                90deg,
+        background: linear-gradient(90deg,
                 rgba(81, 79, 177, 1) 0%,
                 rgba(76, 117, 183, 1) 24.304988980293274%,
                 rgba(53, 159, 173, 1) 77.56538987159729%,
-                rgba(44, 175, 168, 1) 98.4375%
-        );
+                rgba(44, 175, 168, 1) 98.4375%);
         opacity: 0.8999999761581421;
         width: 100%;
         height: 100px;
@@ -195,7 +191,7 @@
         top: 0px;
         backdrop-filter: blur(2px);
         z-index: 20;
-        
+
     }
 
     .headerBox {
@@ -204,7 +200,7 @@
         display: flex;
     }
 
-    .right{
+    .right {
         display: flex;
         align-items: center;
         height: 50px;
@@ -214,7 +210,7 @@
 
     .rightImg {
         width: 33.1px;
-        height:38.4px;
+        height: 38.4px;
         display: flex;
         position: absolute;
         left: 19px;
@@ -235,7 +231,8 @@
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
-        line-height: 105.3%; /* 20.007px */
+        line-height: 105.3%;
+        /* 20.007px */
     }
 
     .headerTitleItem2 {
@@ -272,7 +269,7 @@
         background: none;
     }
 
-    .mobileHamburgerMenu{
+    .mobileHamburgerMenu {
         display: inline-block;
     }
 
@@ -280,7 +277,7 @@
         cursor: pointer;
     }
 
-    .contactButton{
+    .contactButton {
         display: none;
     }
 
