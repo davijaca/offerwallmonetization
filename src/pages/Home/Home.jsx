@@ -805,7 +805,7 @@ const Home = () => {
                                                     </div>
 
                                                     <div className={styles.LeftReadMoreExploreMobile}>
-                                                        <div className={styles.readMoreButtonMobilesa}>
+                                                        <div className={styles.readMoreButtonMobile}>
                                                             Read More
                                                         </div>
                                                     </div>

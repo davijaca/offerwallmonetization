@@ -2908,10 +2908,11 @@ button:hover {
     line-height: normal;
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 .leftDateTimeMobile {
-    width: 382px;
+    width: 350px;
     flex-shrink: 0;
     height: 30px;
     display: flex;
@@ -2923,7 +2924,8 @@ button:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    display: flexs;
+    margin-top: 50px;
+    padding-right: 20px;
 }
 
 .leftImgTimeMobile {
@@ -2961,8 +2963,9 @@ button:hover {
 }
 
 .rightSevenBox3Mobile {
-    width: 100%;
+    width: 90%;
     height: 550px;
+    margin: auto;
 
     
 }
