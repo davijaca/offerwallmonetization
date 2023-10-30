@@ -1,16 +1,36 @@
+.backgroundImage {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    max-width: 1530px;
+    height: 617px;
+    margin: auto;
+    overflow-x: hidden;
+    margin-top: -200px;
+    z-index: 20;
+
+}
+
+.footerName {
+    align-items: flex-end;
+    background-color: #f7f8fc00;
+
+}
 
 .footerInfo {
     position: absolute;
-    margin-top: 250px;
     width: 100%;
-    height: 300px;
+    height: 515px;
     display: flex;
     justify-content: center;
 }
 
+
+
 .innerFooterInfo {
-    width: 80%;
-    height: 320px;
+    width: 1110px;
+    height: 515px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -76,7 +96,7 @@
 
 .leftFooterInfo {
     width: 100%;
-    height: 160px;
+    height: 80px;
     display: flex;
     align-items: center;
 
@@ -91,7 +111,7 @@
     display: flex;
     justify-content: space-between;
     color: var(--Modal-grey-1, #DBDAD7);
-    font-family: Poppins sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -111,22 +131,144 @@
 
 
 .footerDivider {
-    width: 100%;
-    height: 30px;
+    height: 1px;
+    width: 1110px;
 
 }
 
-.footerDivider > hr {
+.footerDivider>hr {
     border: 0.5px solid #DEDEDE
 }
 
 .downFooterInfo {
     width: 100%;
-    height: 120px;
-    font-size: 15px;
+    height: 103px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
+    color: #DBDAD7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
+
+
+/*MOBILE RESPONSIVENESS*/
+@media only screen and (max-width: 1280px) and (min-width: 373px) {
+
+
+    .backgroundImage {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1550px;
+        height: 617px;
+        margin: auto;
+        overflow-x: hidden;
+
+
+    }
+
+    .footerName {
+        align-items: flex-end;
+        background-color: #f7f8fc00;
+        display: flex;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .footerInfo {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .innerFooterInfo {
+        width: 80%;
+        height: 515px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .rightFooterInfo {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footerLogo {
+        width: 33.1px;
+        height: 38.4px;
+        display: flex;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .offerwall {
+        color: var(--White, #FFF);
+        font-family: NordiquePro-Bold;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%;
+        position: absolute;
+        padding-left: 40px;
+        margin-top: 10px
+    }
+
+    .monetization {
+        color: #E0FF22;
+        font-family: NordiquePro-Bold;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%;
+        bottom: 20px;
+        position: absolute;
+    }
+
+    .imgValuable {
+        width: 33.1px;
+        height: 38.4px;
+
+
+    }
+
+    .valuable {
+        width: 100%;
+        height: 1px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 131.5%;
+        color: #FFF;
+    }
+
+    .leftFooterInfo {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .rightInfo {
+        font-size: 12px;
+    }
+
+
+    .downFooterInfo {
+        font-size: 12px;
+    }
+
+
+
 }

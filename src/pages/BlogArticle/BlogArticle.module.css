@@ -1,0 +1,468 @@
+.blogArticle,
+.blogArticle * {
+  box-sizing: border-box;
+}
+
+/* First Container */
+
+.blogArticle {
+  background: #ffffff;
+  width: 100%;
+  max-width: 1530px;
+  position: relative;
+  margin: auto;
+}
+
+.heroContainer {
+  background: #5b56bd;
+  width: 1512px;
+  height: 770px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.firstBackground {
+  position: absolute;
+  left: -1px;
+  top: -3px;
+  overflow: visible;
+}
+
+.secondBackground {
+  position: absolute;
+  left: -1px;
+  transform: translate(0px, -5.5px);
+  overflow: visible;
+}
+
+.thirdBackground {
+  position: absolute;
+  opacity: 0.50;
+  left: -1px;
+  top: 351.47px;
+  transform: translate(1px, -340px);
+  overflow: visible;
+}
+
+.heroTitle {
+  text-align: left;
+  font: 700 55px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 195px;
+  width: 704px;
+}
+
+.heroTitle_span {
+  color: #ffffff;
+  font: 700 55px "Poppins", sans-serif;
+}
+
+.heroTitle_span2 {
+  color: #e0ff22;
+  font: 700 55px "Poppins", sans-serif;
+}
+
+.btnShare {
+  position: absolute;
+  inset: 0;
+}
+
+.share {
+  color: #e0ff22;
+  text-align: center;
+  font: 500 25px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1183px;
+  top: 212px;
+}
+
+.shareIcon {
+  position: absolute;
+  left: 1131px;
+  top: 212px;
+  overflow: visible;
+}
+
+.heroText {
+  text-align: left;
+  font: 700 40px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 301px;
+  width: 1110px;
+}
+
+.heroText_span {
+  color: #e0ff22;
+  font: 700 40px "Poppins", sans-serif;
+}
+
+.heroText_span2 {
+  color: #ffffff;
+  font: 700 40px "Poppins", sans-serif;
+}
+
+.heroDate {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 258px;
+  top: 494px;
+}
+
+.timeGroup {
+  position: absolute;
+  inset: 0;
+}
+
+.heroReadingTime {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px/24px "Poppins", sans-serif;
+  position: absolute;
+  left: 1181px;
+  top: 494px;
+}
+
+.clock {
+  position: absolute;
+  left: 1144px;
+  top: 494px;
+  overflow: visible;
+}
+
+.heroMobile_img {
+  border-radius: 10px;
+  width: 1110px;
+  height: 632px;
+  position: relative;
+  left: calc(50% - 555px);
+  top: 548px;
+}
+
+/* Second Container */
+
+.articleAuthor {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: relative;
+  left: 258px;
+  top: 1249px;
+}
+
+.articleIntroText {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: relative;
+  left: 258px;
+  top: 1360px;
+  width: 999px;
+}
+
+.articleContentContainer {
+  color: #1e1e1e;
+  text-align: left;
+  position: relative;
+  left: 258px;
+  top: 1447px;
+  width: 999px;
+  height: 3845px;
+}
+
+.articleMainTitle {
+  color: #1e1e1e;
+  font: 700 30px "Poppins", sans-serif;
+}
+
+.articleText {
+  color: #1e1e1e;
+  font: 400 15px "Poppins", sans-serif;
+}
+
+
+.articleSecondaryTitle {
+  color: #1e1e1e;
+  font: 500 20px "Poppins", sans-serif;
+}
+
+
+.blogArticleMobile {
+  border-radius: 10px;
+  width: 999px;
+  height: 500px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.bestPraticesContainer {
+  color: #1e1e1e;
+  text-align: left;
+  position: relative;
+  width: 999px;
+}
+
+/* Third Container */
+
+.thirdBlogArticleContainer {
+  position: relative;
+  height: 1507px;
+}
+
+.readNextContainer {
+  background: #5b56bd;
+  width: 1512px;
+  height: 1722px;
+  position: relative;
+  margin: auto;
+
+}
+
+.whatToReadNextGroup {
+  text-align: left;
+  position: relative;
+  left: 201px;
+  top: 162px;
+  width: 482px;
+}
+
+.span700White {
+  color: #ffffff;
+  font: 700 40px "Poppins", sans-serif;
+}
+
+.span700Green {
+  color: #e0ff22;
+  font: 700 40px "Poppins", sans-serif;
+}
+
+
+.allArticles {
+  color: #ffffff;
+  text-align: right;
+  font: 500 20px "Poppins", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1021px;
+  top: 184px;
+  width: 236px;
+}
+
+
+.phoneImg {
+  border-radius: 21px;
+  width: 545px;
+  height: 329px;
+  position: absolute;
+  left: 201px;
+  top: 240px;
+}
+
+.meetingImg {
+  border-radius: 21px;
+  width: 545px;
+  height: 329px;
+  position: absolute;
+  left: 766px;
+  top: 240px;
+}
+
+.behindTheScenes {
+  top: 589px;
+  left: 201px;
+  background: #9ad3cc;
+  border-radius: 21px;
+  width: 545px;
+  height: 437px;
+  position: absolute;
+}
+
+.exploringGroup {
+  position: absolute;
+  background: #e7caa2;
+  border-radius: 21px;
+  width: 545px;
+  height: 437px;
+  top: 589px;
+  left: 766px;
+}
+
+.cardTitle {
+  color: var(--primary-black-1, #1e1e1e);
+  text-align: left;
+  position: absolute;
+  font: 700 20px "Poppins", sans-serif;
+  left: 56.48px;
+  top: 40px;
+  width: 436px;
+}
+
+.cardDate {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px "Poppins", sans-serif;
+  position: absolute;
+  left: 56.48px;
+  top: 170px;
+  width: 77.29px;
+}
+
+.cardReadingTime {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 14px/24px "Poppins", sans-serif;
+  position: absolute;
+  left: 420px;
+  top: 167px;
+}
+
+.cardClock {
+  position: absolute;
+  left: 383px;
+  top: 167px;
+  overflow: visible;
+}
+
+.cardText {
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 56.48px;
+  top: 213px;
+  width: 436px;
+}
+
+.cardBtn23 {
+  width: 190.25px;
+  height: 45px;
+  position: static;
+
+}
+
+
+.cardBtn {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #1e1e1e;
+  border-width: 1px;
+  width: 190.25px;
+  height: 45px;
+  position: absolute;
+  left: 306px;
+  top: 345px;
+  text-align: center;
+
+
+}
+
+.readMore {
+  color: #1e1e1e;
+  font: 500 15px "Inter", sans-serif;
+  text-transform: uppercase;
+  top: 12px;
+  position: relative;
+  height: 20px;
+
+}
+
+
+.newsletterGroup {
+  text-align: left;
+  font: 700 55px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1132px;
+  width: 646px;
+  height: 68px;
+}
+
+.signUpSpan1 {
+  color: #ffffff;
+  font: 700 55px "Poppins", sans-serif;
+}
+
+.signUpSpan2 {
+  color: #e0ff22;
+  font: 700 55px "Poppins", sans-serif;
+}
+
+.signUpText {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 201px;
+  top: 1228px;
+  width: 441px;
+}
+
+.yourEmail {
+  color: #ffffff;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  position: absolute;
+  left: 988px;
+  top: 1197px;
+}
+
+.emailBox {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 320px;
+  height: 45px;
+  position: absolute;
+  left: 991px;
+  top: 1223px;
+}
+
+
+
+.signUpBtn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 684px;
+  top: 1345px;
+
+}
+
+.signUpBackground {
+  background: #e0ff22;
+  border-radius: 134px;
+  flex-shrink: 0;
+  width: 144px;
+  height: 144px;
+  position: relative;
+}
+
+.arrow {
+  flex-shrink: 0;
+  position: absolute;
+  overflow: visible;
+}
+
+
+.sign-up {
+  color: #ffffff;
+  text-align: center;
+  font: 500 30px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 650px;
+  top: 1540px;
+  width: 207px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

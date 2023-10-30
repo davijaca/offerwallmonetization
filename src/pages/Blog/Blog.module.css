@@ -1,3 +1,4 @@
+
 .blog,
 .blog * {
   box-sizing: border-box;
@@ -7,6 +8,22 @@
   width: 100vw;
   max-width: 1512px;
   height: 100%;
+}
+
+.webResponsiveMainBlog {
+  display: inline-block;
+}
+
+.mobileResponsiveMainBlog {
+  display: none;
+}
+
+.blogBgImage {
+  width: 100vw;
+  max-width: 1512px;
+  height: 736px;
+  display: flex;
+
 }
 
 .blogMain > img {
@@ -25,6 +42,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+
 }
 
 .firstRight1 {
@@ -116,6 +134,7 @@
   height: 720px;
   display: flex;
   align-items: flex-end;
+
 }
 
 .firstLeft1 {
@@ -164,8 +183,6 @@
   width: 320px;
   height: 45px;
   align-items: center;
-
-
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid var(--White, #FFF);
@@ -629,12 +646,17 @@
   width: 100%;
 }
 
+
+
 .blogFourthContainer {
   width: 100%;
-  height: 400px;
+  height: 700px;
   background-color: #5B56BD;
-  padding-top: 150px;
   display: flex;
+}
+
+.fourthMobileSection {
+  display: none;
 }
 
 .blogFourthBox1 {
@@ -642,7 +664,7 @@
   height: 300px;
   display: flex;
   justify-content: flex-end;
-
+  padding-top: 100px;
 }
 
 .innerBlogFourthBox1 {
@@ -744,6 +766,7 @@
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
+  padding-top: 100px;
 }
 
 .yourEmail3 {
@@ -777,10 +800,6 @@
   border: none;
   color: #1E1E1E;
 }
-
-
-
-
 
 .footerName {
   display: flex;
@@ -920,6 +939,544 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+/*MOBILE RESPONSIVENESS*/
+@media only screen and (max-width: 1130px) and (min-width: 393px) {
+
+  .webResponsiveMainBlog {
+    display: none;
+  }
+
+  .mobileResponsiveMainBlog {
+    display: flex;
+    flex-direction: column;
+    width: 393px;
+    height: 3930px;
+
+  }
+
+.FirstMobileBg {
+  height: 900.51px;
+  width: 393px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.mobileBgBox {
+  width: 342px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+  .innerMobileBgBox {
+    width: 342px;
+    height: 750px;
+  }
+
+  .mobileExploreBlog {
+    width: 342px;
+    height: 46px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileBlogg {
+    color: #E0FF22;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .mobileExpertTips {
+    width: 352px;
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+  }
+
+  .mobileSearchLayout {
+    padding-top: 60px;
+    width: 352px;
+    margin-left: 10px;
+  }
+
+  .innerMobileSearchLayout {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 4px;
+    background: linear-gradient(0deg, rgba(42, 42, 255, 0.11) 0%, rgba(42, 42, 255, 0.11) 100%), rgba(255, 255, 255, 0.48);
+    height: 45px;
+    width: 320px;
+  }
+
+  .mobileSearch{
+    padding-left: 20px;
+    color: var(--Primary-Black-1, #1E1E1E);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  .mobileSearchImg{
+    width: 24px;
+    height: 24px;
+    padding-right: 10px;
+  }
+
+  .mobileSignUpNews {
+    width: 340px;
+    height: 46px;
+    flex-shrink: 0;
+    color:#FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 140px;
+  }
+
+  .mobileSignUpNewsLetter {
+    width: 352px;
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+  }
+
+.mobileSearchLayoutEmail{
+  height: 70px;
+  width: 352px;
+  padding-top: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.mobileYourEmail {
+  color: var(--White, #FFF);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 327px;
+
+}
+
+.mobileSearchEmail {
+  border: 1px solid var(--White, #FFF);
+  width: 325px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.inputE {
+  width: 310px;
+  border: none;
+  height: inherit;
+  background: none;
+  color: white
+}
+
+  .mobileSignUpE {
+    padding-top: 50px;
+    width: 340px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .mobileSignUpEmail {
+    width: 192px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #E0FF22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .secondMobileSection {
+    height: 800px;
+    width: 393px;
+  }
+
+  .secondMobileBg {
+    width: inherit;
+    height: 855px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .secondMobileBgBox {
+    width: 352px;
+    height: 500px;
+  }
+
+  .mobileRecentArticle {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .mobileUnlocking {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 33px;
+  }
+
+  .mobileDateTime {
+    height: 70px;
+    width: 352px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #B3ACAC;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .mobileImgTime {
+    height: 70px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobileImgTime >img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: #B3ACAC;
+  }
+
+  .mobileMinRead {
+    color: #B3ACAC;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  .mobileManyDevelopers {
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .thirdMobileSection {
+    height: 800px;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 105px;
+
+  }
+
+  .thirdMobileBox1 {
+    width: 352px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobileBlog {
+    color: var(--Primary-Black-1, #1E1E1E);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+  }
+
+  .mobileArticles {
+    color: var(--Primary-Blue-1, #2A2AFF);
+    text-align: right;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+
+  .thirdMobileBox2 {
+    width: 352px;
+    height: 400px;
+    padding-top: 30px;
+  }
+
+  .innerThirdMobileBox2, .innerThirdMobileBox3, .innerThirdMobileBox4 {
+    width: inherit;
+    border-radius: 10px;
+    background: #9AD3CC;
+  }
+
+  .innerThirdMobileBox2 > img {
+    width: 352px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .innerThirdMobileBox2Container, innerThirdMobileBox2SecondContainer, .innerThirdMobileBox2thirdContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    background: #9AD3CC;
+    border-radius: 0px 0px 10px 10px;
+
+
+  }
+
+  .thirdMobileBox2Explore {
+    color: var(--Primary-Black-1, #1E1E1E);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 312px;
+    padding-top: 41px;
+
+  }
+
+  .mobileDateTime2, .mobileDateTime3, .mobileDateTime4 {
+    width: 312px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobileImgTime2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+  }
+
+  .mobileImgTime2 > img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  }
+
+  .mobileSignUpE2 {
+    padding-top: 50px;
+    width: 312px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .mobileSignUpEmail2, .mobileSignUpEmail2Second, .mobileSignUpEmail2Third {
+    width: 192px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--Primary-Black-1, #1E1E1E);
+    background: #9AD3CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thirdMobileBox3, .thirdMobileBox4 {
+    width: 352px;
+    height: 400px;
+    padding-top: 260px;
+  }
+
+  .innerThirdMobileBox3, .innerThirdMobileBox4 {
+    background: #DFDFDE;
+  }
+
+  .innerThirdMobileBox2SecondContainer, .innerThirdMobileBox2thirdContainer {
+    background: #DFDFDE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 430px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .mobileDateTime3, .mobileDateTime4 {
+    padding-top: 84px;
+  }
+
+  .mobileSignUpEmail2Second, .mobileSignUpEmail2Third {
+    background: #DFDFDE;
+  }
+
+  .thirdMobileBox4 {
+    padding-top: 270px;
+  }
+
+  .innerThirdMobileBox4 {
+    background: #E7CAA2;
+  }
+
+  .innerThirdMobileBox2thirdContainer {
+    background: #E7CAA2;
+  }
+
+  .mobileDateTime4 {
+    padding-top: 50px;
+  }
+
+  .mobileSignUpEmail2Third {
+    background: #E7CAA2;
+  }
+
+  .fourthMobileSection {
+    width: 393px;
+    height: 750px;
+    flex-shrink: 0;
+    background: #5B56BD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobileblogSignUpNews {
+    width: 352px;
+    height: 48px;
+    flex-shrink: 0;
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+  .mobileNewsLetter {
+    color: var(--White, #E0FF22);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .fourthMobileSignUp {
+    width: 352px;
+    color: var(--White, #FFF);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 30px;
+  }
+
+  .inputE {
+    width: 314px;
+  }
+
+  .mobileBlogNewsImageBox {
+    padding-top: 63px;
+
+
+  }
+
+  .innerMobileBlogNewsImageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innerMobileBlogNewsImageBox > img {
+    width: 144px;
+    height: 144px;
+  }
+
+  .blogSignUpnews {
+    width: 207px;
+    height: 20px;
+    flex-shrink: 0;
+    padding-top: 50px;
+  }
+
+
+
+}
+
+
+
 
 
 
