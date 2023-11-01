@@ -12,11 +12,20 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 const Blog = () => {
 
     const navigate = useNavigate();
+
+    const [search, setSearch] = useState("");
     const [input, setInput] = useState("");
     const [message, setMessage] = useState("");
 
+
+    const searchHandler = (e) => {
+        setSearch(e.target.value);
+    }
+
     const handleClickBlog = () => {
-        navigate("/blogarticle")
+        if (search) {
+            navigate("/blogarticle")
+        }
     };
 
     const inputHandler = (e) => {
@@ -66,7 +75,7 @@ const Blog = () => {
                                     {/*<img src="/images/search.png" alt=""/>*/}
 
                                     <input type="text" className={styles.searchBox}
-                                    placeholder="Search blog" />
+                                    placeholder="Search blog" onChange={searchHandler} value={search}/>
                                     <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
@@ -266,39 +275,51 @@ const Blog = () => {
                 </div>
 
 
-                <div className={styles.blogFourthContainer}>
 
-                    <div className={styles.blogFourthBox1}>
-                        <div className={styles.innerBlogFourthBox1}>
-                            <div className={styles.blogSignUpNews}>
-                                <div>Sign Up for</div> &nbsp;
-                                <div className={styles.newsLetter}>Newsletter</div>
-                            </div>
+                <form onSubmit={submitHandler}>
+                    <div className={styles.blogFourthContainer}>
 
-                            <div className={styles.blogExpertTipsBox}>
-                                <div className={styles.blogExpertTips}>
-                                    Sign up for our newsletter to receive exclusive updates
-                                    and the latest news delivered directly to your inbox.
+                        <div className={styles.ToplogFourthContainer}>
+                            <div className={styles.blogFourthBox1}>
+                                <div className={styles.innerBlogFourthBox1}>
+                                    <div className={styles.blogSignUpNews}>
+                                        <div>Sign Up for</div> &nbsp;
+                                        <div className={styles.newsLetter}>Newsletter</div>
+                                    </div>
+
+                                    <div className={styles.blogExpertTipsBox}>
+                                        <div className={styles.blogExpertTips}>
+                                            Sign up for our newsletter to receive exclusive updates
+                                            and the latest news delivered directly to your inbox.
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.blogNewsImageBox}>
+                                        <div className={styles.innerBlogNewsImageBox}>
+                                            <img src="/images/blogDownBtn.png" alt=""/>
+                                            <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
-                            <div className={styles.blogNewsImageBox}>
-                                <div className={styles.innerBlogNewsImageBox}>
-                                    <img src="/images/blogDownBtn.png" alt=""/>
-                                    <div className={styles.blogSignUpnews}>Sign Up</div>
+
+                            <div className={styles.blogFourthBox2}>
+                                <div className={styles.searchLayoutEmail3}>
+                                    <div className={styles.yourEmail3}>Your-Email</div>
+                                    <div className={styles.searchEmail3}>
+                                        <input className={styles.inputE3} onChange={inputHandler} value={input} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className={styles.blogFourthBox2}>
-                        <div className={styles.searchLayoutEmail3}>
-                            <div className={styles.yourEmail3}>Your-Email</div>
-                            <div className={styles.searchEmail3}>
-                                <input className={styles.inputE3} />
-                            </div>
+                        <div className={styles.lowerBlogFourthContainer}>
+                            {message && <div className={styles.secondAlertMessage}> {message} </div>}
                         </div>
+
                     </div>
-                </div>
+                </form>
 
             </div>
 
@@ -326,7 +347,7 @@ const Blog = () => {
                             <div className={styles.mobileSearchLayout}>
                                 <div className={styles.innerMobileSearchLayout}>
                                     <input type="text" className={styles.mobileSearch}
-                                           placeholder="Search blog" />
+                                           placeholder="Search blog" onChange={searchHandler} value={search} />
                                     <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
@@ -348,7 +369,7 @@ const Blog = () => {
                                         <input className={styles.inputE} type="email"
                                            onChange={inputHandler} value={input}/>
                                     </div>
-                                    {message && <div className={styles.alertMessage}> {message} </div>}
+                                    {message && <div className={styles.mobileAlertMessage}> {message} </div>}
                                 </div>
 
                                 <div className={styles.mobileSignUpE}>
@@ -361,6 +382,7 @@ const Blog = () => {
 
                     </div>
                 </div>
+
 
 
                 <div className={styles.secondMobileSection}>
@@ -496,33 +518,37 @@ const Blog = () => {
                 </div>
             </div>
 
-            <div className={styles.fourthMobileSection}>
-                <div className={styles.mobileblogSignUpNews}>
-                    <div>Sign Up for</div> &nbsp;
-                    <div className={styles.mobileNewsLetter}>Newsletter</div>
-                </div >
 
-                <div className={styles.fourthMobileSignUp}>
-                    Sign up for our newsletter to receive exclusive updates and the
-                    latest news delivered directly to your inbox.
-                </div>
 
-                <div className={styles.mobileSearchLayoutEmail}>
-                    <div className={styles.mobileYourEmail}>Your-Email</div>
-                    <div className={styles.mobileSearchEmail}>
-                        <input className={styles.inputE} />
+
+            <form onSubmit={submitHandler}>
+                <div className={styles.fourthMobileSection}>
+                    <div className={styles.mobileblogSignUpNews}>
+                        <div>Sign Up for</div> &nbsp;
+                        <div className={styles.mobileNewsLetter}>Newsletter</div>
+                    </div >
+
+                    <div className={styles.fourthMobileSignUp}>
+                        Sign up for our newsletter to receive exclusive updates and the
+                        latest news delivered directly to your inbox.
                     </div>
-                </div>
 
-                <div className={styles.mobileBlogNewsImageBox}>
-                    <div className={styles.innerMobileBlogNewsImageBox}>
-                        <img src="/images/blogDownBtn.png" alt=""/>
-                        <div className={styles.blogSignUpnews}>Sign Up</div>
+                    <div className={styles.mobileSearchLayoutEmail}>
+                        <div className={styles.mobileYourEmail}>Your-Email</div>
+                        <div className={styles.mobileSearchEmail}>
+                            <input className={styles.inputE} onChange={inputHandler} value={input} />
+                        </div>
                     </div>
+
+                    <div className={styles.mobileBlogNewsImageBox}>
+                        <div className={styles.innerMobileBlogNewsImageBox}>
+                            <img src="/images/blogDownBtn.png" alt=""/>
+                            <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
+                        </div>
+                    </div>
+                    {message && <div className={styles.mobileAlertMessage}> {message} </div>}
                 </div>
-
-
-            </div>
+            </form>
 
         </div>
 

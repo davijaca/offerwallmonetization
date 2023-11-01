@@ -221,8 +221,9 @@
 }
 
 .alertMessage {
-  color: white;
+  color: #E0FF22;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .signUpE {
@@ -685,6 +686,11 @@
   height: 700px;
   background-color: #5B56BD;
   display: flex;
+  flex-direction: column;
+}
+
+.ToplogFourthContainer {
+  display: flex;
 }
 
 .fourthMobileSection {
@@ -751,7 +757,7 @@
 }
 
 .blogNewsImageBox{
-  width: 630px;
+  width: 650px;
   height: 310px;
   display: flex;
   justify-content: flex-end;
@@ -768,7 +774,8 @@
 
 .innerBlogNewsImageBox > img {
   width: 144px;
-  height: 144px;;
+  height: 144px;
+  margin-left: 20px;
 }
 
 
@@ -781,6 +788,13 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+
+}
+
+.secondAlertMessage {
+  color: #E0FF22;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .blogFourthBox2 {
@@ -816,8 +830,6 @@
   width: 320px;
   height: 45px;
   align-items: center;
-
-
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid var(--White, #FFF);
@@ -833,6 +845,18 @@
   border: none;
   color: white;
 }
+
+.lowerBlogFourthContainer {
+  margin-top: 150px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 .footerName {
   display: flex;
@@ -1499,6 +1523,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
 
   .innerMobileBlogNewsImageBox > img {
@@ -1508,9 +1533,17 @@
 
   .blogSignUpnews {
     width: 207px;
-    height: 20px;
+    height: 50px;
     flex-shrink: 0;
-    padding-top: 50px;
+    margin-top: 50px;
+
+  }
+
+  .mobileAlertMessage {
+    margin-top: 10px;
+    color: #E0FF22;
+    font-size: 18px;
+    font-weight: bold;
   }
 
 
