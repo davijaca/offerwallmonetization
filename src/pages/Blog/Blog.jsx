@@ -1,11 +1,43 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Blog.module.css";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {db} from "../../firebase";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+
+
 
 /* Code generated with AutoHTML Plugin for Figma */
 
 
 const Blog = () => {
+
+    const navigate = useNavigate();
+    const [input, setInput] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleClickBlog = () => {
+        navigate("/blogarticle")
+    };
+
+    const inputHandler = (e) => {
+        setInput(e.target.value);
+    };
+
+    const submitHandler = async (e) => {
+        e.preventDefault();
+            //add to firebase
+        await addDoc(collection(db, "emails"), {
+                email: input,
+                time: serverTimestamp(),
+            });
+            setInput("");
+            setMessage("Thank you for signing up to our news")
+            setTimeout(()=> {
+                setMessage("");
+            }, 3000);
+        }
+
+
     return (
         <div className={styles.blogMain}>
             <div className={styles.webResponsiveMainBlog}>
@@ -27,8 +59,12 @@ const Blog = () => {
 
                             <div className={styles.searchLayout}>
                                 <div className={styles.search}>
-                                    <div className={styles.searchBox}> Search blog</div>
-                                    <img src="/images/search.png" alt=""/>
+                                    {/*<div className={styles.searchBox}> Search blog</div>*/}
+                                    {/*<img src="/images/search.png" alt=""/>*/}
+
+                                    <input type="text" className={styles.searchBox}
+                                    placeholder="Search blog" />
+                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
@@ -43,24 +79,27 @@ const Blog = () => {
                                 Sign Up for Newsletter
                             </div>
 
-                            <div className={styles.expertTips}>
-                                Explore our blog for expert tips, success stories,
-                                and industry updates on maximizing your earnings through
-                                offerwall monetisation.
+                            <div className={styles.expertTips2}>
+                                Sign up for our newsletter to receive
+                                exclusive updates and the latest news delivered
+                                directly to your inbox.
                             </div>
 
-                            <div className={styles.searchLayoutEmail}>
-                                <div className={styles.yourEmail}>Your-Email</div>
-                                <div className={styles.searchEmail}>
-                                    <input className={styles.inputE} />
+                            <form onSubmit={submitHandler}>
+                                <div className={styles.searchLayoutEmail}>
+                                    <div className={styles.yourEmail}>Your-Email</div>
+                                        <div className={styles.searchEmail}>
+                                            <input className={styles.inputE} type="email"
+                                            onChange={inputHandler} value={input}/>
+                                        </div>
+                                    {message && <div className={styles.alertMessage}> {message} </div>}
                                 </div>
-                            </div>
-
-                            <div className={styles.signUpE}>
-                                <div className={styles.signUpEmail}>
-                                    Sign Up
+                                <div className={styles.signUpE}>
+                                    <button type="submit" className={styles.signUpEmail}>
+                                        Sign Up
+                                    </button>
                                 </div>
-                            </div>
+                            </form>
 
                         </div>
                     </div>
@@ -109,7 +148,7 @@ const Blog = () => {
 
                             <div className={styles.signUpE2}>
                                 <div className={styles.subSignUpE2}>
-                                    <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
                                         <div className={styles.signUpEmail2}>
                                             Read More
                                         </div>
@@ -153,7 +192,7 @@ const Blog = () => {
                                         </div>
                                     </div>
                                     <div className={styles.readMoreExplore}>
-                                        <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
+                                        <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
                                             <div className={styles.readMoreButton}>
                                                 Read More
                                             </div>
@@ -181,9 +220,11 @@ const Blog = () => {
                                         </div>
 
                                         <div className={styles.LeftReadMoreExplore}>
-                                            <div className={styles.readMoreButton}>
-                                                Read More
-                                            </div>
+                                            <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                                <div className={styles.readMoreButton}>
+                                                    Read More
+                                                </div>
+                                            </Link>
                                         </div>
 
                                     </div>
@@ -207,9 +248,11 @@ const Blog = () => {
                                         </div>
 
                                         <div className={styles.LeftReadMoreExplore}>
-                                            <div className={styles.readMoreButton}>
-                                                Read More
-                                            </div>
+                                            <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                                <div className={styles.readMoreButton}>
+                                                    Read More
+                                                </div>
+                                            </Link>
                                         </div>
 
                                     </div>
@@ -257,6 +300,8 @@ const Blog = () => {
             </div>
 
 
+
+
             {/*MOBILE RESPONSIVENESS*/}
             <div className={styles.mobileResponsiveMainBlog}>
                 <div className={styles.FirstMobileBg} style={{
@@ -277,8 +322,9 @@ const Blog = () => {
 
                             <div className={styles.mobileSearchLayout}>
                                 <div className={styles.innerMobileSearchLayout}>
-                                    <div className={styles.mobileSearch}>Search blog</div>
-                                    <img className={styles.mobileSearchImg} src="/images/search.png" alt="" />
+                                    <input type="text" className={styles.mobileSearch}
+                                           placeholder="Search blog" />
+                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
@@ -292,18 +338,22 @@ const Blog = () => {
                                 to your inbox.
                             </div>
 
-                            <div className={styles.mobileSearchLayoutEmail}>
-                                <div className={styles.mobileYourEmail}>Your-Email</div>
-                                <div className={styles.mobileSearchEmail}>
-                                    <input className={styles.inputE} />
+                            <form onSubmit={submitHandler}>
+                                <div className={styles.mobileSearchLayoutEmail}>
+                                    <div className={styles.mobileYourEmail}>Your-Email</div>
+                                    <div className={styles.mobileSearchEmail}>
+                                        <input className={styles.inputE} type="email"
+                                           onChange={inputHandler} value={input}/>
+                                    </div>
+                                    {message && <div className={styles.alertMessage}> {message} </div>}
                                 </div>
-                            </div>
 
-                            <div className={styles.mobileSignUpE}>
-                                <div className={styles.mobileSignUpEmail}>
-                                    Sign Up
+                                <div className={styles.mobileSignUpE}>
+                                    <button type="submit" className={styles.mobileSignUpEmail}>
+                                        Sign Up
+                                    </button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
 
                     </div>
@@ -334,9 +384,11 @@ const Blog = () => {
                             </div>
 
                             <div className={styles.mobileSignUpE}>
-                                <div className={styles.mobileSignUpEmail}>
-                                    Read More
-                                </div>
+                                <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                    <div className={styles.mobileSignUpEmail}>
+                                        Read More
+                                    </div>
+                                </Link>
                             </div>
 
 
@@ -370,9 +422,11 @@ const Blog = () => {
                                 </div>
 
                                 <div className={styles.mobileSignUpE2}>
-                                    <div className={styles.mobileSignUpEmail2}>
-                                        Read More
-                                    </div>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2}>
+                                            Read More
+                                        </div>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -397,9 +451,11 @@ const Blog = () => {
                                 </div>
 
                                 <div className={styles.mobileSignUpE2}>
-                                    <div className={styles.mobileSignUpEmail2Second}>
-                                        Read More
-                                    </div>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2Second}>
+                                            Read More
+                                        </div>
+                                    </Link>
                                 </div>
 
                             </div>
@@ -424,9 +480,11 @@ const Blog = () => {
                                 </div>
 
                                 <div className={styles.mobileSignUpE2}>
-                                    <div className={styles.mobileSignUpEmail2Third}>
-                                        Read More
-                                    </div>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2Third}>
+                                            Read More
+                                        </div>
+                                    </Link>
                                 </div>
 
                             </div>

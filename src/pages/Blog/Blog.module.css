@@ -72,7 +72,7 @@
   line-height: normal;
 }
 
-.expertTips {
+.expertTips, .expertTips2 {
   width: 451px;
   height: 100px;
   color: var(--White, #FFF);
@@ -83,6 +83,10 @@
   line-height: normal;
   display: flex;
   align-items: flex-end;
+}
+
+.expertTips2 {
+  align-items: center;
 }
 
 .searchLayout {
@@ -111,11 +115,17 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
   display: flex;
-  padding: 4px 30px;
+  padding: 4px 20px;
   align-items: center;
   gap: 4px;
   flex: 1 0 0;
   align-self: stretch;
+  outline: none;
+  border: none;
+}
+
+::placeholder {
+  color: var(--Primary-Black-1, #1E1E1E);
 }
 
 .search > img {
@@ -129,11 +139,16 @@
   flex-shrink: 0;
 }
 
+.search > img:hover {
+   cursor: pointer;
+}
+
 .firstLeft {
   width: 100%;
   height: 720px;
   display: flex;
   align-items: flex-end;
+
 
 }
 
@@ -143,11 +158,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
 }
 
 .signUpNews {
   width: 469px;
-  height: 68px;
+  height: 70px;
   flex-shrink: 0;
   color: var(--White, #FFF);
   text-align: right;
@@ -156,16 +172,20 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
 }
 
 .searchLayoutEmail {
-  width: 340px;
+  width: 580px;
   height: 130px;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 
 .yourEmail {
@@ -186,6 +206,7 @@
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid var(--White, #FFF);
+
 }
 
 .inputE {
@@ -194,8 +215,14 @@
   font-size: 18px;
   background: none;
   width: 320px;
+  outline: none;
   border: none;
-  color: #1E1E1E;
+  color: white;
+}
+
+.alertMessage {
+  color: white;
+  font-size: 18px;
 }
 
 .signUpE {
@@ -204,6 +231,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+
 }
 
 .signUpEmail {
@@ -224,6 +252,10 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.signUpEmail:hover {
+  cursor: pointer;
 }
 
 
@@ -797,8 +829,9 @@
   font-size: 18px;
   background: none;
   width: 320px;
+  outline: none;
   border: none;
-  color: #1E1E1E;
+  color: white;
 }
 
 .footerName {
@@ -1050,6 +1083,8 @@
     gap: 10px;
     flex: 1 0 0;
     align-self: stretch;
+    outline: none;
+    border: none;
   }
 
   .mobileSearchImg{
@@ -1137,6 +1172,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--Primary-Black-1, #1E1E1E);
+
   }
 
   .secondMobileSection {
@@ -1270,6 +1307,7 @@
     width: 352px;
     height: 400px;
     padding-top: 30px;
+
   }
 
   .innerThirdMobileBox2, .innerThirdMobileBox3, .innerThirdMobileBox4 {
@@ -1350,10 +1388,11 @@
     align-items: center;
   }
 
-  .thirdMobileBox3, .thirdMobileBox4 {
+  .thirdMobileBox3 {
     width: 352px;
     height: 400px;
-    padding-top: 260px;
+    margin-top: 260px;
+
   }
 
   .innerThirdMobileBox3, .innerThirdMobileBox4 {
@@ -1378,7 +1417,7 @@
   }
 
   .thirdMobileBox4 {
-    padding-top: 270px;
+    margin-top: 270px;
   }
 
   .innerThirdMobileBox4 {
