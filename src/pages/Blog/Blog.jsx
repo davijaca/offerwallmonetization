@@ -25,8 +25,9 @@ const Blog = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
+        if (input){
             //add to firebase
-        await addDoc(collection(db, "emails"), {
+            await addDoc(collection(db, "emails"), {
                 email: input,
                 time: serverTimestamp(),
             });
@@ -36,6 +37,8 @@ const Blog = () => {
                 setMessage("");
             }, 3000);
         }
+
+        };
 
 
     return (

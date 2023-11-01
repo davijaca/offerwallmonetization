@@ -1173,7 +1173,10 @@
     justify-content: center;
     align-items: center;
     color: var(--Primary-Black-1, #1E1E1E);
+  }
 
+  .mobileSignUpEmail:hover {
+    cursor: pointer;
   }
 
   .secondMobileSection {
