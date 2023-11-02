@@ -40,7 +40,7 @@
 
 
 .header .nav-menu {
-    display: flex;
+    display: none;
     list-style-type: none;
 
 }
@@ -76,6 +76,11 @@
 
     .header .navbar {
         max-width: 100%;
+        
+    }
+
+    .header .nav-menu {
+        display: flex;
     }
 
     .hamburger {
@@ -84,6 +89,7 @@
     }
 
     .nav-menu {
+        
         position: fixed;
         left: -200%;
         top: 83px;
@@ -301,7 +307,7 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px){
+@media only screen and (max-width: 1130px) and (min-width: 250px){
 
 
     .mainBox {
@@ -356,7 +362,7 @@
 
     .headerTitleItem {
         color: var(--White, #FFF);
-        font-family: NordiquePro-Bold;
+        font-family: "NordiquePro-Bold", sans-serif;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -365,7 +371,7 @@
 
     .headerTitleItem2 {
         color: #E0FF22;
-        font-family: NordiquePro-Bold;
+        font-family: "NordiquePro-Bold", sans-serif;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;

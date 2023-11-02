@@ -1,158 +1,454 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Blog.module.css";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {db} from "../../firebase";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+
+
 
 /* Code generated with AutoHTML Plugin for Figma */
 
 
 const Blog = () => {
+
+    const navigate = useNavigate();
+
+    const [search, setSearch] = useState("");
+    const [input, setInput] = useState("");
+    const [message, setMessage] = useState("");
+
+
+    const searchHandler = (e) => {
+        setSearch(e.target.value);
+    }
+
+    const handleClickBlog = () => {
+        if (search) {
+            navigate("/blogarticle")
+        }
+    };
+
+    const inputHandler = (e) => {
+        setInput(e.target.value);
+    };
+
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        if (input){
+            //add to firebase
+            await addDoc(collection(db, "emails"), {
+                email: input,
+                time: serverTimestamp(),
+            });
+            setInput("");
+            setMessage("Thank you for signing up to our news")
+            setTimeout(()=> {
+                setMessage("");
+            }, 3000);
+        }
+
+        };
+
+
     return (
         <div className={styles.blogMain}>
-            <div style={{backgroundImage: "url(/images/blog_top_Bg.png)", width: "100vw", maxWidth: "1512px", height: "736px", display: "flex"}}>
-                <div className={styles.firstRight}>
-                    <div className={styles.firstRight1}>
+            <div className={styles.webResponsiveMainBlog}>
 
-                        <div className={styles.exploreBlog}>
-                            <div>Explore our </div>&nbsp;
-                           <div className={styles.blogE}> blog.</div>
-                        </div>
+                <div className={styles.blogBgImage} style={{backgroundImage: "url(/images/blog_top_Bg.png)"}}>
+                    <div className={styles.firstRight}>
+                        <div className={styles.firstRight1}>
 
-                        <div className={styles.expertTips}>
-                            Explore our blog for expert tips, success stories,
-                            and industry updates on maximizing your earnings through
-                            offerwall monetisation.
-                        </div>
-
-                        <div className={styles.searchLayout}>
-                            <div className={styles.search}>
-                                <div className={styles.searchBox}> Search blog</div>
-                                <img src="/images/search.png" alt=""/>
+                            <div className={styles.exploreBlog}>
+                                <div>Explore our </div>&nbsp;
+                                <div className={styles.blogE}> blog.</div>
                             </div>
-                        </div>
 
+                            <div className={styles.expertTips}>
+                                Explore our blog for expert tips, success stories,
+                                and industry updates on maximizing your earnings through
+                                offerwall monetisation.
+                            </div>
+
+                            <div className={styles.searchLayout}>
+                                <div className={styles.search}>
+                                    {/*<div className={styles.searchBox}> Search blog</div>*/}
+                                    {/*<img src="/images/search.png" alt=""/>*/}
+
+                                    <input type="text" className={styles.searchBox}
+                                    placeholder="Search blog" onChange={searchHandler} value={search}/>
+                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div className={styles.firstLeft}>
+                        <div className={styles.firstLeft1}>
+
+                            <div className={styles.signUpNews}>
+                                Sign Up for Newsletter
+                            </div>
+
+                            <div className={styles.expertTips2}>
+                                Sign up for our newsletter to receive
+                                exclusive updates and the latest news delivered
+                                directly to your inbox.
+                            </div>
+
+                            <form onSubmit={submitHandler}>
+                                <div className={styles.searchLayoutEmail}>
+                                    <div className={styles.yourEmail}>Your-Email</div>
+                                        <div className={styles.searchEmail}>
+                                            <input className={styles.inputE} type="email"
+                                            onChange={inputHandler} value={input}/>
+                                        </div>
+                                    {message && <div className={styles.alertMessage}> {message} </div>}
+                                </div>
+                                <div className={styles.signUpE}>
+                                    <button type="submit" className={styles.signUpEmail}>
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
 
 
-                <div className={styles.firstLeft}>
-                    <div className={styles.firstLeft1}>
 
-                        <div className={styles.signUpNews}>
-                            Sign Up for Newsletter
+                <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", maxWidth: "1512px", height: "982px"}}>
+
+                    {/*<div>*/}
+                    {/*    <div className={styles.blogRight}>*/}
+                    {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.blogLeft}>*/}
+                    {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+
+                    <div className={styles.secondBlog}>
+                        <div className={styles.subSecondBlog}>
+                            <div className={styles.recentArticle}>
+                                Recent Article
+                            </div>
+
+                            <div className={styles.unlockingProfit}>
+                                Unlocking Profit Potential: The Power of Offerwall
+                                Monetization in Mobile Apps
+                            </div>
+
+                            <div className={styles.dateTimeManyGames1}>
+                                <div className={styles.dateTime1}>
+                                    <div>July 19 2023</div>
+                                    <div className={styles.imgTime1}>
+                                        <img src="/images/TimeBlog.png"  alt=""/>
+                                        <div className={styles.minRead1}>8 min read</div>
+                                    </div>
+                                </div>
+
+                                <div className={styles.manyGames}>Many game developers struggle with understanding
+                                    the best way to monetize a mobile game, resorting
+                                    to flooding their users with ads that interrupt the
+                                    user experience and cause their users to write negative
+                                    reviews.
+                                </div>
+                            </div>
+
+                            <div className={styles.signUpE2}>
+                                <div className={styles.subSignUpE2}>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.signUpEmail2}>
+                                            Read More
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div className={styles.blogThirdContainer}>
+
+                    <div className={styles.innerThirdBoxContainer}>
+                        <div className={styles.innerThird1}>
+                            <span className={styles.innerThirdBlog}>Browse</span>
+                            <span className={styles.innerThirdArticles}>All articles</span>
                         </div>
 
-                        <div className={styles.expertTips}>
-                            Explore our blog for expert tips, success stories,
-                            and industry updates on maximizing your earnings through
-                            offerwall monetisation.
-                        </div>
+                        <div className={styles.innerThird2}>
+                            <div className={styles.thirdRight}>
+                                <div className={styles.topRightThird}>
+                                    <img src="/images/img000012.png" alt=""/>
+                                </div>
+                                <div className={styles.belowRightThird}>
+                                    <div className={styles.innerBelowRightThird}>
+                                        <div className={styles.exploring}>
+                                            Exploring Offerwall Solutions for
+                                            Monetization and Retention: a Comparative
+                                            Analysis
+                                        </div>
+                                        <div className={styles.dateTime}>
+                                            <div>July 19 2023</div>
+                                            <div className={styles.imgTime}>
+                                                <img src="/images/Time.png"  alt=""/>
+                                                <div className={styles.minRead}>8 min read</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.readMoreExplore}>
+                                        <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                            <div className={styles.readMoreButton}>
+                                                Read More
+                                            </div>
+                                        </Link>
+                                    </div>
 
-                        <div className={styles.searchLayoutEmail}>
-                            <div className={styles.yourEmail}>Your-Email</div>
-                            <div className={styles.searchEmail}>
-                                <input className={styles.inputE} />
+                                </div>
+                            </div>
+                            <div className={styles.thirdLeft}>
+                                <div className={styles.topLeftThird}>
+                                    <img src="/images/img0002.png" alt=""/>
+                                    <div className={styles.topLeftThirdBox1}>
+
+                                        <div className={styles.mastering}>
+                                            Mastering Offerwall Monetisation: <br />
+                                            Strategies to Boost Your Earnings
+                                        </div>
+
+                                        <div className={styles.leftDateTime}>
+                                            <div>July 19 2023</div>
+                                            <div className={styles.leftImgTime}>
+                                                <img src="/images/Time.png"  alt=""/>
+                                                <div className={styles.minRead}>8 min read</div>
+                                            </div>
+                                        </div>
+
+                                        <div className={styles.LeftReadMoreExplore}>
+                                            <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                                <div className={styles.readMoreButton}>
+                                                    Read More
+                                                </div>
+                                            </Link>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div className={styles.belowLeftThird}>
+                                    <img src="/images/img0003.png" alt=""/>
+                                    <div className={styles.topLeftThirdBox1}>
+
+                                        <div className={styles.mastering}>
+                                            Behind the Scenes: How Advertisers <br />
+                                            Create Irresistible Offerwall Campaigns
+                                        </div>
+
+                                        <div className={styles.leftDateTime}>
+                                            <div>July 19 2023</div>
+                                            <div className={styles.leftImgTime}>
+                                                <img src="/images/Time.png"  alt=""/>
+                                                <div className={styles.minRead}>8 min read</div>
+                                            </div>
+                                        </div>
+
+                                        <div className={styles.LeftReadMoreExplore}>
+                                            <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                                <div className={styles.readMoreButton}>
+                                                    Read More
+                                                </div>
+                                            </Link>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <form onSubmit={submitHandler}>
+                    <div className={styles.blogFourthContainer}>
+
+                        <div className={styles.ToplogFourthContainer}>
+                            <div className={styles.blogFourthBox1}>
+                                <div className={styles.innerBlogFourthBox1}>
+                                    <div className={styles.blogSignUpNews}>
+                                        <div>Sign Up for</div> &nbsp;
+                                        <div className={styles.newsLetter}>Newsletter</div>
+                                    </div>
+
+                                    <div className={styles.blogExpertTipsBox}>
+                                        <div className={styles.blogExpertTips}>
+                                            Sign up for our newsletter to receive exclusive updates
+                                            and the latest news delivered directly to your inbox.
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.blogNewsImageBox}>
+                                        <div className={styles.innerBlogNewsImageBox}>
+                                            <img src="/images/blogDownBtn.png" alt=""/>
+                                            <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div className={styles.blogFourthBox2}>
+                                <div className={styles.searchLayoutEmail3}>
+                                    <div className={styles.yourEmail3}>Your-Email</div>
+                                    <div className={styles.searchEmail3}>
+                                        <input className={styles.inputE3} onChange={inputHandler} value={input} />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div className={styles.signUpE}>
-                               <div className={styles.signUpEmail}>
-                                   Sign Up
-                               </div>
+                        <div className={styles.lowerBlogFourthContainer}>
+                            {message && <div className={styles.secondAlertMessage}> {message} </div>}
                         </div>
 
                     </div>
-                </div>
+                </form>
+
             </div>
 
 
 
-            <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", maxWidth: "1512px", height: "982px"}}>
 
-                {/*<div>*/}
-                {/*    <div className={styles.blogRight}>*/}
-                {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
-                {/*    </div>*/}
-                {/*    <div className={styles.blogLeft}>*/}
-                {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+            {/*MOBILE RESPONSIVENESS*/}
+            <div className={styles.mobileResponsiveMainBlog}>
+                <div className={styles.FirstMobileBg} style={{
+                    backgroundImage: "url(/images/home_Mobile_background.png)"}}>
 
-                <div className={styles.secondBlog}>
-                    <div className={styles.subSecondBlog}>
-                        <div className={styles.recentArticle}>
-                            Recent Article
-                        </div>
+                    <div className={styles.mobileBgBox}>
+                        <div className={styles.innerMobileBgBox}>
+                            <div className={styles.mobileExploreBlog}>
+                                <div>Explore our</div>&nbsp;
+                                <div className={styles.mobileBlogg}>blog</div>
+                            </div>
 
-                        <div className={styles.unlockingProfit}>
-                            Unlocking Profit Potential: The Power of Offerwall
-                            Monetization in Mobile Apps
-                        </div>
+                            <div className={styles.mobileExpertTips}>
+                                Explore our blog for expert tips, success stories,
+                                and industry updates on maximizing your earnings
+                                through offerwall monetisation.
+                            </div>
 
-                        <div className={styles.dateTimeManyGames1}>
-                            <div className={styles.dateTime1}>
-                                <div>July 19 2023</div>
-                                <div className={styles.imgTime1}>
-                                    <img src="/images/TimeBlog.png"  alt=""/>
-                                    <div className={styles.minRead1}>8 min read</div>
+                            <div className={styles.mobileSearchLayout}>
+                                <div className={styles.innerMobileSearchLayout}>
+                                    <input type="text" className={styles.mobileSearch}
+                                           placeholder="Search blog" onChange={searchHandler} value={search} />
+                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
-                            <div className={styles.manyGames}>Many game developers struggle with understanding
-                                the best way to monetize a mobile game, resorting
-                                to flooding their users with ads that interrupt the
-                                user experience and cause their users to write negative
-                                reviews.
+                            <div className={styles.mobileSignUpNews}>
+                                Sign Up for Newsletter
                             </div>
+
+                            <div className={styles.mobileSignUpNewsLetter}>
+                                Sign up for our newsletter to receive exclusive
+                                updates and the latest news delivered directly
+                                to your inbox.
+                            </div>
+
+                            <form onSubmit={submitHandler}>
+                                <div className={styles.mobileSearchLayoutEmail}>
+                                    <div className={styles.mobileYourEmail}>Your-Email</div>
+                                    <div className={styles.mobileSearchEmail}>
+                                        <input className={styles.inputE} type="email"
+                                           onChange={inputHandler} value={input}/>
+                                    </div>
+                                    {message && <div className={styles.mobileAlertMessage}> {message} </div>}
+                                </div>
+
+                                <div className={styles.mobileSignUpE}>
+                                    <button type="submit" className={styles.mobileSignUpEmail}>
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
                         </div>
 
-                        <div className={styles.signUpE2}>
-                            <div className={styles.subSignUpE2}>
-                                <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
-                                    <div className={styles.signUpEmail2}>
+                    </div>
+                </div>
+
+
+
+                <div className={styles.secondMobileSection}>
+                    <div className={styles.secondMobileBg} style={{
+                        backgroundImage: "url(/images/secondMobileBg.png)"}}>
+
+                        <div className={styles.secondMobileBgBox}>
+                            <div className={styles.mobileRecentArticle}> Recent article </div>
+                            <div className={styles.mobileUnlocking}>
+                                Unlocking Profit Potential: The Power of Offerwall Monetization in Mobile Apps
+                            </div>
+
+                            <div className={styles.mobileDateTime}>
+                                <div>July 19 2023</div>
+                                <div className={styles.mobileImgTime}>
+                                    <img src="/images/mobileTime.png"  alt=""/>
+                                    <div className={styles.mobileMinRead}>8 min read</div>
+                                </div>
+                            </div>
+
+                            <div className={styles.mobileManyDevelopers}>
+                                Many game developers struggle with understanding the best way to monetize a mobile game,
+                                resorting to flooding their users with ads that interrupt the user experience and cause their users to write negative reviews.
+                            </div>
+
+                            <div className={styles.mobileSignUpE}>
+                                <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                    <div className={styles.mobileSignUpEmail}>
                                         Read More
                                     </div>
                                 </Link>
                             </div>
+
+
                         </div>
 
                     </div>
                 </div>
 
-            </div>
-
-
-
-            <div className={styles.blogThirdContainer}>
-
-                <div className={styles.innerThirdBoxContainer}>
-                    <div className={styles.innerThird1}>
-                        <span className={styles.innerThirdBlog}>Browse</span>
-                        <span className={styles.innerThirdArticles}>All articles</span>
+                <div className={styles.thirdMobileSection}>
+                    <div className={styles.thirdMobileBox1}>
+                        <div className={styles.mobileBlog}>Blog</div>
+                        <div className={styles.mobileArticles}>All Articles</div>
                     </div>
 
-                    <div className={styles.innerThird2}>
-                        <div className={styles.thirdRight}>
-                            <div className={styles.topRightThird}>
-                                <img src="/images/img000012.png" alt=""/>
-                            </div>
-                            <div className={styles.belowRightThird}>
-                                <div className={styles.innerBelowRightThird}>
-                                    <div className={styles.exploring}>
-                                        Exploring Offerwall Solutions for
-                                        Monetization and Retention: a Comparative
-                                        Analysis
-                                    </div>
-                                    <div className={styles.dateTime}>
-                                        <div>July 19 2023</div>
-                                        <div className={styles.imgTime}>
-                                            <img src="/images/Time.png"  alt=""/>
-                                            <div className={styles.minRead}>8 min read</div>
-                                        </div>
+                    <div className={styles.thirdMobileBox2}>
+                        <div className={styles.innerThirdMobileBox2}>
+                            <img src="/images/mobile_blog_image1.png" alt="" />
+
+                            <div className={styles.innerThirdMobileBox2Container}>
+                                <div className={styles.thirdMobileBox2Explore}>
+                                    Exploring Offerwall Solutions for Monetization and
+                                    Retention: a Comparative Analysis
+                                </div>
+
+                                <div className={styles.mobileDateTime2}>
+                                    <div>July 19 2023</div>
+                                    <div className={styles.mobileImgTime2}>
+                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
                                 </div>
-                                <div className={styles.readMoreExplore}>
-                                    <Link style={{ textDecoration: 'none'}} to={"/blog_article"}>
-                                        <div className={styles.readMoreButton}>
+
+                                <div className={styles.mobileSignUpE2}>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2}>
                                             Read More
                                         </div>
                                     </Link>
@@ -160,57 +456,62 @@ const Blog = () => {
 
                             </div>
                         </div>
-                        <div className={styles.thirdLeft}>
-                            <div className={styles.topLeftThird}>
-                                <img src="/images/img0002.png" alt=""/>
-                                <div className={styles.topLeftThirdBox1}>
+                    </div>
 
-                                    <div className={styles.mastering}>
-                                        Mastering Offerwall Monetisation: <br />
-                                        Strategies to Boost Your Earnings
+                    <div className={styles.thirdMobileBox3}>
+                        <div className={styles.innerThirdMobileBox3}>
+                            <img src="/images/mobile_blog_image2.png" alt="" />
+
+                            <div className={styles.innerThirdMobileBox2SecondContainer}>
+                                <div className={styles.thirdMobileBox2Explore}>
+                                    Mastering Offerwall Monetization: Strategies to boost your earnings
+                                </div>
+
+                                <div className={styles.mobileDateTime3}>
+                                    <div>July 19 2023</div>
+                                    <div className={styles.mobileImgTime2}>
+                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
+                                </div>
 
-                                    <div className={styles.leftDateTime}>
-                                        <div>July 19 2023</div>
-                                        <div className={styles.leftImgTime}>
-                                            <img src="/images/Time.png"  alt=""/>
-                                            <div className={styles.minRead}>8 min read</div>
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.LeftReadMoreExplore}>
-                                        <div className={styles.readMoreButton}>
+                                <div className={styles.mobileSignUpE2}>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2Second}>
                                             Read More
                                         </div>
-                                    </div>
-
+                                    </Link>
                                 </div>
 
                             </div>
-                            <div className={styles.belowLeftThird}>
-                                <img src="/images/img0003.png" alt=""/>
-                                <div className={styles.topLeftThirdBox1}>
+                        </div>
+                    </div>
 
-                                    <div className={styles.mastering}>
-                                        Behind the Scenes: How Advertisers <br />
-                                        Create Irresistible Offerwall Campaigns
+                    <div className={styles.thirdMobileBox4}>
+                        <div className={styles.innerThirdMobileBox4}>
+                            <img src="/images/mobile_blog_image3.png" alt="" />
+
+                            <div className={styles.innerThirdMobileBox2thirdContainer}>
+                                <div className={styles.thirdMobileBox2Explore}>
+                                    Behind the Scenes: How Advertisers create irresistible Offerwall Campaigns
+                                </div>
+
+                                <div className={styles.mobileDateTime4}>
+                                    <div>July 19 2023</div>
+                                    <div className={styles.mobileImgTime2}>
+                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
+                                </div>
 
-                                    <div className={styles.leftDateTime}>
-                                        <div>July 19 2023</div>
-                                        <div className={styles.leftImgTime}>
-                                            <img src="/images/Time.png"  alt=""/>
-                                            <div className={styles.minRead}>8 min read</div>
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.LeftReadMoreExplore}>
-                                        <div className={styles.readMoreButton}>
+                                <div className={styles.mobileSignUpE2}>
+                                    <Link style={{ textDecoration: 'none'}} to={"/blogarticle"}>
+                                        <div className={styles.mobileSignUpEmail2Third}>
                                             Read More
                                         </div>
-                                    </div>
-
+                                    </Link>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -218,41 +519,43 @@ const Blog = () => {
             </div>
 
 
-            <div className={styles.blogFourthContainer}>
 
-                <div className={styles.blogFourthBox1}>
-                    <div className={styles.innerBlogFourthBox1}>
-                        <div className={styles.blogSignUpNews}>
-                            <div>Sign Up for</div> &nbsp;
-                            <div className={styles.newsLetter}>Newsletter</div>
-                        </div>
 
-                        <div className={styles.blogExpertTipsBox}>
-                            <div className={styles.blogExpertTips}>
-                                Sign up for our newsletter to receive exclusive updates
-                                and the latest news delivered directly to your inbox.
-                            </div>
-                        </div>
-                        <div className={styles.blogNewsImageBox}>
-                            <div className={styles.innerBlogNewsImageBox}>
-                                <img src="/images/blogDownBtn.png" alt=""/>
-                                <div className={styles.blogSignUpnews}>Sign Up</div>
-                            </div>
+            <form onSubmit={submitHandler}>
+                <div className={styles.fourthMobileSection}>
+                    <div className={styles.mobileblogSignUpNews}>
+                        <div>Sign Up for</div> &nbsp;
+                        <div className={styles.mobileNewsLetter}>Newsletter</div>
+                    </div >
+
+                    <div className={styles.fourthMobileSignUp}>
+                        Sign up for our newsletter to receive exclusive updates and the
+                        latest news delivered directly to your inbox.
+                    </div>
+
+                    <div className={styles.mobileSearchLayoutEmail}>
+                        <div className={styles.mobileYourEmail}>Your-Email</div>
+                        <div className={styles.mobileSearchEmail}>
+                            <input className={styles.inputE} onChange={inputHandler} value={input} />
                         </div>
                     </div>
-                </div>
 
-                <div className={styles.blogFourthBox2}>
-                    <div className={styles.searchLayoutEmail3}>
-                        <div className={styles.yourEmail3}>Your-Email</div>
-                        <div className={styles.searchEmail3}>
-                            <input className={styles.inputE3} />
+                    <div className={styles.mobileBlogNewsImageBox}>
+                        <div className={styles.innerMobileBlogNewsImageBox}>
+                            <img src="/images/blogDownBtn.png" alt=""/>
+                            <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
                         </div>
                     </div>
+                    {message && <div className={styles.mobileAlertMessage}> {message} </div>}
                 </div>
+            </form>
 
-            </div>
         </div>
+
+
+
+
+
 
 
 
