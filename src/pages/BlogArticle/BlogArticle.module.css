@@ -1,12 +1,12 @@
 .blogArticle,
 .blogArticle * {
   box-sizing: border-box;
-  overflow-x: hidden;
+
 }
 
 .blogArticle {
   background: #ffffff;
-  width: 100%;
+  width: 100vw;
   max-width: 1530px;
   position: relative;
   margin: auto;
@@ -16,23 +16,27 @@
 /* First Container */
 
 .firstBlogArticleContainer {
-  width: 100vw;
+  width: 100%;
+  max-width: 1512px;
   position: relative;
   margin: auto;
   overflow: visible;
 
 }
 
+
 .heroContainer {
   background: #5b56bd;
-  width: 100vw;
   height: 770px;
   position: relative;
   overflow: visible;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+}
+
+.mobileBG {
+  display: none;
 
 }
 
@@ -159,6 +163,10 @@
   overflow: visible;
 }
 
+.heroMobile {
+  display: none;
+}
+
 /* Second Container */
 
 .secondBlogArticleContainer {
@@ -244,7 +252,6 @@
 
 .readNextContainer {
   background: #5b56bd;
-  width: 100vw;
   height: 1722px;
   position: relative;
   margin: auto;
@@ -499,18 +506,263 @@
 }
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px) {
+@media only screen and (max-width: 1130px) and (min-width: 350px) {
 
-  .mainFirst {
-    display: flex;
-    width: 352px;
-    ;
-    height: 1305px;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 160px;
+  .blogArticle {
+    overflow: hidden;
+
+  }
+
+  /* First Container */
+
+  .firstBlogArticleContainer {
+    width: 100vw;
+    height: 465px;
+    position: relative;
+    background-image: url(/public/images/mobileBG.svg);
+    background-size: 100vw;
+    background-position: center;
+
+  }
+
+
+
+  .heroContainer {
+    background: #ffffff00;
+    width: 100VW;
+    height: 465px;
+    position: relative;
+    overflow: visible;
     margin: auto;
+    padding-top: 150px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
+
+  .firstBackground {
+    display: none;
+  }
+
+  .secondBackground {
+    display: none;
+  }
+
+  .thirdBackground {
+    display: none;
+  }
+
+  .topHeroDiv {
+    width: 80%;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+
+  .heroTitle {
+    text-align: left;
+    font: 700 24px "Poppins", sans-serif;
+    position: relative;
+    height: 36px;
+    width: 170px;
+    display: flex;
+    left: 1px;
+    top: 1px;
+  }
+
+  .heroTitle_span {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .heroTitle_span2 {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .btnShare {
+    width: 83px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    left: 1px;
+    top: 1px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .share {
+    font: 500 16px "Poppins", sans-serif;
+    width: 51px;
+    height: 24px;
+    top: 1px;
+    left: 30px;
+
+  }
+
+  .shareIcon {
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 1px;
+
+  }
+
+  .heroText {
+    font: 700 24px "Poppins", sans-serif;
+    width: 340px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+  }
+
+  .heroText_span {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .heroText_span2 {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .dateAndTimeHero {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heroDate {
+    font: 400 15px "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    left: 1px;
+    top: 1px;
+  }
+
+  .timeGroup {
+    width: 119px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    left: 1px;
+    top: 1px;
+  }
+
+  .heroReadingTime {
+    width: 82px;
+    height: 24px;
+    display: flex;
+    top: 1px;
+    left: 35px
+  }
+
+  .clock {
+    width: 22.01px;
+    height: 22.01px;
+    top: 1px;
+    left: 1px;
+  }
+
+  .heroMobile_img {
+    display: none;
+  }
+
+  .heroMobile {
+    display: contents;
+    position: relative;
+    overflow: visible;
+  }
+
+  .heroMobileImg {
+    left: -10px;
+    width: 1110px;
+    height: 632px;
+    position: relative;
+  }
+
+  /* Second Container */
+
+  .secondBlogArticleContainer {
+    width: 100vw;
+    max-width: 999px;
+    height: 5200px;
+    position: relative;
+    top: 10px;
+    overflow: visible;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .articleAuthor {
+    width: 500px;
+    margin-top: 50px;
+    font: 400 18px "Poppins", sans-serif;
+  }
+
+  .articleIntroText {
+    width: 500px;
+    margin-top: 30px;
+    font: 400 19px "Poppins", sans-serif;
+
+  }
+
+  .articleContentContainer {
+    width: 500px;
+    max-width: 999px;
+    color: #1e1e1e;
+    text-align: left;
+    position: relative;
+
+  }
+
+  .articleMainTitle {
+    font: 700 40px "Poppins", sans-serif;
+  }
+
+  .articleText {
+    font: 400 19px "Poppins", sans-serif;
+  }
+
+
+  .articleSecondaryTitle {
+    font: 500 30px "Poppins", sans-serif;
+  }
+
+
+  .blogArticleMobileResponsive {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+  }
+
+  .blogArticleMobile {
+    border-radius: 0px;
+    min-width: 600px;
+    height: 345px;
+    position: relative;
+
+  }
+
+  .bestPraticesContainer {
+    width: 500px;
+    max-width: 999px;
+    position: relative;
+    overflow: visible;
+    margin-top: 30px;
   }
 
 }

@@ -21,19 +21,21 @@ const BlogArticle = () => {
             src='/images/blogArticle_bg3.svg'
             alt=''
           />
-          <div className={styles.heroTitle}>
-            <span>
-              <span className={styles.heroTitle_span}>An </span>
-              <span className={styles.heroTitle_span2}>article.</span>
-            </span>{' '}
-          </div>
-          <div className={styles.btnShare}>
-            <div className={styles.share}>share </div>
-            <img
-              className={styles.shareIcon}
-              src='/images/share.svg'
-              alt=''
-            />
+          <div className={styles.topHeroDiv}>
+            <div className={styles.heroTitle}>
+              <span>
+                <span className={styles.heroTitle_span}>An </span>
+                <span className={styles.heroTitle_span2}>Article.</span>
+              </span>{' '}
+            </div>
+            <div className={styles.btnShare}>
+              <div className={styles.share}>share </div>
+              <img
+                className={styles.shareIcon}
+                src='/images/share.svg'
+                alt=''
+              />
+            </div>
           </div>
           <div className={styles.heroText}>
             <span>
@@ -45,15 +47,16 @@ const BlogArticle = () => {
               </span>
             </span>{' '}
           </div>
-
-          <div className={styles.heroDate}>Jul 19 2023 </div>
-          <div className={styles.timeGroup}>
-            <div className={styles.heroReadingTime}>8 min read </div>
-            <img
-              className={styles.clock}
-              src='/images/clock.svg'
-              alt=''
-            />
+          <div className={styles.dateAndTimeHero}>
+            <div className={styles.heroDate}>Jul 19 2023 </div>
+            <div className={styles.timeGroup}>
+              <div className={styles.heroReadingTime}>8 min read </div>
+              <img
+                className={styles.clock}
+                src='/images/clock.svg'
+                alt=''
+              />
+            </div>
           </div>
 
           <img
@@ -62,6 +65,13 @@ const BlogArticle = () => {
             alt=''
           />
         </div>
+      </div>
+      <div className={styles.heroMobile}>
+        <img
+          className={styles.heroMobileImg}
+          src='secret-of-mobile-apps-3.png'
+          alt=''
+        />
       </div>
 
       <div className={styles.secondBlogArticleContainer}>
@@ -176,11 +186,13 @@ const BlogArticle = () => {
               advertising platform.
             </span>
           </span>{' '}
-          <img
-            className={styles.blogArticleMobile}
-            src='/images/blog_article_mobile.svg'
-            alt=''
-          />
+          <div className={styles.blogArticleMobileResponsive}>
+            <img
+              className={styles.blogArticleMobile}
+              src='/images/blog_article_mobile.svg'
+              alt=''
+            />
+          </div>
           <div className={styles.bestPraticesContainer}>
             <span>
               <span className={styles.articleMainTitle}>
