@@ -292,93 +292,97 @@ const BlogArticle = () => {
       </div>
       <div className={styles.thirdBlogArticleContainer}>
         <div className={styles.readNextContainer}>
-          <div className={styles.whatToReadNextGroup}>
-            <span>
-              <span className={styles.span700White}>What to </span>
-              <span className={styles.span700Green}>read</span>
-              <span className={styles.span700White}> next</span>
-            </span>{' '}
+          <div className={styles.readNextDiv}>
+            <div className={styles.whatToReadNextGroup}>
+              <span>
+                <span className={styles.span700White}>What to </span>
+                <span className={styles.span700Green}>read</span>
+                <span className={styles.span700White}> next</span>
+              </span>{' '}
+            </div>
+            <div className={styles.allArticles}>All articles </div>
           </div>
-          <div className={styles.allArticles}>All articles </div>
+          <div className={styles.articlesCardContainer}>
+            <img
+              className={styles.phoneImg}
+              src='rectangle2.png'
+              alt=''
+            />
 
-          <img
-            className={styles.phoneImg}
-            src='rectangle2.png'
-            alt=''
-          />
+            <img
+              className={styles.meetingImg}
+              src='frame-23-4-1.png'
+              alt=''
+            />
 
-          <img
-            className={styles.meetingImg}
-            src='frame-23-4-1.png'
-            alt=''
-          />
+            <div className={styles.behindTheScenes}>
+              <div className={styles.cardTitle}>
+                Behind the Scenes: How Advertisers Create Irresistible Offerwall
+                Campaigns{' '}
+              </div>
+              <div className={styles.cardDate}>Jul 28 2023 </div>
 
-          <div className={styles.behindTheScenes}>
-            <div className={styles.cardTitle}>
-              Behind the Scenes: How Advertisers Create Irresistible Offerwall
-              Campaigns{' '}
+              <div className={styles.cardTimeGroup}>
+                <div className={styles.cardReadingTime}>8 min read </div>
+                <img
+                  className={styles.cardClock}
+                  src='/images/cardClock.svg'
+                  alt=''
+                />
+              </div>
+
+              <div className={styles.cardText}>
+                Many game developers struggle with understanding the best way to
+                monetize a mobile game, resorting to flooding their users with
+                ads that interrupt the user experience and cause their users to
+                write negative reviews.{' '}
+              </div>
+              <div className={styles.cardBtn}>
+                <div className={styles.readMore}>Read more </div>
+              </div>
             </div>
-            <div className={styles.cardDate}>Jul 28 2023 </div>
 
-            <div className={styles.timeGroup}>
-              <div className={styles.cardReadingTime}>8 min read </div>
-              <img
-                className={styles.cardClock}
-                src='/images/cardClock.svg'
-                alt=''
-              />
-            </div>
+            <div className={styles.exploringGroup}>
+              <div className={styles.cardTitle}>
+                Exploring Offerwall Solutions for Monetization and Retention: a
+                Comparative Analysis{' '}
+              </div>
+              <div className={styles.cardTimeGroup}>
+                <div className={styles.cardReadingTime}>8 min read </div>
+                <img
+                  className={styles.cardClock}
+                  src='/images/cardClock.svg'
+                  alt=''
+                />
+              </div>
+              <div className={styles.cardText}>
+                Many game developers struggle with understanding the best way to
+                monetize a mobile game, resorting to flooding their users with
+                ads that interrupt the user experience and cause their users to
+                write negative reviews.{' '}
+              </div>
 
-            <div className={styles.cardText}>
-              Many game developers struggle with understanding the best way to
-              monetize a mobile game, resorting to flooding their users with ads
-              that interrupt the user experience and cause their users to write
-              negative reviews.{' '}
-            </div>
-            <div className={styles.cardBtn}>
-              <div className={styles.readMore}>Read more </div>
+              <div className={styles.cardBtn}>
+                <div className={styles.readMore}>Read more </div>
+              </div>
             </div>
           </div>
-
-          <div className={styles.exploringGroup}>
-            <div className={styles.cardTitle}>
-              Exploring Offerwall Solutions for Monetization and Retention: a
-              Comparative Analysis{' '}
-            </div>
-            <div className={styles.timeGroup}>
-              <div className={styles.cardReadingTime}>8 min read </div>
-              <img
-                className={styles.cardClock}
-                src='/images/cardClock.svg'
-                alt=''
-              />
-            </div>
-            <div className={styles.cardText}>
-              Many game developers struggle with understanding the best way to
-              monetize a mobile game, resorting to flooding their users with ads
-              that interrupt the user experience and cause their users to write
-              negative reviews.{' '}
-            </div>
-
-            <div className={styles.cardBtn}>
-              <div className={styles.readMore}>Read more </div>
-            </div>
-          </div>
-
           <div className={styles.newsletterGroup}>
             <span>
               <span className={styles.signUpSpan1}>Sign Up for </span>
               <span className={styles.signUpSpan2}>Newsletter</span>
             </span>{' '}
           </div>
-          <div className={styles.signUpText}>
-            Sign up for our newsletter to receive exclusive updates and the
-            latest news delivered directly to your inbox.{' '}
+          <div className={styles.signUpContainer}>
+            <div className={styles.signUpText}>
+              Sign up for our newsletter to receive exclusive updates and the
+              latest news delivered directly to your inbox.{' '}
+            </div>
+            <div className={styles.emailFormContainer}>
+              <div className={styles.yourEmail}>Your E-mail </div>
+              <div className={styles.emailBox}></div>
+            </div>
           </div>
-
-          <div className={styles.yourEmail}>Your E-mail </div>
-          <div className={styles.emailBox}></div>
-
           <div className={styles.signUpBtn}>
             <div className={styles.signUpBackground}></div>
             <img
