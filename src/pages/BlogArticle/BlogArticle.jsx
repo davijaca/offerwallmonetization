@@ -367,6 +367,73 @@ const BlogArticle = () => {
               </div>
             </div>
           </div>
+          <div className={styles.articlesCardContainerMobile}>
+            <div className={styles.innerSeventhBoxContainerMobile}>
+              <div className={styles.innerSeven2Mobile}>
+                <div className={styles.sevenRightMobile}>
+                  <div className={styles.topFirstSevenMobile}>
+                    <img
+                      src='/images/img00001.png'
+                      alt=''
+                    />
+                    <div className={styles.topLeftSevenBox1Mobile}>
+                      <div className={styles.exploringMobile}>
+                        Exploring Offerwall Solutions for Monetization and
+                        Retention: a Comparative Analysis
+                      </div>
+
+                      <div className={styles.dateTimeMobile1}>
+                        <div>July 19 2023</div>
+                        <div className={styles.imgTimeMobile1}>
+                          <img
+                            src='/images/Time.png'
+                            alt=''
+                          />
+                          <div className={styles.minReadMobile}>8 min read</div>
+                        </div>
+                      </div>
+
+                      <div className={styles.LeftReadMoreExploreMobile}>
+                        <div className={styles.readMoreButtonMobile}>
+                          Read More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.belowLeftSevenMobile}>
+                    <img
+                      src='/images/img0003.png'
+                      alt=''
+                    />
+                    <div className={styles.topLeftSevenBox1Mobile}>
+                      <div className={styles.masteringMobile}>
+                        Behind the Scenes: How Advertisers <br />
+                        Create Irresistible Offerwall Campaigns
+                      </div>
+
+                      <div className={styles.dateTimeMobile2}>
+                        <div>July 19 2023</div>
+                        <div className={styles.imgTimeMobile2}>
+                          <img
+                            src='/images/Time.png'
+                            alt=''
+                          />
+                          <div className={styles.minReadMobile}>8 min read</div>
+                        </div>
+                      </div>
+
+                      <div className={styles.LeftReadMoreExploreMobile}>
+                        <div className={styles.readMoreButtonMobile}>
+                          Read More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className={styles.newsletterGroup}>
             <span>
               <span className={styles.signUpSpan1}>Sign Up for </span>
