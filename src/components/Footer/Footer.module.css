@@ -8,13 +8,10 @@
     margin: auto;
     overflow-x: hidden;
     margin-top: -200px;
-    z-index: 20;
-
 }
 
 .footerName {
     align-items: flex-end;
-    background-color: #f7f8fc00;
 
 }
 
@@ -161,10 +158,7 @@
 @media only screen and (max-width: 1280px) and (min-width: 320px) {
 
     .footerName {
-        background-color: #f7f8fc00;
         display: flex;
-        height: 100px;
-        position: relative;
 
     }
 
@@ -177,8 +171,8 @@
         height: 617px;
         margin: auto;
         overflow-x: hidden;
-
-
+        margin-top: -450px;
+        z-index: 20;
     }
 
 

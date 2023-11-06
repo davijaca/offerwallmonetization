@@ -43,15 +43,15 @@ const Navbar = () => {
                         </div>
 
                         <nav className='topMenu'>
-                            <a className='topMenuItem' href="/offerwallmonetization/">Home</a>
+                            <a className='topMenuItem' href="/">Home</a>
                             {/*<a className={styles.topMenuItem}>How it Works</a>*/}
-                            <a className='topMenuItem' href="/offerwallmonetization/#/blog">Blog</a>
+                            <a className='topMenuItem' href="/blog">Blog</a>
                             <a className='topMenuItem'>About Us</a>
                         </nav>
                     </div>
 
                     <div className='contact'>
-                        <a href="/offerwallmonetization/#/contact">
+                        <a href="/contact">
                         <div className='contactButton'>Request Contact</div>
                         </a>
                         <div className='hamburger' onClick={handleClick}>

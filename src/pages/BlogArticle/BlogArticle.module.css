@@ -8,9 +8,10 @@
 .blogArticle {
   background: #ffffff;
   width: 100%;
-  max-width: 1530px;
+  max-width: 1512px;
   position: relative;
   margin: auto;
+  margin-top: -100px;
 }
 
 .heroContainer {
@@ -211,7 +212,8 @@
 
 .thirdBlogArticleContainer {
   position: relative;
-  height: 1507px;
+  height: 1700px;
+  margin-top: 100px;
 }
 
 .readNextContainer {

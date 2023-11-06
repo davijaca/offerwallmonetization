@@ -1,5 +1,4 @@
 
-
 .home,
 .home * {
   box-sizing: border-box;
@@ -7,12 +6,11 @@
 }
 
 .homeContainer {
-    background: #ffffff;
-    width: 100%;
+    width: 100vw;
     max-width: 1530px;
-    position: relative;
     margin: auto;
     margin-top: -100px;
+    
 }
 
 /*FIRST SECTION*/
@@ -29,6 +27,8 @@
     position: relative;
     left: calc(-50vw + 50%);
     overflow: visible;
+    display: inline-block;
+    
 }
 
 
@@ -808,7 +808,7 @@ button:hover {
 .fifthHomeContainer {
     width: 100%;
     height: 968px;
-    background-color: maroon;
+    display: inline-block;
 }
 
 .fifthHomeBackground {
@@ -1048,7 +1048,7 @@ button:hover {
 }
 
 .innerSeventhHomeContainer {
-    height: 2000px;
+
     width: 80%;
 }
 
@@ -1131,6 +1131,8 @@ button:hover {
     height: 1300px;
     display: flex;
     align-items: flex-end;
+    background-color: #F7F8FC;
+    justify-content: center;
 }
 
 .innerSeventhBoxContainer {
@@ -1386,7 +1388,7 @@ button:hover {
 
 .innerSeventhHome {
     width: 74%;
-    height: 520px;
+    height: 720px;
     display: flex;
     justify-content: space-between;
 }
@@ -1623,12 +1625,12 @@ button:hover {
 
 
     .homeContainer {
-        background: #ffffff;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100vw;
-        height: 10500px;
+        height: 11100px;
         position: relative;
-        overflow: hidden;
-        margin: auto;
         margin-top: -150px;
     }
 
@@ -1657,7 +1659,7 @@ button:hover {
     .mobileTopFirstBg {
         display: flex;
         height: 1500px;
-        width: 393px;
+        width: 100%;
         background-repeat: no-repeat ;
         justify-content: center;
     }
@@ -1670,7 +1672,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
         padding-top: 160px;
-        margin: auto;
+
 
     }
 
@@ -1825,7 +1827,7 @@ button:hover {
         flex-direction: column;
         align-items: center;
         border: none;
-        margin: auto;
+
 
     }
 
@@ -1942,12 +1944,12 @@ button:hover {
     }
 
     .MobileSecondHomeContainer {
-        width: 393px;
+        width: 100%;
         height: 750px;
         display: flex;
         flex-direction: column;
-        padding-top: 450px;
-        margin: auto;
+        padding-top: 550px;
+        justify-content: center;
     }
 
 
@@ -1999,7 +2001,7 @@ button:hover {
     }
 
     .anOfferwall {
-        width: 393px;
+        width: 100%;
         display: flex;
     }
 
@@ -2066,16 +2068,18 @@ button:hover {
     .mobileThirdHomeContainer {
         display: flex;
         flex-direction: column;
-        width: 393px;
-        margin: auto;
+        width: 100%;
+
     }
 
     .imageThirdHomeContainer {
-        width: 393px;
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         align-items: flex-end;
+        background-position: center center;
+        background-size:contain;
     }
 
     .thirdHomeContainerBox {
@@ -2154,9 +2158,8 @@ button:hover {
     .mobileFourthHomeContainer {
         display: flex;
         flex-direction: column;
-        width: 393px;
+        width: 100%;
         height: 850px;
-        margin: auto;
     }
 
     .SubFourthHomeContainer {
@@ -2201,14 +2204,14 @@ button:hover {
 
     .fourthHomeBox2 {
         height: 670px;
-        width: 393px;
+        width: 100%;
         display: flex;
         flex-direction: column;
 
     }
 
     .fourthBox2Container {
-        width: 393px;
+        width: 100%;
         height: 670px;
         display: flex;
         flex-direction: column;
@@ -2218,14 +2221,11 @@ button:hover {
     .fourth13,
     .fourth24
     {
-        width: 393px;
+        width: 100%;
         height: 500px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding-top: 30px;
-
+        flex-direction: column;   
+        align-items: center;
     }
 
     .fourth13One, .fourth13Two,
@@ -2325,14 +2325,13 @@ button:hover {
     .mobileFifthHomeContainer {
         display: flex;
         flex-direction: column;
-        width: 393px;
-        margin: auto;
+        width: 100%;
         margin-top: 550px;
 
     }
 
     .fifthHomeBackground {
-        width: 393px;
+        width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -2453,7 +2452,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: auto;
+
     }
     
     .sixthBox1 {
@@ -2552,6 +2551,7 @@ button:hover {
 
 .seventhHomeContainer {
     display: none;
+    
 }
 
 .seventhMobileHomeContainer{
@@ -2562,6 +2562,7 @@ button:hover {
     justify-content: space-between;
     margin: auto;
     margin-top: 170px;
+    
 }
 
 
@@ -2578,6 +2579,7 @@ button:hover {
     justify-content: flex-end;
     margin: auto;
     margin-top: 0px;
+    flex-shrink: 1;
 
 }
 
@@ -2667,12 +2669,15 @@ button:hover {
 .seventhHomeBox2Mobile {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    background-color: #F7F8FC;
+    justify-content: center;
 }
 
 .innerSeventhBoxContainerMobile {
-    max-width: 393px;
+    max-width: 363px;
     height: 3150px;
-    background-color: #F7F8FC;
+
 }
 
 .innerSeven1Mobile {
@@ -2839,6 +2844,7 @@ button:hover {
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: -20%;
     
 }
 
@@ -2912,7 +2918,7 @@ button:hover {
 }
 
 .leftDateTimeMobile {
-    width: 350px;
+    width: 95%;
     flex-shrink: 0;
     height: 30px;
     display: flex;
@@ -2933,7 +2939,6 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     width: 29%;
-
 }
 
 .LeftReadMoreExploreMobile {
@@ -2944,15 +2949,11 @@ button:hover {
     align-items: flex-end;
 }
 
-
-
 .seventhHomeBox3Mobile {
     width: 100%;
     height: 0px;
     margin-top: -1100px;
     position: relative;
-    
-
 }
 
 
@@ -3046,8 +3047,9 @@ button:hover {
     display: flex;
     justify-content: center;
     z-index: 20;
-    position: relative;
+    position: absolute;
     margin-top: -100px;
+
 
 }
 

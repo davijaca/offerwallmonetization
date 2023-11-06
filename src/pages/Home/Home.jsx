@@ -1,6 +1,6 @@
-import React, {useRef} from "react";
+import React from "react";
 import styles from "./Home.module.css";
-import ScrollDivider from "../ScrollDivider";
+
 
 const Home = () => {
 
@@ -765,7 +765,7 @@ const Home = () => {
                                             <img src="/images/img0002.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1Mobile}>
 
-                                                <div className={styles.masteringMobile}>
+                                                <div className={styles.exploringMobile}>
                                                     Mastering Offerwall Monetisation: <br />
                                                     Strategies to Boost Your Earnings
                                                 </div>
@@ -791,7 +791,7 @@ const Home = () => {
                                                 <img src="/images/img0003.png" alt=""/>
                                                 <div className={styles.topLeftSevenBox1Mobile}>
 
-                                                    <div className={styles.masteringMobile}>
+                                                    <div className={styles.exploringMobile}>
                                                         Behind the Scenes: How Advertisers <br />
                                                         Create Irresistible Offerwall Campaigns
                                                     </div>
@@ -830,8 +830,10 @@ const Home = () => {
                                             on how you can maximize the impact of offerwall
                                             monetization on your own mobile games.</div>
                                         <div>
-                                            <div className={styles.contactImgMobile}>
-                                                <img src="/images/contact.png" alt=""/>
+                                            <div className={styles.contactImgMobile} href="/contact">
+                                                <a href="/contact">
+                                                    <img src="/images/contact.png" alt="" />
+                                                </a>
                                             </div>
                                             <div className={styles.contactLayOutMobile}>
                                                 <div className={styles.contactUsMobile}>

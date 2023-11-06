@@ -11,7 +11,7 @@
 .contact {
   background: #ffffff;
   width: 1512px;
-  height: 802px;
+  height: 1000px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -501,11 +501,11 @@
 .contactMobile {
   background: #ffffff;
   width: 393px;
-  height: 1413px;
+  height: 1713px;
   position: relative;
   display: flex;
   margin: auto;
-  margin-top: -150px;
+  margin-top: -200px;
   flex-direction: column;
 
 }
@@ -574,7 +574,7 @@
   border-style: solid;
   border-color: #1e1e1e;
   border-width: 1px;
-  width: 413px;
+  width: 393px;
   height: 45px;
   position: absolute;
   left: 0px;
@@ -596,7 +596,7 @@
   border-style: solid;
   border-color: #1e1e1e;
   border-width: 1px;
-  width: 413px;
+  width: 393px;
   height: 45px;
   position: absolute;
   left: 0px;
@@ -619,7 +619,7 @@
   border-style: solid;
   border-color: #1e1e1e;
   border-width: 1px;
-  width: 413px;
+  width: 393px;
   height: 114px;
   position: absolute;
   left: 0px;
