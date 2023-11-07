@@ -1620,7 +1620,7 @@ button:hover {
 
     .mobileResponsive{
         width: 393px;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1809,14 +1809,13 @@ button:hover {
 
 
     .mobileSection3 {
-        height: 800px;
+        height: 770px;
         width: 393px;
         display: flex;
         align-items: flex-end;
     }
 
     .innerMobileSection3 {
-        margin-top: 50px;
         height: 700px;
         width: 393px;
         display: flex;
