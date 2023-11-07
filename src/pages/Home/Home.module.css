@@ -1816,11 +1816,13 @@ button:hover {
     }
 
     .innerMobileSection3 {
+        margin-top: 50px;
         height: 700px;
         width: 393px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
 
     }
 
