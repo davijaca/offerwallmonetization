@@ -31,6 +31,10 @@
     
 }
 
+.mobileFirstHomeContainer {
+    display: none;
+}
+
 
 
 .waves {
@@ -96,7 +100,7 @@
     overflow: visible;
     z-index: 1;
     object-fit: cover;
-    background-image: url(/public/background3.png);
+    background-image: url(../../../public/images/background3.png);
     background-size: 100% 100%;
     
   }
@@ -426,14 +430,13 @@ button:hover {
 /*SECOND SECTION*/
 
 .secondHomeContainer {
-    padding-top: 350px;
     width: 100%;
     height: 850px;
     display: flex;
     flex-direction: row;
 }
 
-.MobileSecondHomeContainer{
+.mobileSecondHomeContainer{
     display: none;
 }
 
@@ -1643,11 +1646,22 @@ button:hover {
 
 
     .firstHomeContainer {
+        display: none;
+    }
+
+   .mobileFirstHomeContainer {
+        display: flex;
         width: 100%;
         height: 1500px;
         position: relative;
-    }
-
+        flex-direction: column;
+        background: linear-gradient(
+            180deg,
+            rgba(91, 86, 189, 1) 0%,
+            rgba(41, 50, 133, 1) 52.08333134651184%,
+            rgba(10, 0, 74, 1) 100%
+          );
+   }
 
     .hrLine {
         display: none;
@@ -1666,27 +1680,25 @@ button:hover {
     }
 
 
-    .mainFirst {
+    .mainFirstMobile {
         display: flex;
         width: 352px;;
         height: 1305px;
         flex-direction: column;
         align-items: center;
-        padding-top: 160px;
-
-
+        padding-top: 100px;
     }
 
-    .rightMain {
+    .rightMainMobile {
         width: 352px;
         height: 1150px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin-top: 100px;
     }
 
-    .text {
+    .textMobile {
         color: var(--White, #FFF);
         font-family: Poppins;
         font-size: 41px;
@@ -1709,12 +1721,12 @@ button:hover {
         display: flex;
     }
 
-    .parag {
+    .paragMobile {
         width: 100%;
         height: 90px;
     }
 
-    .innerParag {
+    .innerParagMobile {
         width: 352px;
         height: 95px;
         color: var(--White, #FFF);
@@ -1723,21 +1735,20 @@ button:hover {
         font-style: normal;
         font-weight: 400;
         line-height: 22px; /* 157.143% */
-        margin-top: 450px;
     }
 
-    .buttonText {
+    .buttonTextMobile {
         width: 352px;
         height: 100px;
         display: inline-flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding-top: 45px;
         gap: 20px;
-        margin-top: 450px;
     }
 
-    .buttonText1, .buttonText2{
+    .buttonText1Mobile, .buttonText2Mobile{
         width: 220px;
         height: 46px;
         flex-shrink: 0;
@@ -1750,13 +1761,16 @@ button:hover {
         font-weight: 600;
         line-height: normal;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .buttonText2 {
+    .buttonText2Mobile {
         width: 320px;
     }
 
-    .downClickImg {
+    .downClickImgMobile {
         width: 99.5%;
         height: 250px;
         display: flex;
@@ -1765,7 +1779,7 @@ button:hover {
         padding-top: 60px;
     }
 
-    .downClickImg > img {
+    .downClickImgMobile > img {
         width: 144px;
         height: 144px;
     }
@@ -1775,7 +1789,7 @@ button:hover {
     /*    position: absolute;*/
     /*}*/
 
-    .leftMain {
+    .leftMainMobile {
         width: 100%;
         height: 500px;
         display: flex;
@@ -1784,7 +1798,7 @@ button:hover {
 
     }
 
-    .leftImgInfo {
+    .leftImgInfoMobile {
         display: flex;
         width: 358px;
         height: 450.732px;
@@ -1797,11 +1811,10 @@ button:hover {
 
     }
 
-    .leftImg {
+    .leftImgMobile {
         width: 270.309px;
         height: 480.174px;
         flex-shrink: 0;
-        margin-top: -1600px;
     }
 
 
@@ -1809,7 +1822,8 @@ button:hover {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 600px;
+        margin-top: 0;
+        margin-bottom: 250px;
     }
 
     .innerBelowFirst1 {
@@ -1940,43 +1954,35 @@ button:hover {
 
     /*SECOND MOBILE SECTION*/
 
-    .secondHomeContainer {
+    .secondHomeContainer{
         display: none;
     }
 
-    .MobileSecondHomeContainer {
-        width: 100%;
-        height: 750px;
+    .mobileSecondHomeContainer {
+        align-items: flex-end;
+        display: flex;
+        height: 800px;
+        width: 393px;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .innerMobileSection3 {
+        height: 700px;
+        width: 393px;
         display: flex;
         flex-direction: column;
-        padding-top: 550px;
-        justify-content: center;
-    }
-
-
-    .secondHomeContainerBox1,  .secondHomeContainerBox2 {
-        width: 100%;
-        height: 750px;
-        display: flex;
         align-items: center;
-        position: relative;
-        z-index: 2;
-    }
-
-
-    .whatOffer {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        padding-top: 50px;
 
     }
 
-    .what {
-        width: 50%;
-        height: 100px;
+    .mobileWhat {
+        width: 393px;
+        height: 50px;
+        flex-shrink: 0;
         color: var(--Primary-Black-1, #1E1E1E);
         text-align: center;
         font-family: Poppins;
@@ -1985,72 +1991,27 @@ button:hover {
         font-weight: 700;
         line-height: normal;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
 
     }
 
-    .offerW {
-        width: 50%;
-        height: 100px;
+    .mobileWofferwall {
         color: #8764E3;
         font-family: Poppins;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-
     }
 
-    .anOfferwall {
-        width: 100%;
-        display: flex;
-    }
 
-    .innerAnOfferwall {
-        width: 100%;
-    }
-
-    .anOfferwallParag {
-        width: 352px;
-        color: var(--Primary-Black-1, #1E1E1E);
-        font-family: Poppins;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: start;
-    }
-
-    .secondHomeContainerBox2 {
-        width: 100%;
-        height: 350px;
-        flex-shrink: 0;
-
-
-    }
-
-    .image1 {
-        width: 383px;
-        height: 383px;
-        flex-shrink: 0;
-        padding-bottom: 60px;
-
-    }
-
-    .anOfferwall  {
-        width: 100%;
+    .mobilePImage > img {
+        width: 400px;
         height: 400px;
-        display: flex;
-        justify-content: center;
+        flex-shrink: 0;
     }
 
-    .innerAnOfferwall {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .anOfferwallParag {
+    .mobileInaPPAdd {
         width: 352px;
         color: var(--Primary-Black-1, #1E1E1E);
         font-family: Poppins;
@@ -2069,45 +2030,39 @@ button:hover {
     .mobileThirdHomeContainer {
         display: flex;
         flex-direction: column;
-        width: 100%;
-
+        height: 850px;
+        width: 393px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .imageThirdHomeContainer {
-        width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: flex-end;
-        background-position: center center;
-        background-size:contain;
-    }
-
-    .thirdHomeContainerBox {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mobileProblem {
-        width: 352px;
-        height: 70px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .innerMobileProblem {
-        display: flex;
-        width: 352px;
+    .mobileTh1 {
+        width: 393px;
+        height: 850px;
         display: flex;
         justify-content: center;
-
+        align-items: flex-end;
     }
 
-    .mobileProblem1,
-    .with {
+    .innerMobileTh1 {
+        width: 352px;
+        height: 350px;
+    }
+
+    .mobileModernProblem {
+        width: 352px;
+        color: var(--White, #FFF);
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .innerMobileProb {
         color: #E0FF22;
         text-align: center;
         font-family: Poppins;
@@ -2117,30 +2072,12 @@ button:hover {
         line-height: normal;
     }
 
-    .with {
-        color: var(--White, #FFF);
-    }
-
-    .mobileProblem2 {
-        color: var(--White, #FFF);
-        font-family: Poppins;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    .mobileModern {
         display: flex;
         justify-content: center;
     }
 
-    .gameDeveloper {
-        width: 100%;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 100px;
-    }
-
-    .gameDeveloper1 {
+    .mobileGameProblem {
         width: 352px;
         color: var(--White, #FFF);
         font-family: Poppins;
@@ -2150,6 +2087,7 @@ button:hover {
         line-height: normal;
     }
 
+
     /*FOURTH MOBILE SECTION*/
 
     .fourthHomeContainer {
@@ -2157,29 +2095,32 @@ button:hover {
     }
 
     .mobileFourthHomeContainer {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 850px;
+        justify-content: center;
+        margin-top: 50px;
     }
 
-    .SubFourthHomeContainer {
+    .mobileSubFourthHomeContainer {
         width: 100%;
-        height: 1350px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
 
     }
 
-    .fourthHomeBox1 {
-        height: 100px;
-        width: 100%;
+    .mobileFourthHomeBox1 {
         display: flex;
         flex-direction: column;
+        height: 100px;
+        width: 100%;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
-    .subFourthHomeBox1 {
+    .mobileSubFourthHomeBox1 {
         width: 352px;
         color: var(--Primary-Black-1, #1E1E1E);
         text-align: center;
@@ -2192,7 +2133,7 @@ button:hover {
        justify-content: center;
     }
 
-    .innerFourthHomeBox1 {
+    .mobileInnerFourthHomeBox1 {
         color: #8764E3;
         font-family: Poppins;
         font-size: 24px;
@@ -2203,7 +2144,7 @@ button:hover {
 
     }
 
-    .fourthHomeBox2 {
+    .mobileFourthHomeBox2 {
         height: 670px;
         width: 100%;
         display: flex;
@@ -2211,7 +2152,7 @@ button:hover {
 
     }
 
-    .fourthBox2Container {
+    .mobileFourthBox2Container {
         width: 100%;
         height: 670px;
         display: flex;
@@ -2219,8 +2160,8 @@ button:hover {
 
     }
 
-    .fourth13,
-    .fourth24
+    .mobileFourth13,
+    .mobileFourth24
     {
         width: 100%;
         height: 500px;
@@ -2229,21 +2170,23 @@ button:hover {
         align-items: center;
     }
 
-    .fourth13One, .fourth13Two,
-    .fourth24One, .fourth24Two
+    .mobileFourth13One, .mobileFourth13Two,
+    .mobileFourth24One, .mobileFourth24Two
     {
-        width: 370px;
-        height: 150px;
-        display: flex;
         align-items: flex-start;
+        display: flex;
+        height: 150px;
+        width: 370px;
+        padding-top: 20px;
+        padding-bottom: 15px;
     }
 
 
-    .innerOne {
+    .mobileInnerOne {
         width: 43.852px;
     }
 
-    .fourth13Integration {
+    .mobileFourth13Integration {
         width: 352px;
         color: var(--Primary-Black-1, #1E1E1E);
         font-family: Poppins;
@@ -2253,7 +2196,7 @@ button:hover {
         line-height: 32px; /* 228.571% */
     }
 
-    .likeSmatchedWork {
+    .mobileLikeSmatchedWork {
         display: flex;
     }
 
@@ -2265,7 +2208,7 @@ button:hover {
 
     /*}*/
 
-    .fourthImg {
+    .mobileFourthImg {
         width: 100%;
         height: 580px;
         display: flex;
@@ -2274,7 +2217,7 @@ button:hover {
     }
 
 
-    .fourthImg1 {
+    .mobileFourthImg1 {
         width: 319px;
         height: 370.157px;
         flex-shrink: 0;
@@ -2299,7 +2242,7 @@ button:hover {
     /*}*/
 
 
-    .fourth24 {
+    .mobileFourth24 {
         padding-top: 65px;
     }
 
@@ -2308,13 +2251,14 @@ button:hover {
 
     /*}*/
 
-    .fourth24Two {
+    .mobileFourth24Two {
         padding-top: 35px;
     }
 
     /*.fourthHomeBox3 {*/
 
     /*}*/
+
 
 
     /*FIFTH MOBILE SECTION*/
