@@ -162,10 +162,8 @@
         background-size: cover;
         width: 1550px;
         height: 617px;
-        margin: auto;
+        margin-top: 4700px;
         overflow-x: hidden;
-
-
     }
 
     .footerName {
@@ -174,7 +172,6 @@
         display: flex;
         width: 100%;
         height: 100px;
-
     }
 
     .footerInfo {
@@ -268,7 +265,6 @@
     .downFooterInfo {
         font-size: 12px;
     }
-
 
 
 }
