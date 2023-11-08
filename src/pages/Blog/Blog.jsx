@@ -348,7 +348,7 @@ const Blog = () => {
                                 <div className={styles.innerMobileSearch}>
                                     <input type="text" className={styles.mobileSearchContainer}
                                            placeholder="Search blog" onChange={searchHandler} value={search} />
-                                    <img src="/images/search.png" alt="" className={styles.mobileIcon}  onClick={handleClickBlog}/>
+                                    <img src="/images/search.png" alt=""  onClick={handleClickBlog}/>
                                 </div>
                             </div>
 

@@ -126,7 +126,7 @@
   align-self: stretch;
   outline: none;
   border: none;
-  background: red;
+
 
 }
 
@@ -143,7 +143,6 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  background: #E7CAA2;
 }
 
 .search > img:hover {
@@ -1116,10 +1115,11 @@
 
   }
 
-  .mobileIcon{
-    width: 58px;
-    height: 58px;
+  .mobileSearchContainer > img{
+    width: 24px;
+    height: 24px;
   }
+
 
   .mobileSignUpNews {
     width: 340px;
