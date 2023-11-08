@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './BlogArticle.module.css';
 
-const BlogArticle = ({ ...props }) => {
+const BlogArticle = () => {
   return (
     <div className={styles.blogArticle}>
       <div className={styles.firstBlogArticleContainer}>
@@ -21,19 +21,21 @@ const BlogArticle = ({ ...props }) => {
             src='/images/blogArticle_bg3.svg'
             alt=''
           />
-          <div className={styles.heroTitle}>
-            <span>
-              <span className={styles.heroTitle_span}>An </span>
-              <span className={styles.heroTitle_span2}>article.</span>
-            </span>{' '}
-          </div>
-          <div className={styles.btnShare}>
-            <div className={styles.share}>share </div>
-            <img
-              className={styles.shareIcon}
-              src='/images/share.svg'
-              alt=''
-            />
+          <div className={styles.topHeroDiv}>
+            <div className={styles.heroTitle}>
+              <span>
+                <span className={styles.heroTitle_span}>An </span>
+                <span className={styles.heroTitle_span2}>Article.</span>
+              </span>{' '}
+            </div>
+            <div className={styles.btnShare}>
+              <div className={styles.share}>share </div>
+              <img
+                className={styles.shareIcon}
+                src='/images/share.svg'
+                alt=''
+              />
+            </div>
           </div>
           <div className={styles.heroText}>
             <span>
@@ -45,15 +47,16 @@ const BlogArticle = ({ ...props }) => {
               </span>
             </span>{' '}
           </div>
-
-          <div className={styles.heroDate}>Jul 19 2023 </div>
-          <div className={styles.timeGroup}>
-            <div className={styles.heroReadingTime}>8 min read </div>
-            <img
-              className={styles.clock}
-              src='/images/clock.svg'
-              alt=''
-            />
+          <div className={styles.dateAndTimeHero}>
+            <div className={styles.heroDate}>Jul 19 2023 </div>
+            <div className={styles.timeGroup}>
+              <div className={styles.heroReadingTime}>8 min read </div>
+              <img
+                className={styles.clock}
+                src='/images/clock.svg'
+                alt=''
+              />
+            </div>
           </div>
 
           <img
@@ -62,6 +65,13 @@ const BlogArticle = ({ ...props }) => {
             alt=''
           />
         </div>
+      </div>
+      <div className={styles.heroMobile}>
+        <img
+          className={styles.heroMobileImg}
+          src='secret-of-mobile-apps-3.png'
+          alt=''
+        />
       </div>
 
       <div className={styles.secondBlogArticleContainer}>
@@ -176,11 +186,13 @@ const BlogArticle = ({ ...props }) => {
               advertising platform.
             </span>
           </span>{' '}
-          <img
-            className={styles.blogArticleMobile}
-            src='/images/blog_article_mobile.svg'
-            alt=''
-          />
+          <div className={styles.blogArticleMobileResponsive}>
+            <img
+              className={styles.blogArticleMobile}
+              src='/images/blog_article_mobile.svg'
+              alt=''
+            />
+          </div>
           <div className={styles.bestPraticesContainer}>
             <span>
               <span className={styles.articleMainTitle}>
@@ -280,93 +292,164 @@ const BlogArticle = ({ ...props }) => {
       </div>
       <div className={styles.thirdBlogArticleContainer}>
         <div className={styles.readNextContainer}>
-          <div className={styles.whatToReadNextGroup}>
-            <span>
-              <span className={styles.span700White}>What to </span>
-              <span className={styles.span700Green}>read</span>
-              <span className={styles.span700White}> next</span>
-            </span>{' '}
+          <div className={styles.readNextDiv}>
+            <div className={styles.whatToReadNextGroup}>
+              <span>
+                <span className={styles.span700White}>What to </span>
+                <span className={styles.span700Green}>read</span>
+                <span className={styles.span700White}> next</span>
+              </span>{' '}
+            </div>
+            <div className={styles.allArticles}>All articles </div>
           </div>
-          <div className={styles.allArticles}>All articles </div>
+          <div className={styles.articlesCardContainer}>
+            <img
+              className={styles.phoneImg}
+              src='rectangle2.png'
+              alt=''
+            />
 
-          <img
-            className={styles.phoneImg}
-            src='rectangle2.png'
-            alt=''
-          />
+            <img
+              className={styles.meetingImg}
+              src='frame-23-4-1.png'
+              alt=''
+            />
 
-          <img
-            className={styles.meetingImg}
-            src='frame-23-4-1.png'
-            alt=''
-          />
+            <div className={styles.behindTheScenes}>
+              <div className={styles.cardTitle}>
+                Behind the Scenes: How Advertisers Create Irresistible Offerwall
+                Campaigns{' '}
+              </div>
+              <div className={styles.cardDate}>Jul 28 2023 </div>
 
-          <div className={styles.behindTheScenes}>
-            <div className={styles.cardTitle}>
-              Behind the Scenes: How Advertisers Create Irresistible Offerwall
-              Campaigns{' '}
+              <div className={styles.cardTimeGroup}>
+                <div className={styles.cardReadingTime}>8 min read </div>
+                <img
+                  className={styles.cardClock}
+                  src='/images/cardClock.svg'
+                  alt=''
+                />
+              </div>
+
+              <div className={styles.cardText}>
+                Many game developers struggle with understanding the best way to
+                monetize a mobile game, resorting to flooding their users with
+                ads that interrupt the user experience and cause their users to
+                write negative reviews.{' '}
+              </div>
+              <div className={styles.cardBtn}>
+                <div className={styles.readMore}>Read more </div>
+              </div>
             </div>
-            <div className={styles.cardDate}>Jul 28 2023 </div>
 
-            <div className={styles.timeGroup}>
-              <div className={styles.cardReadingTime}>8 min read </div>
-              <img
-                className={styles.cardClock}
-                src='/images/cardClock.svg'
-                alt=''
-              />
-            </div>
+            <div className={styles.exploringGroup}>
+              <div className={styles.cardTitle}>
+                Exploring Offerwall Solutions for Monetization and Retention: a
+                Comparative Analysis{' '}
+              </div>
+              <div className={styles.cardTimeGroup}>
+                <div className={styles.cardReadingTime}>8 min read </div>
+                <img
+                  className={styles.cardClock}
+                  src='/images/cardClock.svg'
+                  alt=''
+                />
+              </div>
+              <div className={styles.cardText}>
+                Many game developers struggle with understanding the best way to
+                monetize a mobile game, resorting to flooding their users with
+                ads that interrupt the user experience and cause their users to
+                write negative reviews.{' '}
+              </div>
 
-            <div className={styles.cardText}>
-              Many game developers struggle with understanding the best way to
-              monetize a mobile game, resorting to flooding their users with ads
-              that interrupt the user experience and cause their users to write
-              negative reviews.{' '}
-            </div>
-            <div className={styles.cardBtn}>
-              <div className={styles.readMore}>Read more </div>
+              <div className={styles.cardBtn}>
+                <div className={styles.readMore}>Read more </div>
+              </div>
             </div>
           </div>
+          <div className={styles.articlesCardContainerMobile}>
+            <div className={styles.innerSeventhBoxContainerMobile}>
+              <div className={styles.innerSeven2Mobile}>
+                <div className={styles.sevenRightMobile}>
+                  <div className={styles.topFirstSevenMobile}>
+                    <img
+                      src='/images/img00001.png'
+                      alt=''
+                    />
+                    <div className={styles.topLeftSevenBox1Mobile}>
+                      <div className={styles.exploringMobile}>
+                        Exploring Offerwall Solutions for Monetization and
+                        Retention: a Comparative Analysis
+                      </div>
 
-          <div className={styles.exploringGroup}>
-            <div className={styles.cardTitle}>
-              Exploring Offerwall Solutions for Monetization and Retention: a
-              Comparative Analysis{' '}
-            </div>
-            <div className={styles.timeGroup}>
-              <div className={styles.cardReadingTime}>8 min read </div>
-              <img
-                className={styles.cardClock}
-                src='/images/cardClock.svg'
-                alt=''
-              />
-            </div>
-            <div className={styles.cardText}>
-              Many game developers struggle with understanding the best way to
-              monetize a mobile game, resorting to flooding their users with ads
-              that interrupt the user experience and cause their users to write
-              negative reviews.{' '}
-            </div>
+                      <div className={styles.dateTimeMobile1}>
+                        <div>July 19 2023</div>
+                        <div className={styles.imgTimeMobile1}>
+                          <img
+                            src='/images/Time.png'
+                            alt=''
+                          />
+                          <div className={styles.minReadMobile}>8 min read</div>
+                        </div>
+                      </div>
 
-            <div className={styles.cardBtn}>
-              <div className={styles.readMore}>Read more </div>
+                      <div className={styles.LeftReadMoreExploreMobile}>
+                        <div className={styles.readMoreButtonMobile}>
+                          Read More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.belowLeftSevenMobile}>
+                    <img
+                      src='/images/img0003.png'
+                      alt=''
+                    />
+                    <div className={styles.topLeftSevenBox1Mobile}>
+                      <div className={styles.masteringMobile}>
+                        Behind the Scenes: How Advertisers <br />
+                        Create Irresistible Offerwall Campaigns
+                      </div>
+
+                      <div className={styles.dateTimeMobile2}>
+                        <div>July 19 2023</div>
+                        <div className={styles.imgTimeMobile2}>
+                          <img
+                            src='/images/Time.png'
+                            alt=''
+                          />
+                          <div className={styles.minReadMobile}>8 min read</div>
+                        </div>
+                      </div>
+
+                      <div className={styles.LeftReadMoreExploreMobile}>
+                        <div className={styles.readMoreButtonMobile}>
+                          Read More
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
           <div className={styles.newsletterGroup}>
             <span>
               <span className={styles.signUpSpan1}>Sign Up for </span>
               <span className={styles.signUpSpan2}>Newsletter</span>
             </span>{' '}
           </div>
-          <div className={styles.signUpText}>
-            Sign up for our newsletter to receive exclusive updates and the
-            latest news delivered directly to your inbox.{' '}
+          <div className={styles.signUpContainer}>
+            <div className={styles.signUpText}>
+              Sign up for our newsletter to receive exclusive updates and the
+              latest news delivered directly to your inbox.{' '}
+            </div>
+            <div className={styles.emailFormContainer}>
+              <div className={styles.yourEmail}>Your E-mail </div>
+              <div className={styles.emailBox}></div>
+            </div>
           </div>
-
-          <div className={styles.yourEmail}>Your E-mail </div>
-          <div className={styles.emailBox}></div>
-
           <div className={styles.signUpBtn}>
             <div className={styles.signUpBackground}></div>
             <img

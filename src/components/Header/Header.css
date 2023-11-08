@@ -1,3 +1,136 @@
+.header {
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    overflow: hidden;
+    background: linear-gradient(
+        90deg,
+        rgba(81, 79, 177, 1) 0%,
+        rgba(76, 117, 183, 1) 24.304988980293274%,
+        rgba(53, 159, 173, 1) 77.56538987159729%,
+        rgba(44, 175, 168, 1) 98.4375%
+      );
+      opacity: 0.8999999761581421;
+      
+
+}
+.header-bg{
+    background: linear-gradient(
+        90deg,
+        rgba(81, 79, 177, 1) 0%,
+        rgba(76, 117, 183, 1) 24.304988980293274%,
+        rgba(53, 159, 173, 1) 77.56538987159729%,
+        rgba(44, 175, 168, 1) 98.4375%
+      );
+      opacity: 0.8999999761581421;
+      
+}
+
+
+
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.header .nav-menu a {
+    color: #ffffff;
+}
+
+
+
+.header .nav-menu {
+    display: none;
+    list-style-type: none;
+
+}
+
+.header .nav-item {
+    padding: 1.5rem;
+    font-weight: 700;
+    margin-right: 20%;
+}
+
+.header .nav-item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+            background: linear-gradient(
+        90deg,
+        rgba(81, 79, 177, 1) 0%,
+        rgba(76, 117, 183, 1) 24.304988980293274%,
+        rgba(53, 159, 173, 1) 77.56538987159729%,
+        rgba(44, 175, 168, 1) 98.4375%
+      );
+      opacity: 0.8999999761581421;
+    }
+
+    .header .navbar {
+        max-width: 100%;
+    }
+
+    .header .nav-menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -200%; /* hides hamburger menu when not toggled */
+        top: 83px;
+        flex-direction: column;
+        background: linear-gradient(
+                    180deg, 
+                    #5B56BD 0%, 
+                    #293285 50%,
+                    #0A004A 100%);
+        width: 100%;
+        height: 90vh;
+        z-index: 20;
+        text-align: center;
+        transition: .3s;
+    }
+    
+    .nav-menu a {
+        text-decoration: none
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
+}
+
+
+
 .mainBox {
     background: linear-gradient(
         90deg,
@@ -9,7 +142,7 @@
       opacity: 0.8999999761581421;
       width: 100%;
       height: 100px;
-      position: fixed;
+      position: sticky;
       left: 0px;
       top: 0px;
       backdrop-filter: blur(2px);
@@ -176,7 +309,7 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px){
+@media only screen and (max-width: 1130px) and (min-width: 250px){
 
 
     .mainBox {
@@ -231,7 +364,7 @@
 
     .headerTitleItem {
         color: var(--White, #FFF);
-        font-family: NordiquePro-Bold;
+        font-family: "NordiquePro-Bold", sans-serif;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -240,7 +373,7 @@
 
     .headerTitleItem2 {
         color: #E0FF22;
-        font-family: NordiquePro-Bold;
+        font-family: "NordiquePro-Bold", sans-serif;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -287,3 +420,15 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

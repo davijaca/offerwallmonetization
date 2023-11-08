@@ -344,11 +344,11 @@ const Blog = () => {
                                 through offerwall monetisation.
                             </div>
 
-                            <div className={styles.mobileSearchLayout}>
-                                <div className={styles.innerMobileSearchLayout}>
-                                    <input type="text" className={styles.mobileSearch}
+                            <div className={styles.mobileSearch}>
+                                <div className={styles.innerMobileSearch}>
+                                    <input type="text" className={styles.mobileSearchContainer}
                                            placeholder="Search blog" onChange={searchHandler} value={search} />
-                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
+                                    <img src="/images/search.png" alt="" className={styles.mobileIcon}  onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
@@ -523,7 +523,7 @@ const Blog = () => {
 
             <form onSubmit={submitHandler}>
                 <div className={styles.fourthMobileSection}>
-                    <div className={styles.mobileblogSignUpNews}>
+                    <div className={styles.mobileBlogSignUpNews}>
                         <div>Sign Up for</div> &nbsp;
                         <div className={styles.mobileNewsLetter}>Newsletter</div>
                     </div >

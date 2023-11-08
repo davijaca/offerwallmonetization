@@ -1,94 +1,88 @@
-import React, {useRef, useState,} from "react";
-import styles from "./Header.module.css";
-import { AiOutlineUp, AiOutlineDown } from "react-icons/ai"
-import {Link} from "react-router-dom";
-import { AppRoutes } from "../../common/routes/AppRoutes";
+import React, { useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
-const Header = () => {
 
-    // const [open, setOpen] = useState(false);
-    // const menuRef = useRef();
-    // const businessRef = useRef();
-    //
-    // window.addEventListener("click", (e) => {
-    //     if (e.target !== menuRef.current && e.target !== businessRef.current) {
-    //         setOpen(false);
-    //     }
-    // });
+import './Header.css'
 
-    return(
-        <>
-            <div className={styles.mainBox}>
-                <div className={styles.headerBox}>
-                    <div className={styles.right}>
-                        <div className={styles.rightImg}>
+const Navbar = () => {
+
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
+    const closeMenu = () => setClick(false)
+
+    return (
+    <>
+        <div className={color ? 'header header-bg' : 'header'}>
+                <div className='headerBox'>
+                    <div className='right'>
+                        <div className='rightImg'>
                             <img src="/images/header_logo.png" alt="Logo"/>
 
                         </div>
-                        <div className={styles.headerTitle}>
+                        <div className='headerTitle'>
                             <span>
-                            <span className={styles.headerTitleItem}>
+                            <span className='headerTitleItem'>
                                 offerwall
                             <br />
                             </span>
-                            <span className={styles.headerTitleItem2}>
+                            <span className='headerTitleItem2'>
                                 monetization
                             </span>
                             </span>{" "}
                         </div>
 
-
-                        {/*<svg*/}
-                        {/*    // className={styles["header-logo"]}*/}
-                        {/*    // width="50"*/}
-                        {/*    // height="58"*/}
-                        {/*    // viewBox="0 0 50 58"*/}
-                        {/*    // fill="none"*/}
-                        {/*    // xmlns="http://www.w3.org/2000/svg"*/}
-                        {/*>*/}
-                            {/*<path*/}
-                            {/*d="M28.9651 35.341H26.4026C25.2732 35.3383 24.1676 34.9739 23.2137 34.2898C22.2598 33.6057 21.4967 32.63 21.0127 31.4756H26.4026C26.6291 31.4756 26.8464 31.3738 27.0066 31.1926C27.1668 31.0113 27.2567 30.7655 27.2567 30.5093C27.2567 30.253 27.1668 30.0072 27.0066 29.8259C26.8464 29.6447 26.6291 29.5429 26.4026 29.5429H20.4916C20.4005 28.9028 20.4005 28.2503 20.4916 27.6102H26.4026C26.6291 27.6102 26.8464 27.5084 27.0066 27.3272C27.1668 27.1459 27.2567 26.9001 27.2567 26.6438C27.2567 26.3876 27.1668 26.1418 27.0066 25.9605C26.8464 25.7793 26.6291 25.6775 26.4026 25.6775H21.0127C21.4967 24.5231 22.2598 23.5474 23.2137 22.8633C24.1676 22.1792 25.2732 21.8148 26.4026 21.8121H28.9651C29.1917 21.8121 29.4089 21.7103 29.5691 21.5291C29.7293 21.3478 29.8193 21.102 29.8193 20.8457C29.8193 20.5895 29.7293 20.3437 29.5691 20.1624C29.4089 19.9812 29.1917 19.8794 28.9651 19.8794H26.4026C24.815 19.8824 23.2673 20.4414 21.9718 21.4796C20.6764 22.5178 19.6968 23.9842 19.1676 25.6775H17.0065C16.78 25.6775 16.5627 25.7793 16.4025 25.9605C16.2423 26.1418 16.1523 26.3876 16.1523 26.6438C16.1523 26.9001 16.2423 27.1459 16.4025 27.3272C16.5627 27.5084 16.78 27.6102 17.0065 27.6102H18.7662C18.6978 28.2521 18.6978 28.901 18.7662 29.5429H17.007C16.7805 29.5429 16.5632 29.6447 16.403 29.8259C16.2428 30.0072 16.1529 30.253 16.1529 30.5093C16.1529 30.7655 16.2428 31.0113 16.403 31.1926C16.5632 31.3738 16.7805 31.4756 17.007 31.4756H19.1676C19.6968 33.1689 20.6764 34.6353 21.9718 35.6735C23.2673 36.7117 24.815 37.2707 26.4026 37.2737H28.9651C29.1917 37.2737 29.4089 37.1719 29.5691 36.9907C29.7293 36.8094 29.8193 36.5637 29.8193 36.3074C29.8193 36.0511 29.7293 35.8053 29.5691 35.624C29.4089 35.4428 29.1917 35.341 28.9651 35.341Z"*/}
-                            {/*fill="#BEE4FF"*/}
-                            {/*/>*/}
-                            {/*<path*/}
-                            {/*d="M15.1124 14.8637C10.5511 17.9725 7.55615 23.2093 7.55615 29.1457C7.55615 34.6517 10.1326 39.5559 14.1457 42.7186M18.9537 12.8988C20.7873 12.2357 22.7652 11.8743 24.8275 11.8743C32.3355 11.8743 38.7245 16.6648 41.1046 23.356M42.0293 27.5842C42.0754 28.0985 42.0989 28.6193 42.0989 29.1457C42.0989 38.6844 34.3663 46.4171 24.8275 46.4171C22.3493 46.4171 19.9929 45.8951 17.8624 44.9551"*/}
-                            {/*stroke="#BEE4FF"*/}
-                            {/*strokeWidth="1.8"*/}
-                            {/*strokeLinecap="round"*/}
-                            {/*/>*/}
-                            {/*<path*/}
-                            {/*d="M29.1455 53.338L29.6265 54.0987C29.8884 53.9331 30.0467 53.6443 30.0455 53.3344C30.0442 53.0245 29.8836 52.737 29.6204 52.5735L29.1455 53.338ZM22.88 48.3865C22.4577 48.1242 21.9028 48.2539 21.6405 48.6761C21.3783 49.0983 21.5079 49.6532 21.9302 49.9155L22.88 48.3865ZM21.924 56.8399C21.5039 57.1056 21.3787 57.6615 21.6444 58.0816C21.9101 58.5017 22.466 58.6269 22.8861 58.3613L21.924 56.8399ZM15.4645 7.13544C15.9219 6.94104 16.1352 6.4126 15.9408 5.95514C15.7464 5.49767 15.2179 5.28442 14.7605 5.47882L15.4645 7.13544ZM24.9511 52.7853C11.6589 52.7853 0.9 42.127 0.9 28.9996H-0.9C-0.9 43.1392 10.683 54.5853 24.9511 54.5853V52.7853ZM28.9968 52.4504C27.6821 52.6706 26.3305 52.7853 24.9511 52.7853V54.5853C26.4305 54.5853 27.8815 54.4622 29.2941 54.2257L28.9968 52.4504ZM21.9302 49.9155L28.6706 54.1025L29.6204 52.5735L22.88 48.3865L21.9302 49.9155ZM22.8861 58.3613L29.6265 54.0987L28.6644 52.5774L21.924 56.8399L22.8861 58.3613ZM0.9 28.9996C0.9 19.2006 6.8929 10.7779 15.4645 7.13544L14.7605 5.47882C5.55619 9.39018 -0.9 18.4446 -0.9 28.9996H0.9Z"*/}
-                            {/*fill="#BEE4FF"*/}
-                            {/*/>*/}
-                            {/*<path*/}
-                            {/*d="M20.5098 4.26255L20.0288 3.50189C19.7668 3.66753 19.6086 3.95627 19.6098 4.26617C19.611 4.57608 19.7716 4.86354 20.0349 5.02706L20.5098 4.26255ZM26.7753 9.2141C27.1975 9.47638 27.7524 9.34672 28.0147 8.92449C28.277 8.50227 28.1473 7.94736 27.7251 7.68509L26.7753 9.2141ZM27.7313 0.760643C28.1514 0.494976 28.2766 -0.0609512 28.0109 -0.481052C27.7452 -0.901154 27.1893 -1.02635 26.7692 -0.760681L27.7313 0.760643ZM34.1908 50.4651C33.7333 50.6595 33.5201 51.188 33.7145 51.6454C33.9089 52.1029 34.4373 52.3162 34.8948 52.1218L34.1908 50.4651ZM24.7042 4.81526C37.9963 4.81526 48.7553 15.4735 48.7553 28.601H50.5553C50.5553 14.4613 38.9723 3.01525 24.7042 3.01525V4.81526ZM20.6584 5.15019C21.9732 4.93001 23.3248 4.81526 24.7042 4.81526V3.01525C23.2248 3.01525 21.7738 3.13834 20.3611 3.37492L20.6584 5.15019ZM27.7251 7.68509L20.9847 3.49805L20.0349 5.02706L26.7753 9.2141L27.7251 7.68509ZM26.7692 -0.760681L20.0288 3.50189L20.9908 5.02322L27.7313 0.760643L26.7692 -0.760681ZM48.7553 28.601C48.7553 38.3999 42.7624 46.8227 34.1908 50.4651L34.8948 52.1218C44.0991 48.2104 50.5553 39.156 50.5553 28.601H48.7553Z"*/}
-                            {/*fill="#E0FF22"*/}
-                            {/*/>*/}
-                        {/*</svg>*/}
-
-                        <nav className={styles.topMenu}>
-                            <a className={styles.topMenuItem} href="/">Home</a>
+                        <nav className='topMenu'>
+                            <a className='topMenuItem' href="/">Home</a>
                             {/*<a className={styles.topMenuItem}>How it Works</a>*/}
-                            <a className={styles.topMenuItem} href="/blog">Blog</a>
-                            <a className={styles.topMenuItem}>About Us</a>
+                            <a className='topMenuItem' href="/blog">Blog</a>
+                            <a className='topMenuItem'>About Us</a>
                         </nav>
                     </div>
 
-                    <div className={styles.contact}>
+                    <div className='contact'>
                         <a href="/contact">
-                        <div className={styles.contactButton}>Request Contact</div>
+                        <div className='contactButton'>Request Contact</div>
                         </a>
-                        <svg className={styles.mobileHamburgerMenu}> xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                            <path d="M28.4696 24.9509H1.56909C1.27782 24.9509 1.04175 24.7148 1.04175 24.4236C1.04175 24.1323 1.27782 23.8962 1.56909 23.8962H28.4696C28.7609 23.8962 28.9969 24.1323 28.9969 24.4236C28.9969 24.7148 28.7609 24.9509 28.4696 24.9509ZM28.4696 15.5121H1.56909C1.27782 15.5121 1.04175 15.276 1.04175 14.9847C1.04175 14.6934 1.27782 14.4574 1.56909 14.4574H28.4696C28.7609 14.4574 28.9969 14.6934 28.9969 14.9847C28.9969 15.276 28.7609 15.5121 28.4696 15.5121ZM28.4696 6.07324H1.56909C1.27782 6.07324 1.04175 5.83717 1.04175 5.5459C1.04175 5.25463 1.27782 5.01855 1.56909 5.01855H28.4696C28.7609 5.01855 28.9969 5.25463 28.9969 5.5459C28.9969 5.83717 28.7609 6.07324 28.4696 6.07324Z" fill="white"/>
-                        </svg>
-                    </div>
+                        <div className='hamburger' onClick={handleClick}>
+                            {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                                : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
+                            <ul className={click ? "nav-menu active" : "nav-menu"}>
+                                <li className='nav-item'>
+                                    <a href='/' onClick={closeMenu}>Home</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a href='/blog' onClick={closeMenu}>Blog</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a href='#about' onClick={closeMenu}>About</a>
+                                </li>
+                                <li className='nav-item'>
+                                    <a href='/contact' onClick={closeMenu}>Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
 
                 </div>
-            </div>
-        </>
+        </div>
+
+        {/* Temporary solution for background opacity */}
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        </ul>
+    </>
     )
 }
 
-export default Header;
-
-
+export default Navbar

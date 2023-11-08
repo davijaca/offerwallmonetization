@@ -2,12 +2,15 @@
 .blog,
 .blog * {
   box-sizing: border-box;
+  
 }
 
 .blogMain {
   width: 100vw;
   max-width: 1512px;
   height: 100%;
+  margin: auto;
+  margin-top: -100px;
 }
 
 .webResponsiveMainBlog {
@@ -94,6 +97,7 @@
   height: 130px;
   display: flex;
   align-items: flex-end;
+
 }
 
 .search {
@@ -122,6 +126,8 @@
   align-self: stretch;
   outline: none;
   border: none;
+  background: red;
+
 }
 
 ::placeholder {
@@ -137,6 +143,7 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  background: #E7CAA2;
 }
 
 .search > img:hover {
@@ -1001,7 +1008,7 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px) {
+@media only screen and (max-width: 1130px) and (min-width: 250px) {
 
   .webResponsiveMainBlog {
     display: none;
@@ -1011,12 +1018,14 @@
     display: flex;
     flex-direction: column;
     width: 393px;
-    height: 3930px;
+    height: 3950px;
+    margin: auto;
+    margin-top: -100px;
 
   }
 
 .FirstMobileBg {
-  height: 900.51px;
+  height: 970px;
   width: 393px;
   display: flex;
   justify-content: center;
@@ -1025,7 +1034,7 @@
 
 .mobileBgBox {
   width: 342px;
-  height: 850px;
+  height: 950px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1034,7 +1043,7 @@
 
   .innerMobileBgBox {
     width: 342px;
-    height: 750px;
+    height: 800px;
   }
 
   .mobileExploreBlog {
@@ -1076,25 +1085,23 @@
     padding-top: 30px;
   }
 
-  .mobileSearchLayout {
-    padding-top: 60px;
+  .mobileSearch {
     width: 352px;
-    margin-left: 10px;
-  }
-
-  .innerMobileSearchLayout {
+    height: 150px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    gap: 4px;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-radius: 4px;
-    background: linear-gradient(0deg, rgba(42, 42, 255, 0.11) 0%, rgba(42, 42, 255, 0.11) 100%), rgba(255, 255, 255, 0.48);
-    height: 45px;
-    width: 320px;
   }
 
-  .mobileSearch{
+  .innerMobileSearch {
+    background: linear-gradient(0deg, rgba(42, 42, 255, 0.11) 0%, rgba(42, 42, 255, 0.11) 100%), rgba(255, 255, 255, 0.48);
+    width: 320px;
+    height: 56px;
+    display: flex;
+  }
+
+  .mobileSearchContainer{
     padding-left: 20px;
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins;
@@ -1102,19 +1109,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-    align-self: stretch;
     outline: none;
     border: none;
+    width: 320px;
+    height: 54px;
+
   }
 
-  .mobileSearchImg{
-    width: 24px;
-    height: 24px;
-    padding-right: 10px;
+  .mobileIcon{
+    width: 58px;
+    height: 58px;
   }
 
   .mobileSignUpNews {
@@ -1466,14 +1470,16 @@
   .fourthMobileSection {
     width: 393px;
     height: 750px;
-    flex-shrink: 0;
     background: #5B56BD;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    margin-bottom: 250px;
+
   }
 
-  .mobileblogSignUpNews {
+  .mobileBlogSignUpNews {
     width: 352px;
     height: 48px;
     flex-shrink: 0;
