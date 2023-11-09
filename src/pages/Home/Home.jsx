@@ -1,6 +1,6 @@
-import React, {useRef} from "react";
+import React from "react";
 import styles from "./Home.module.css";
-import ScrollDivider from "../ScrollDivider";
+
 
 const Home = () => {
 
@@ -10,9 +10,7 @@ const Home = () => {
     return (
         <div className={styles.homeContainer}>
             <div className={styles.firstHomeContainer}>
-                {/* <div className={styles.hrLine}>
-                    <hr />
-                </div> */}
+
                 <div className={styles.topFirst}>
                     <div style={{ height: "982px", display: "flex", justifyContent: "center"}}>
                             <div className={styles.gradientContainer}>
@@ -33,78 +31,6 @@ const Home = () => {
                                 </g>
                             </svg>
                                 </div>
-
-                                {/* <div className={styles.gradientContainerRight}></div>
-                                <div className={styles.gradientContainerLeft}>
-                                    <svg
-                                        className={styles["hero-gradient-background"]}
-                                        width="200px"
-                                        height="900px"
-                                        preserveAspectRatio="none"
-                                        viewBox="0 0 375 137"
-                                    >
-                                    </svg>
-
-                                    <svg
-                                        className={styles["hero-gradient-background-2"]}
-                                        width="50%"
-                                        height="900"
-                                        viewBox="0 0 784 982"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                        <path
-                                            opacity="0.2"
-                                            d="M38.4604 0H784V982H38.5C55.4973 770.731 203.133 688.026 154.612 521.647C118.578 398.088 -37.8396 305.418 8.50974 117C10.9053 107.262 34.9369 10.2674 38.4604 0Z"
-                                            fill="url(#paint0_angular_217_2526)"
-                                        />
-                                        <defs>
-                                            <radialGradient
-                                            id="paint0_angular_217_2526"
-                                            cx="0"
-                                            cy="0"
-                                            r="1"
-                                            gradientUnits="userSpaceOnUse"
-                                            gradientTransform="translate(570.989 780.433) rotate(-67.9598) scale(545.673 471.276)"
-                                            >
-                                            <stop offset="0.111924" stopColor="#4981FF" />
-                                            <stop offset="0.632206" stopColor="#5528D8" />
-                                            <stop offset="0.809809" stopColor="#4D71B8" />
-                                            <stop offset="1" stopColor="#28B4A7" />
-                                            </radialGradient>
-                                        </defs>
-                                    </svg>
-
-                                    <svg
-                                        className={styles["hero-gradient-background-3"]}
-                                        width="754"
-                                        height="900"
-                                        viewBox="0 0 754 982"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                        <path
-                                            opacity="0.2"
-                                            d="M30.1567 0H754V982H16.5C16.5 982 16.4995 953.288 16.4995 891.5C16.4995 653.724 109.675 612.28 57.4995 438.5C19.0716 310.509 -32.453 207.5 30.1567 0Z"
-                                            fill="url(#paint0_angular_217_2527)"
-                                        />
-                                        <defs>
-                                            <radialGradient
-                                            id="paint0_angular_217_2527"
-                                            cx="0"
-                                            cy="0"
-                                            r="1"
-                                            gradientUnits="userSpaceOnUse"
-                                            gradientTransform="translate(490 683) rotate(-67.3739) scale(539.726 475.885)"
-                                            >
-                                            <stop offset="0.111924" stopColor="#0549E3" />
-                                            <stop offset="0.632206" stopColor="#370DAE" />
-                                            <stop offset="0.809809" stopColor="#4D71B8" />
-                                            <stop offset="1" stopColor="#28B4A7" />
-                                            </radialGradient>
-                                        </defs>
-                                    </svg>
-                                </div> */}
 
                             </div>
 
@@ -145,26 +71,78 @@ const Home = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div className={styles.mobileFirstHomeContainer}>
+                {/* <div className={styles.hrLine}>
+                    <hr />
+                </div> */}
+                <div className={styles.mobileTopFirst}>
+                    <div style={{ height: "982px", display: "flex", justifyContent: "center"}}>
+
+                            <div className={styles.mainFirstMobile}>
+
+                            <div className={styles.rightMainMobile}>
+                                <div className={styles.textMobile}>
+                                    Offerwalls:
+                                    <br/>
+                                    A Valuable Tool for
+                                    <br />
+                                    <div className={styles.M}>Monetizing</div>
+                                    Mobile
+                                    Games
+                                </div>
+
+                                <div className={styles.leftMainMobile}>
+                                    <div className={styles.leftImgInfoMobile}>
+                                        <img className={styles.leftImgMobile} src="/images/iPhone_14%20_Pro.png"/>
+                                    </div>
+                                </div>
+                            
+                                <div className={styles.paragMobile}>
+                                    <div className={styles.innerParagMobile}> Offerwalls are a great monetization
+                                    tool primarily because they help gaming
+                                    publishers and developers reach a wider
+                                        audience which in turn…
+                                    </div>
+                                </div>
+                                <div className={styles.buttonTextMobile}>
+                                    <div className={styles.buttonText1Mobile}>Increases retention</div>
+                                    <div className={styles.buttonText2Mobile}>Generates additional revenue</div>
+                                </div>
+                                <div className={styles.downClickImgMobile}>
+                                    <img src="/images/downClick.png" alt=''
+                                    // onClick={handleClick}
+                                    />
+                                </div>
+                            </div>
+
+                            </div>
+                    </div>
+                </div>
+
                 {/*<ScrollDivider ref={ref} className={styles.scrollDivider } />*/}
 
-                <div className={styles.belowFirst}>
-                    <div className={styles.innerBelowFirst1}>
-                        <div className={styles.innerBelowBox1}>
-                            <div className={styles.percentage}>50 % </div>
-                            <div className={styles.retention}>retention increase</div>
-                            <div className={styles.study}>A study by App Annie found that adding Offerwalls to your existing monetization strategy increases retention by 50% - Why? The answer is…more choice for the user. </div>
-                        </div>
-                    </div>
 
-                    <div className={styles.innerBelowFirst2}>
-                        <div className={styles.innerBelowBox2}>
-                            <div className={styles.blog}>Blog</div>
-                            <div className={styles.explore}>Explore our blog for expert tips, success stories, and industry updates on maximizing your earnings through offerwall monetisation.</div>
-                            <div className={styles.readMore}>
-                                <button>
-                                    Read more
-                                </button>
-                            </div>
+            </div>
+
+            <div className={styles.belowFirst}>
+                <div className={styles.innerBelowFirst1}>
+                    <div className={styles.innerBelowBox1}>
+                        <div className={styles.percentage}>50 % </div>
+                        <div className={styles.retention}>retention increase</div>
+                        <div className={styles.study}>A study by App Annie found that adding Offerwalls to your existing monetization strategy increases retention by 50% - Why? The answer is…more choice for the user. </div>
+                    </div>
+                </div>
+
+                <div className={styles.innerBelowFirst2}>
+                    <div className={styles.innerBelowBox2}>
+                        <div className={styles.blog}>Blog</div>
+                        <div className={styles.explore}>Explore our blog for expert tips, success stories, and industry updates on maximizing your earnings through offerwall monetisation.</div>
+                        <div className={styles.readMore}>
+                            <button>
+                                Read more
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +152,7 @@ const Home = () => {
                     <div className= {styles.secondHomeContainerBox1}>
                         <div className={styles.whatOffer}>
                             <div className={styles.what}>What Is an </div>&nbsp;
-                            <div className={styles.offerW}>Offerwall?</div>
+                            <div className={styles.offerW}> Offerwall?</div>
                         </div>
 
                         <div className={styles.anOfferwall}>
@@ -200,31 +178,18 @@ const Home = () => {
 
 
             {/*Second Home mobile responsiveness*/}
-            <div className={styles.MobileSecondHomeContainer}>
-                <div className= {styles.secondHomeContainerBox1}>
-                    <div className={styles.whatOffer}>
-                        <div className={styles.what}>What Is an </div>
-                        <div className={styles.offerW}>Offerwall?</div>
-                    </div>
 
-                    <div className= {styles.secondHomeContainerBox2}>
-                        <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
-                        {/*<img className= {styles.image2} src="/images/mobileP_Hover.png" alt=""/>*/}
+            <div className={styles.mobileSecondHomeContainer}>
+                <div className={styles.innerMobileSection3}>
+                    <div className={styles.mobileWhat}>
+                        <div>What Is an </div>&nbsp;
+                        <div className={styles.mobileWofferwall}>Offerwall?</div>
                     </div>
+                    <div className={styles.mobilePImage}>
+                        <img src="/images/mobileP.png" alt="image"/>
+                    </div>
+                    <div className={styles.mobileInaPPAdd}>An Offerwall is a type of in-app advertising unit that allows users to earn rewards by completing certain actions like downloading apps, signing up for newsletters, or conducting surveys. The user earns in-game currency and the gaming publisher earns revenue. </div>
                 </div>
-                <div className={styles.anOfferwall}>
-                    <div className={styles.innerAnOfferwall}>
-                        <div className={styles.anOfferwallParag}>
-                            An Offerwall is a type of in-app advertising
-                            unit that allows users to earn rewards by completing
-                            certain actions like downloading apps, signing up for
-                            newsletters, or conducting surveys. The user earns
-                            in-game currency and the gaming publisher earns revenue.
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
 
 
@@ -254,30 +219,22 @@ const Home = () => {
 
 
                 {/*Third Home mobile Responsiveness*/}
+
             <div className={styles.mobileThirdHomeContainer}>
-                <div className={styles.imageThirdHomeContainer} style={{ backgroundImage: "url(/images/Th1Mobile.png)", }}>
-                    <div className={styles.thirdHomeContainerBox}>
-                        <div className={styles.mobileProblem}>
-                            <div className={styles.innerMobileProblem}>
-                                <div className={styles.mobileProblem1}>The Problem </div>&nbsp;&nbsp;
-                                <div className={styles.with}>With Modern</div>
+                    <div className={styles.mobileTh1} style={{ backgroundImage: "url(/images/Th1Mobile.png)"}}>
+                        <div className={styles.innerMobileTh1}>
+                            <div className={styles.mobileModernProblem}>
+                                <div className={styles.mobileModern}>
+                                    <div className={styles.innerMobileProb}>The Problem</div>&nbsp;
+                                    <div>With Modern </div>
+                                </div>
+                                <div>Mobile Game Monetization</div>
                             </div>
-                            <div className={styles.mobileProblem2}> Mobile Game Monetization</div>
+                            <div className={styles.mobileGameProblem}>
+                                Many game developers struggle with understanding the best way to monetize a mobile game, resorting to flooding their users with ads that interrupt the user experience and cause their users to write negative reviews.                            </div>
                         </div>
-
-                        <div className={styles.gameDeveloper}>
-                            <div className={styles.gameDeveloper1}>Many game developers struggle with understanding
-                                the best way to monetize a mobile game, resorting
-                                to flooding their users with ads that interrupt the
-                                user experience and cause their users to write negative reviews.
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-
             </div>
-
 
             <div className={styles.fourthHomeContainer}>
                 <div className={styles.SubFourthHomeContainer}>
@@ -353,75 +310,71 @@ const Home = () => {
 
             {/*MOBILE FOURTH HOME CONTAINER*/}
             <div className={styles.mobileFourthHomeContainer}>
-                <div className={styles.SubFourthHomeContainer}>
+                 <div className={styles.mobileSubFourthHomeContainer}>
 
-                    <div className={styles.fourthHomeBox1}>
-                        <div className={styles.subFourthHomeBox1}>
+                    <div className={styles.mobileFourthHomeBox1}>
+                        <div className={styles.mobileSubFourthHomeBox1}>
                             <div>Why</div>&nbsp;
-                            <div className={styles.innerFourthHomeBox1}>Mobile </div> &nbsp;
+                            <div className={styles.mobileInnerFourthHomeBox1}>Mobile </div> &nbsp;
                             <div> Offerwall </div>
-                        </div>
-                        <div className={styles.subFourthHomeBox1}> Monetization? </div>
+                        </div><div className={styles.mobileSubFourthHomeBox1}> Monetization? </div>
                     </div>
 
-                    <div className={styles.fourthHomeBox2}>
-                        <div className={styles.fourthBox2Container}>
+                    <div className={styles.mobileFourthHomeBox2}>
+                        <div className={styles.mobileFourthBox2Container}>
 
-                            <div className={styles.fourthImg}>
-                                <img className={styles.fourthImg1} src="/images/phone01.png" alt=""/>
-                                {/*<img className={styles.fourthImg2} src="/images/phone02.png" alt=""/>*/}
+                            <div className={styles.mobileFourthImg}>
+                                <img className={styles.mobileFourthImg1} src="/images/phone01.png" alt=""/>
                             </div>
 
-                            <div className={styles.fourth13}>
-
-                                <div className={styles.fourth13One}>
-                                    <div className={styles.innerOne}>
+                            <div className={styles.mobileFourth13}>
+                                <div className={styles.mobileFourth13One}>
+                                    <div className={styles.mobileInnerOne}>
                                         <img src="/images/one.png" alt="" />
-                                        <div className={styles.fourth13Integration}>
-                                            Offerwall integration is seamless with
-                                            existing ad monetization or paywall structures
+                                        <div className={styles.mobileFourth13Integration}>
+                                            Offerwall integration is seamless with existing ad monetization or paywall structures
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className={styles.fourth13Two}>
-                                    <div className={styles.innerOne}>
+                                
+                                <div className={styles.mobileFourth24One}>
+                                    <div className={styles.mobileInnerOne}>
                                         <img src="/images/two.png" alt="" />
-                                        <div className={styles.fourth13Integration}>
-                                            At the point where users decline to pay for
-                                            premium content in your online shop you can
-                                            redirect them to an offerwall giving them a
-                                            different way to make the same payment                                   </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div className={styles.fourth24}>
-                                <div className={styles.fourth24One}>
-                                    <div className={styles.innerOne}>
-                                        <img src="/images/three.png" alt="" />
-                                        <div className={styles.fourth13Integration}>
-                                            Offerwalls have a proven track record of
-                                            increasing customer lifetime value and monthly
-                                            recurring revenue
+                                        <div className={styles.mobileFourth13Integration}>
+                                            Offerwalls have a proven track record of increasing
+                                            customer lifetime value and monthly recurring revenue                                    </div>
                                         </div>
                                     </div>
+                                    <div className={styles.mobileFourth13Two}>
+                                    <div className={styles.mobileInnerOne}>
+                                        <img src="/images/three.png" alt="" />
+                                        <div className={styles.mobileFourth13Integration}>
+                                            At the point where users decline to pay
+                                            for premium content in your online shop you
+                                            can redirect them to an offerwall giving
+                                            them a different way to make the same payment                                    </div>
+                                    </div>
                                 </div>
-                                <div className={styles.fourth24Two}>
-                                    <div className={styles.innerTwoSecond}>
+
+                                <div className={styles.mobileFourth24Two}>
+                                    <div className={styles.mobileInnerTwoSecond}>
                                         <img src="/images/four.png" alt="" />
-                                        <div className={styles.fourth13Integration}>
+                                        <div className={styles.mobileFourth13Integration}>
                                             There are offerwall solution providers
-                                            <div className={styles.likeSmatchedWork}>
+                                            <div className={styles.mobileLikeSmatchedWork}>
                                                 <div>like</div>&nbsp;
-                                                <div className={styles.fourth13Smatched}>Smatched</div>&nbsp;
+                                                <div className={styles.mobileFourth13Smatched}>Smatched</div>&nbsp;
                                                 <div>that work with you to </div>
                                             </div>
                                             customise the service for a seamless integration
                                             within your app to maximize the profit from your offerwall monetization                                   </div>
                                     </div>
                                 </div>
+                                <div className={styles.mobileFourth24}>
+
+                                
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -765,7 +718,7 @@ const Home = () => {
                                             <img src="/images/img0002.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1Mobile}>
 
-                                                <div className={styles.masteringMobile}>
+                                                <div className={styles.exploringMobile}>
                                                     Mastering Offerwall Monetisation: <br />
                                                     Strategies to Boost Your Earnings
                                                 </div>
@@ -791,7 +744,7 @@ const Home = () => {
                                                 <img src="/images/img0003.png" alt=""/>
                                                 <div className={styles.topLeftSevenBox1Mobile}>
 
-                                                    <div className={styles.masteringMobile}>
+                                                    <div className={styles.exploringMobile}>
                                                         Behind the Scenes: How Advertisers <br />
                                                         Create Irresistible Offerwall Campaigns
                                                     </div>

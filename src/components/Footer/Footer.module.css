@@ -158,7 +158,7 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1280px) and (min-width: 350px) {
+@media only screen and (max-width: 1130px) and (min-width: 350px) {
 
     .footerName {
         background-color: #f7f8fc00;
