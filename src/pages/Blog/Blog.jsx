@@ -54,7 +54,10 @@ const Blog = () => {
         <div className={styles.blogMain}>
             <div className={styles.webResponsiveMainBlog}>
 
-                <div className={styles.blogBgImage} style={{backgroundImage: "url(/images/blog_top_Bg.png)"}}>
+                <div className={styles.blogBgImage}
+                    style={{backgroundImage: "url(/images/top_background.png)"}}
+                    >
+                    {/*blog_First.png*/}
                     <div className={styles.firstRight}>
                         <div className={styles.firstRight1}>
 
@@ -84,7 +87,8 @@ const Blog = () => {
                     </div>
 
 
-                    <div className={styles.firstLeft}>
+                    <div className={styles.firstLeft}
+                    >
                         <div className={styles.firstLeft1}>
 
                             <div className={styles.signUpNews}>

@@ -14,7 +14,9 @@
 }
 
 .webResponsiveMainBlog {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .mobileResponsiveMainBlog {
@@ -22,12 +24,19 @@
 }
 
 .blogBgImage {
-  width: 100vw;
+  width: 100%;
   max-width: 1512px;
-  height: 736px;
+  height: 650px;
   display: flex;
-
+  /*background: linear-gradient(180deg, #5B56BD 0%, #293285 44.93%, #0A004A 100%);*/
 }
+
+/*.rightBg {*/
+/*  width: 50%;*/
+/*  height: 720px;*/
+/*  max-width: 1512px;*/
+/*  background: red;*/
+/*}*/
 
 .blogMain > img {
   width: 100%;
@@ -45,6 +54,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  /*background: linear-gradient(180deg, #5B56BD 0%, #293285 44.93%, #0A004A 100%);*/
+
 
 }
 
