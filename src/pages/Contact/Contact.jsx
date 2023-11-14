@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import styles from './Contact.module.css';
+import emailjs from '@emailjs/browser';
 
-const Contact = ({ ...props }) => {
+const Contact = () => {
+  const form = useRef();
+
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        'service_kqfam0m',
+        'template_0nk7u7r',
+        form.current,
+        'AuTqDu9UI6pmz293H'
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert('Thank you. We will get back to you as soon as possible.');
+
+          form.current.reset();
+        },
+        (error) => {
+          setLoading(false);
+          alert('Something went wrong.');
+        }
+      );
+  };
+
   return (
     <>
       <div className={styles.contact}>
@@ -32,27 +62,31 @@ const Contact = ({ ...props }) => {
           </div>
         </div>
         <div className={styles.heroRight}>
-          <form>
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
+          >
             <div className={styles.contactForm}>
               <div className={styles.contactEmail}>
                 <label
                   className={styles.contactLabel}
-                  for='contactEmail'
+                  value={form.email}
                 >
                   Your E-mail{' '}
                 </label>
                 <input
                   className={styles.dataBox}
                   type='email'
-                  id='contactEmail'
-                  name='user_email'
+                  name='email'
                   required
                 />
               </div>
               <div className={styles.contactSubject}>
                 <label
                   className={styles.contactLabel}
-                  for='contactSubject'
+                  name='subject'
+                  value={form.subject}
+                  required
                 >
                   Subject{' '}
                 </label>
@@ -67,13 +101,15 @@ const Contact = ({ ...props }) => {
               <div className={styles.contactMessage}>
                 <label
                   className={styles.contactLabel}
-                  for='contactMessage'
+                  name='message'
+                  value={form.message}
+                  required
                 >
                   Your message{' '}
                 </label>
                 <textarea
                   className={styles.messageBox}
-                  maxlength='240'
+                  maxLength='240'
                   id='contactMessage'
                   name='message'
                   required
@@ -84,9 +120,14 @@ const Contact = ({ ...props }) => {
               <div className={styles.sendGroup}>
                 <button
                   className={styles.sendButton}
+                  type='submit'
                   id='btnSubmit'
-                />
-                <div className={styles.sendText}>Send </div>
+                >
+                  {' '}
+                </button>
+                <div className={styles.sendText}>
+                  {loading ? 'Sending...' : 'Send'}{' '}
+                </div>
               </div>
             </div>
           </form>

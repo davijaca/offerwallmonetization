@@ -131,11 +131,6 @@
   resize: none;
 }
 
-.errorMessage {
-  color: #ff0000;
-  font-size: 15px;
-}
-
 
 .sendGroup {
   display: flex;
