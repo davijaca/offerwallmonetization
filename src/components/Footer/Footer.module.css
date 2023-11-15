@@ -1,199 +1,319 @@
-
-.footerContainer {
-    width: 100%;
-    height: 617px;
-    background-image:
-    url(
-  "/public/footer2.png");
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    overflow: hidden;
-    padding:0;
+.backgroundImage {
+    position: relative;
     background-repeat: no-repeat;
-    justify-content: center;
-}
-
-.footer-background {
-    position: absolute;
-    overflow: visible;
+    background-size: cover;
+    width: 100vw;
+    max-width: 1530px;
+    height: 617px;
     margin: auto;
+    overflow-x: hidden;
+    margin-top: -200px;
+}
+a { text-decoration: none; color: #dbdad7}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
-  }
+.footerName {
+    align-items: flex-end;
 
-.topFooterContainer {
-    width: 85%;
-    height: 290px;
-    display: flex;
-    align-items: end;
 }
 
-.topFooterBox{
-    height: 250px;
+.footerInfo {
+    position: absolute;
     width: 100%;
+    height: 515px;
     display: flex;
-    justify-content: space-between;
-}
-
-.topFooterBox1 {
-    width: 22%;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.smatchedLogoIcon {
-    position: relative;
-    width: 29px;
-    height: 41px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.smatchedUnleash {
-    position: relative;
-    line-height: 30px;
-    display: inline-block;
-    width: 286.32px;
-    height: 30.22px;
-    flex-shrink: 0;
-    font-size: 14px;
-}
-
-.socialMediaIconfacebook {
-    position: relative;
-    width: 30px;
-    height: 30px;
-}
-
-.social {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.social {
-    align-self: stretch;
-    flex-direction: row;
-}
-.frame {
-    flex: 1;
-    overflow: hidden;
-    flex-direction: column;
-}
-
-.topFooterBox2 {
-    width: 40%;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.text {
-    position: relative;
-    line-height: 30px;
-    font-weight: 700;
-    text-align: start;
-    font-family: Inter;
-}
-.srhHeidelbergGrnderInstitutIcon {
-    position: relative;
-    width: 100px;
-    height: 36.79px;
-    object-fit: cover;
-}
-.startProTectNeg95x3521Icon,
-.xsosuj1p4uyke1i1q8fo1Icon {
-    position: relative;
-    width: 100px;
-    height: 40px;
-    object-fit: cover;
-}
-.startProTectNeg95x3521Icon {
-    height: 35px;
-}
-.company,
-.links,
-.supportedBy {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.supportedBy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.company {
-    height: 65px;
-}
-.ourMission {
-    font-size: 15px;
-}
-
-.services {
-    display: flex;
-    flex-direction: column;
-    height: 123px;
-    justify-content: space-between;
-}
-
-.links, .link1 {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    justify-content: space-between;
-    font-size: 15px;
-}
-
-.link1 {
-    gap: 11px;
-}
-
-.legal {
-    width: 25%;
-    height: 123px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.lowerFooterContainer {
-    width: 100%;
-    height: 90px;
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-hr {
+
+
+.innerFooterInfo {
+    width: 1110px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.TopFooterInfo {
     width: 100%;
-    background-color: #513A8D;
-    height: 1px;
-    border: 0;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.lowerFooterBox {
-    height: 90px;
-    width: 85%;
-
-}
-
-.copyRights {
+.rightFooterInfo {
+    width: 100%;
     height: 100px;
+
+}
+
+.imgValuable {
+    width: 50%;
+    height: 70px;
+    display: flex;
+
+}
+
+.footerLogo {
+    width: 50px;
+    height: 58px;
+}
+
+.offerwallBox {
+    width: 220px;
+    height: 58px;
+    padding-left: 12px;
+
+}
+
+.offerwall {
+
+    color: var(--White, #FFF);
+    /*font-family: NordiquePro-Bold;*/
+    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+
+}
+
+.monetization {
+    color: #E0FF22;
+    font: 400 30px/0% "NordiquePro-Bold", sans-serif;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.valuable {
     width: 100%;
-    font-family: Inter;
-    font-size: 12px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    color: #F7F7FC;
+    line-height: 131.5%;
+    color: #FFF;
+}
+
+.leftFooterInfo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+
+.info {
+    width: 100%;
+    height: 20px;
+}
+
+.rightInfo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Modal-grey-1, #DBDAD7);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.leftInfo {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+
+.footerDivider {
+    height: 1px;
+    width: 1110px;
+
+}
+
+.footerDivider>hr {
+    border: 0.5px solid #DEDEDE
+}
+
+.downFooterInfo {
+    width: 100%;
+    height: 103px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #DBDAD7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+}
+
+
+/*MOBILE RESPONSIVENESS*/
+@media only screen and (max-width: 1280px) and (min-width: 320px) {
+
+    .footerName {
+        display: flex;
+
+    }
+
+    .backgroundImage {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 1550px;
+        height: 617px;
+        margin: auto;
+        overflow-x: hidden;
+        margin-top: -450px;
+        z-index: 50;
+    }
+
+
+    .innerFooterInfo {
+        margin: 20px;
+        height: 370px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        top: 200px;
+
+    }
+
+    .TopFooterInfo {
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .rightFooterInfo {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .footerLogo {
+        width: 33.104px;
+        height: 38.4px;
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .offerwallBox {
+        width: 220px;
+        height: 58px;
+        padding-left: 12px;
+        margin: 10px 5px;
+        position: relative;
+
+    }
+
+    .offerwall {
+        color: var(--White, #FFF);
+        font-family: NordiquePro-Bold, sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%;
+        position: absolute;
+
+    }
+
+    .monetization {
+        color: #E0FF22;
+        font-family: NordiquePro-Bold, sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105.3%;
+
+        position: absolute;
+    }
+
+    .imgValuable {
+        width: 33.104px;
+        height: 38.4px;
+        position: absolute;
+
+    }
+
+    .valuable {
+        width: 100%;
+        height: 36px;
+        flex-shrink: 0;
+        font-size: 14px;
+        top: 65px;
+        position: relative;
+    }
+
+    .info {
+        width: 100%;
+        height: 140px;
+        margin-top: 60px;
+
+    }
+
+
+    .leftFooterInfo {
+        position: relative;
+        margin-top: 20px;
+
+    }
+
+
+    .rightInfo {
+        font-size: 14px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .leftInfo {
+        width: 24px;
+        height: 24px;
+        top: 80px;
+        position: relative;
+    }
+
+
+    .footerDivider {
+        height: 0.7px;
+        width: 352px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .downFooterInfo {
+        width: 284px;
+        height: 81px;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
