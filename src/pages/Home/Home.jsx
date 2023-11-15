@@ -57,14 +57,14 @@ const Home = () => {
                                     <div className={styles.buttonText2}>Generates additional revenue</div>
                                 </div>
                                 <div className={styles.downClickImg}>
-                                    <img src="/images/downClick.png" alt=''
+                                    <img src="./downClick.png" alt=''
                                     // onClick={handleClick}
                                     />
                                 </div>
                             </div>
                             <div className={styles.leftMain}>
                                 <div className={styles.leftImgInfo}>
-                                    <img className={styles.leftImg} src="/images/iPhone_14%20_Pro.png"/>
+                                    <img className={styles.leftImg} src="./iPhone_14%20_Pro.png"/>
                                 </div>
                             </div>
                             </div>
@@ -95,7 +95,7 @@ const Home = () => {
 
                                 <div className={styles.leftMainMobile}>
                                     <div className={styles.leftImgInfoMobile}>
-                                        <img className={styles.leftImgMobile} src="/images/iPhone_14%20_Pro.png"/>
+                                        <img className={styles.leftImgMobile} src="./iPhone_14%20_Pro.png"/>
                                     </div>
                                 </div>
                             
@@ -111,7 +111,7 @@ const Home = () => {
                                     <div className={styles.buttonText2Mobile}>Generates additional revenue</div>
                                 </div>
                                 <div className={styles.downClickImgMobile}>
-                                    <img src="/images/downClick.png" alt=''
+                                    <img src="./downClick.png" alt=''
                                     // onClick={handleClick}
                                     />
                                 </div>
@@ -171,8 +171,8 @@ const Home = () => {
 
 
                     <div className= {styles.secondHomeContainerBox2}>
-                        <img className= {styles.image1} src="/images/mobileP.png" alt=""/>
-                        <img className= {styles.image2} src="/images/mobileP_Hover.png" alt=""/>
+                        <img className= {styles.image1} src="./mobileP.png" alt=""/>
+                        <img className= {styles.image2} src="./mobileP_Hover.png" alt=""/>
                     </div>
             </div>
 
@@ -186,7 +186,7 @@ const Home = () => {
                         <div className={styles.mobileWofferwall}>Offerwall?</div>
                     </div>
                     <div className={styles.mobilePImage}>
-                        <img src="/images/mobileP.png" alt="image"/>
+                        <img src="./mobileP.png" alt="image"/>
                     </div>
                     <div className={styles.mobileInaPPAdd}>An Offerwall is a type of in-app advertising unit that allows users to earn rewards by completing certain actions like downloading apps, signing up for newsletters, or conducting surveys. The user earns in-game currency and the gaming publisher earns revenue. </div>
                 </div>
@@ -194,7 +194,7 @@ const Home = () => {
 
 
             <div className={styles.thirdHomeContainer}>
-                <div className={styles.imageThirdHomeContainer} style={{ backgroundImage: "url(/images/Th1.png)", }}>
+                <div className={styles.imageThirdHomeContainer} style={{ backgroundImage: "url(./Th1.png)", }}>
                     <div className={styles.thirdHomeContainerBox}>
                         <div className={styles.mobileProblem}>
                             <div className={styles.innerMobileProblem}>
@@ -221,7 +221,7 @@ const Home = () => {
                 {/*Third Home mobile Responsiveness*/}
 
             <div className={styles.mobileThirdHomeContainer}>
-                    <div className={styles.mobileTh1} style={{ backgroundImage: "url(/images/Th1Mobile.png)"}}>
+                    <div className={styles.mobileTh1} style={{ backgroundImage: "url(./Th1Mobile.png)"}}>
                         <div className={styles.innerMobileTh1}>
                             <div className={styles.mobileModernProblem}>
                                 <div className={styles.mobileModern}>
@@ -249,7 +249,7 @@ const Home = () => {
                             <div className={styles.fourth13}>
                                 <div className={styles.fourth13One}>
                                     <div className={styles.innerOne}>
-                                        <img src="/images/one.png" alt="" />
+                                        <img src="./one.png" alt="" />
                                         <div className={styles.fourth13Integration}>
                                             Offerwall integration is seamless with existing ad monetization or paywall structures
                                         </div>
@@ -257,7 +257,7 @@ const Home = () => {
                                 </div>
                                 <div className={styles.fourth13Two}>
                                     <div className={styles.innerOne}>
-                                        <img src="/images/three.png" alt="" />
+                                        <img src="./three.png" alt="" />
                                         <div className={styles.fourth13Integration}>
                                             At the point where users decline to pay
                                             for premium content in your online shop you
@@ -268,14 +268,14 @@ const Home = () => {
                             </div>
 
                             <div className={styles.fourthImg}>
-                                <img className={styles.fourthImg1} src="/images/phone01.png" alt=""/>
-                                <img className={styles.fourthImg2} src="/images/phone02.png" alt=""/>
+                                <img className={styles.fourthImg1} src="./phone01.png" alt=""/>
+                                <img className={styles.fourthImg2} src="./phone02.png" alt=""/>
                             </div>
 
                             <div className={styles.fourth24}>
                                 <div className={styles.fourth24One}>
                                     <div className={styles.innerOne}>
-                                        <img src="/images/two.png" alt="" />
+                                        <img src="./two.png" alt="" />
                                         <div className={styles.fourth13Integration}>
                                             Offerwalls have a proven track record of increasing
                                             customer lifetime value and monthly recurring revenue                                    </div>
@@ -283,7 +283,7 @@ const Home = () => {
                                 </div>
                                 <div className={styles.fourth24Two}>
                                     <div className={styles.innerTwoSecond}>
-                                        <img src="/images/four.png" alt="" />
+                                        <img src="./four.png" alt="" />
                                         <div className={styles.fourth13Integration}>
                                             There are offerwall solution providers
                                             <div className={styles.likeSmatchedWork}>
@@ -324,13 +324,13 @@ const Home = () => {
                         <div className={styles.mobileFourthBox2Container}>
 
                             <div className={styles.mobileFourthImg}>
-                                <img className={styles.mobileFourthImg1} src="/images/phone01.png" alt=""/>
+                                <img className={styles.mobileFourthImg1} src="./phone01.png" alt=""/>
                             </div>
 
                             <div className={styles.mobileFourth13}>
                                 <div className={styles.mobileFourth13One}>
                                     <div className={styles.mobileInnerOne}>
-                                        <img src="/images/one.png" alt="" />
+                                        <img src="./one.png" alt="" />
                                         <div className={styles.mobileFourth13Integration}>
                                             Offerwall integration is seamless with existing ad monetization or paywall structures
                                         </div>
@@ -340,7 +340,7 @@ const Home = () => {
                                 
                                 <div className={styles.mobileFourth24One}>
                                     <div className={styles.mobileInnerOne}>
-                                        <img src="/images/two.png" alt="" />
+                                        <img src="./two.png" alt="" />
                                         <div className={styles.mobileFourth13Integration}>
                                             Offerwalls have a proven track record of increasing
                                             customer lifetime value and monthly recurring revenue                                    </div>
@@ -348,7 +348,7 @@ const Home = () => {
                                     </div>
                                     <div className={styles.mobileFourth13Two}>
                                     <div className={styles.mobileInnerOne}>
-                                        <img src="/images/three.png" alt="" />
+                                        <img src="./three.png" alt="" />
                                         <div className={styles.mobileFourth13Integration}>
                                             At the point where users decline to pay
                                             for premium content in your online shop you
@@ -359,7 +359,7 @@ const Home = () => {
 
                                 <div className={styles.mobileFourth24Two}>
                                     <div className={styles.mobileInnerTwoSecond}>
-                                        <img src="/images/four.png" alt="" />
+                                        <img src="./four.png" alt="" />
                                         <div className={styles.mobileFourth13Integration}>
                                             There are offerwall solution providers
                                             <div className={styles.mobileLikeSmatchedWork}>
@@ -476,7 +476,7 @@ const Home = () => {
                     <div className={styles.innerSixthBox2}>
                         <div className={styles.willingUsers}>
                             <div className={styles.dollar}>
-                                <img src="/images/dollar_sign.png"/>
+                                <img src="./dollar_sign.png"/>
                             </div>
 
                             <div className={styles.pay}>
@@ -486,7 +486,7 @@ const Home = () => {
 
                         <div className={styles.hateUsers}>
                             <div className={styles.megaphone}>
-                                <img src="/images/mega_phone.png"/>
+                                <img src="./mega_phone.png"/>
                             </div>
 
                             <div className={styles.ads}>
@@ -500,7 +500,7 @@ const Home = () => {
 
 
             <div className={styles.seventhHomeContainer}>
-            <div style={{ background: "url(/images/rect_1203.png)", width: "100vw", maxWidth: "1512px", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
+            <div style={{ background: "url(./rect_1203.png)", width: "100vw", maxWidth: "1512px", height: "2760px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center"}}>
 
                         <div className={styles.seventhHomeBox1}>
                             <div className={styles.implementingSoln}>
@@ -533,7 +533,7 @@ const Home = () => {
                                 <div className={styles.innerSeven2}>
                                     <div className={styles.sevenRight}>
                                         <div className={styles.topRightSeven}>
-                                            <img src="/images/img00001.png" alt=""/>
+                                            <img src="./img00001.png" alt=""/>
                                         </div>
                                         <div className={styles.belowRightSeven}>
                                             <div className={styles.innerBelowRightSeven}>
@@ -545,7 +545,7 @@ const Home = () => {
                                                 <div className={styles.dateTime}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.imgTime}>
-                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <img src="./Time.png"  alt=""/>
                                                         <div className={styles.minRead}>8 min read</div>
                                                     </div>
                                                 </div>
@@ -560,7 +560,7 @@ const Home = () => {
                                     </div>
                                     <div className={styles.sevenLeft}>
                                         <div className={styles.topLeftSeven}>
-                                            <img src="/images/img0002.png" alt=""/>
+                                            <img src="./img0002.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1}>
 
                                                 <div className={styles.mastering}>
@@ -571,7 +571,7 @@ const Home = () => {
                                                 <div className={styles.leftDateTime}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTime}>
-                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <img src="./Time.png"  alt=""/>
                                                         <div className={styles.minRead}>8 min read</div>
                                                     </div>
                                                 </div>
@@ -586,7 +586,7 @@ const Home = () => {
 
                                         </div>
                                         <div className={styles.belowLeftSeven}>
-                                            <img src="/images/img0003.png" alt=""/>
+                                            <img src="./img0003.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1}>
 
                                                 <div className={styles.mastering}>
@@ -597,7 +597,7 @@ const Home = () => {
                                                 <div className={styles.leftDateTime}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTime}>
-                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <img src="./Time.png"  alt=""/>
                                                         <div className={styles.minRead}>8 min read</div>
                                                     </div>
                                                 </div>
@@ -628,7 +628,7 @@ const Home = () => {
                                         monetization on your own mobile games. </div>
                                     <div>
                                         <div className={styles.contactImg}>
-                                            <img src="/images/contact.png" alt=""/>
+                                            <img src="./contact.png" alt=""/>
                                         </div>
                                         <div className={styles.contactLayOut}>
                                             <div className={styles.contactUs}>
@@ -639,7 +639,7 @@ const Home = () => {
                                 </div>
                                 <div  className={styles.leftSevenBox3}>
                                     <div className={styles.mobile005}>
-                                        <img src="/images/mobile005.png" alt=""/>
+                                        <img src="./mobile005.png" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -653,7 +653,7 @@ const Home = () => {
             {/*MOBILE SEVENTH HOME CONTAINER*/}
 
             <div className={styles.seventhMobileHomeContainer}>
-                <div style={{ background: "url(/images/rect_1203mobile.png)", width: "100vw", maxWidth: "393px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", margin:"auto", backgroundRepeat: "no-repeat"}}>
+                <div style={{ background: "url(./rect_1203mobile.png)", width: "100vw", maxWidth: "393px", display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", margin:"auto", backgroundRepeat: "no-repeat"}}>
 
                             <div className={styles.seventhHomeBox1Mobile}>
                                 <div className={styles.implementingSolnMobile}>
@@ -688,7 +688,7 @@ const Home = () => {
                                         <div className={styles.sevenRightMobile}>
 
                                             <div className={styles.topFirstSevenMobile}>
-                                            <img src="/images/img00001.png" alt=""/>
+                                            <img src="./img00001.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1Mobile}>
 
                                                 <div className={styles.exploringMobile}>
@@ -700,7 +700,7 @@ const Home = () => {
                                                 <div className={styles.leftDateTimeMobile}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTimeMobile}>
-                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <img src="./Time.png"  alt=""/>
                                                         <div className={styles.minReadMobile}>8 min read</div>
                                                     </div>
                                                 </div>
@@ -715,7 +715,7 @@ const Home = () => {
 
                                             </div>
                                             <div className={styles.topLeftSevenMobile}>
-                                            <img src="/images/img0002.png" alt=""/>
+                                            <img src="./img0002.png" alt=""/>
                                             <div className={styles.topLeftSevenBox1Mobile}>
 
                                                 <div className={styles.exploringMobile}>
@@ -726,7 +726,7 @@ const Home = () => {
                                                 <div className={styles.leftDateTimeMobile}>
                                                     <div>July 19 2023</div>
                                                     <div className={styles.leftImgTimeMobile}>
-                                                        <img src="/images/Time.png"  alt=""/>
+                                                        <img src="./Time.png"  alt=""/>
                                                         <div className={styles.minReadMobile}>8 min read</div>
                                                     </div>
                                                 </div>
@@ -741,7 +741,7 @@ const Home = () => {
 
                                             </div>
                                             <div className={styles.belowLeftSevenMobile}>
-                                                <img src="/images/img0003.png" alt=""/>
+                                                <img src="./img0003.png" alt=""/>
                                                 <div className={styles.topLeftSevenBox1Mobile}>
 
                                                     <div className={styles.exploringMobile}>
@@ -752,7 +752,7 @@ const Home = () => {
                                                     <div className={styles.leftDateTimeMobile}>
                                                         <div>July 19 2023</div>
                                                         <div className={styles.leftImgTimeMobile}>
-                                                            <img src="/images/Time.png"  alt=""/>
+                                                            <img src="./Time.png"  alt=""/>
                                                             <div className={styles.minReadMobile}>8 min read</div>
                                                         </div>
                                                     </div>
@@ -784,7 +784,7 @@ const Home = () => {
                                             monetization on your own mobile games.</div>
                                         <div>
                                             <div className={styles.contactImgMobile}>
-                                                <img src="/images/contact.png" alt=""/>
+                                                <img src="./contact.png" alt=""/>
                                             </div>
                                             <div className={styles.contactLayOutMobile}>
                                                 <div className={styles.contactUsMobile}>
@@ -795,7 +795,7 @@ const Home = () => {
                                     </div>
 
                                         <div className={styles.mobile005Mobile}>
-                                            <img src="/images/mobile005.png" alt=""/>
+                                            <img src="./mobile005.png" alt=""/>
                                         </div>
 
                                 </div>

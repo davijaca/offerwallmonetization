@@ -4,963 +4,335 @@
 
 }
 
-.contactMobile {
-  display: none;
-}
-
 .contact {
   background: #ffffff;
-  width: 1512px;
-  height: 1000px;
+  width: 100vw;
+  max-width: 1530px;
+  height: 1056px;
   position: relative;
   overflow: hidden;
   display: flex;
   margin: auto;
   margin-top: -150px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
 }
+
+.heroLeft {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 200px;
+}
+
 .heroBackground {
-  position: absolute;
-  inset: 0;
+  margin-top: -75px;
 }
-.firstBackground {
-  background: rgba(217, 217, 217, 0);
-  border-radius: 50%;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0.3px;
-  width: 419px;
-  height: 419px;
-  position: absolute;
-  left: 213px;
-  top: 386px;
-  box-shadow: inset 49px 75px 50px 0px rgba(154, 211, 204, 0.18);
+
+.heroBackgroundMobile {
+  display: none
 }
-.secondBackground {
-  background: rgba(217, 217, 217, 0);
-  border-radius: 50%;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 0.3px;
-  width: 419px;
-  height: 419px;
-  position: absolute;
-  left: 213px;
-  top: 805px;
-  box-shadow: inset -23px -27px 50px 0px rgba(135, 100, 227, 0.18);
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.bottomBackground {
-  position: absolute;
-  left: 213px;
-  top: 386px;
-  overflow: visible;
-}
+
+
 .heroH2 {
   color: #1e1e1e;
   text-align: left;
   font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 201px;
-  top: 278px;
+  position: relative;
   width: 447px;
   height: 146px;
+  margin-top: 20px;
 }
+
 .heroGetInTouch {
   text-align: left;
   font: 700 55px "Poppins", sans-serif;
-  position: absolute;
-  left: 201px;
-  top: 195px;
+  position: relative;
   width: 447px;
   height: 68px;
 }
+
 .getIn {
   color: #1e1e1e;
   font: 700 55px "Poppins", sans-serif;
 }
+
 .touch {
   color: #5b56bd;
   font: 700 55px "Poppins", sans-serif;
 }
+
+.heroRight {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 150px;
+}
+
+.contactForm {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  color: #1e1e1e;
+  text-align: left;
+  font: 400 15px "Poppins", sans-serif;
+  margin-top: 50px;
+
+}
+
 .contactEmail {
-  position: absolute;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px;
   inset: 0;
 }
-.yourEmail {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 898px;
-  top: 260px;
-}
-.emailBox {
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 413px;
-  height: 45px;
-  position: absolute;
-  left: 898px;
-  top: 286px;
-}
+
 .contactSubject {
-  position: absolute;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px;
   inset: 0;
 }
-.subject {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 899px;
-  top: 349px;
+
+
+.contactMessage {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 20px;
+  inset: 0;
 }
-.subjectBox {
+
+
+.dataBox {
   border-style: solid;
   border-color: #1e1e1e;
   border-width: 1px;
   width: 413px;
   height: 45px;
-  position: absolute;
-  left: 898px;
-  top: 375px;
+  margin-top: 10px;
+  position: relative;
 }
-.contactMessage {
-  position: absolute;
-  inset: 0;
-}
-.yourMessage {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 898px;
-  top: 438px;
-  width: 142px;
-}
+
 .messageBox {
   border-style: solid;
   border-color: #1e1e1e;
   border-width: 1px;
-  width: 413px;
-  height: 114px;
-  position: absolute;
-  left: 898px;
-  top: 464px;
+  width: 417px;
+  height: 157px;
+  margin-top: 10px;
+  position: relative;
+  overflow: auto;
+  resize: none;
 }
-.group-33 {
-  position: absolute;
-  inset: 0;
-}
-.group-2 {
-  width: 207px;
-  height: 20px;
-  position: static;
-}
-.send {
-  color: #1e1e1e;
-  text-align: center;
-  font: 500 30px "Inter", sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  left: 653px;
-  top: 819px;
-  width: 207px;
-  height: 20px;
+
+
+.sendGroup {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.heroBusiness {
-  width: 447px;
-  height: 447px;
-  position: absolute;
-  left: 201px;
-  top: 343px;
-  overflow: hidden;
-  z-index: 5;
-}
-.vector2 {
-  position: absolute;
-  left: 374.87px;
-  top: 186.42px;
+  margin-top: 40px;
   overflow: visible;
-}
-.vector3 {
-  position: absolute;
-  left: 13.9px;
-  top: 86.31px;
-  overflow: visible;
-}
-.vector4 {
-  position: absolute;
-  left: 316.7px;
-  top: 229.15px;
-  overflow: visible;
-}
-.vector5 {
-  position: absolute;
-  left: 317.25px;
-  top: 238.4px;
-  overflow: visible;
-}
-.vector6 {
-  position: absolute;
-  left: 209.44px;
-  top: 191.17px;
-  overflow: visible;
-}
-.vector7 {
-  position: absolute;
-  left: 249.17px;
-  top: 357.78px;
-  overflow: visible;
-}
-.vector8 {
-  position: absolute;
-  left: 268px;
-  top: 212.99px;
-  overflow: visible;
-}
-.vector9 {
-  position: absolute;
-  left: 284.76px;
-  top: 211.65px;
-  overflow: visible;
-}
-.vector10 {
-  position: absolute;
-  left: 221.38px;
-  top: 138.65px;
-  overflow: visible;
-}
-.vector11 {
-  position: absolute;
-  left: 284.76px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector12 {
-  position: absolute;
-  left: 286.17px;
-  top: 146.62px;
-  overflow: visible;
-}
-.vector13 {
-  position: absolute;
-  left: 285.61px;
-  top: 101.95px;
-  overflow: visible;
-}
-.vector14 {
-  position: absolute;
-  left: 286.44px;
-  top: 119.45px;
-  overflow: visible;
-}
-.vector15 {
-  position: absolute;
-  left: 272.31px;
-  top: 103.28px;
-  overflow: visible;
-}
-.vector16 {
-  position: absolute;
-  left: 291.52px;
-  top: 106.92px;
-  overflow: visible;
-}
-.vector17 {
-  position: absolute;
-  left: 294.69px;
-  top: 123.55px;
-  transform: translate(0.93px, -8.14px);
-  overflow: visible;
-}
-.vector18 {
-  position: absolute;
-  left: 266.98px;
-  top: 91.36px;
-  overflow: visible;
-}
-.vector19 {
-  position: absolute;
-  left: 86.31px;
-  top: 191.17px;
-  overflow: visible;
-}
-.vector20 {
-  position: absolute;
-  left: 100.76px;
-  top: 357.78px;
-  overflow: visible;
-}
-.vector21 {
-  position: absolute;
-  left: 126.64px;
-  top: 212.99px;
-  overflow: visible;
-}
-.vector22 {
-  position: absolute;
-  left: 100.76px;
-  top: 211.65px;
-  overflow: visible;
-}
-.vector23 {
-  position: absolute;
-  left: 84.45px;
-  top: 138.15px;
-  overflow: visible;
-}
-.vector24 {
-  position: absolute;
-  left: 154.09px;
-  top: 144.45px;
-  overflow: visible;
-}
-.vector25 {
-  position: absolute;
-  left: 124.51px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector26 {
-  position: absolute;
-  left: 124.97px;
-  top: 100.85px;
-  overflow: visible;
-}
-.vector27 {
-  position: absolute;
-  left: 130.33px;
-  top: 118.35px;
-  overflow: visible;
-}
-.vector28 {
-  position: absolute;
-  left: 131.7px;
-  top: 102.19px;
-  overflow: visible;
-}
-.vector29 {
-  position: absolute;
-  left: 130.33px;
-  top: 105.82px;
-  overflow: visible;
-}
-.vector30 {
-  position: absolute;
-  left: 128.44px;
-  top: 115.1px;
-  transform: translate(0.93px, -0.77px);
-  overflow: visible;
-}
-.vector31 {
-  position: absolute;
-  left: 126.61px;
-  top: 95.71px;
-  overflow: visible;
-}
-.vector32 {
-  position: absolute;
-  left: 127.13px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector33 {
-  position: absolute;
-  left: 133.32px;
-  top: 146.62px;
-  overflow: visible;
-}
-.vector34 {
-  position: absolute;
-  left: 210.17px;
-  top: 190.71px;
-  overflow: visible;
-}
-.vector35 {
-  position: absolute;
-  left: 313.89px;
-  top: 67.95px;
-  overflow: visible;
-}
-.vector36 {
-  position: absolute;
-  left: 317.92px;
-  top: 72.47px;
-  overflow: visible;
-}
-.vector37 {
-  position: absolute;
-  left: 60.6px;
-  top: 80.44px;
-  overflow: visible;
-}
-.vector38 {
-  position: absolute;
-  left: 59.15px;
-  top: 83.01px;
-  overflow: visible;
-}
-.vector39 {
-  position: absolute;
-  left: 36.73px;
-  top: 337.39px;
-  overflow: visible;
-}
-.vector40 {
-  position: absolute;
-  left: 37.17px;
-  top: 336.23px;
-  overflow: visible;
-}
-.vector41 {
-  position: absolute;
-  left: 12.06px;
-  top: 255.89px;
-  overflow: visible;
-}
-.vector42 {
-  position: absolute;
-  left: 12.06px;
-  top: 255.89px;
-  overflow: visible;
-}
-.vector43 {
-  position: absolute;
-  left: 16.5px;
-  top: 301px;
-  overflow: visible;
-}
-.vector44 {
-  position: absolute;
-  left: 16.5px;
-  top: 302.42px;
-  overflow: visible;
-}
-.vector45 {
-  position: absolute;
-  left: 55.65px;
-  top: 269.46px;
-  overflow: visible;
-}
-.vector46 {
-  position: absolute;
-  left: 72.49px;
-  top: 271.15px;
-  overflow: visible;
-}
-.vector47 {
-  position: absolute;
-  left: 36.73px;
-  top: 338.36px;
-  overflow: visible;
-}
-.group-42 {
-  position: absolute;
-  left: 339.88px;
-  top: 284.85px;
-  overflow: visible;
+  position: relative;
 }
 
 
 .sendButton {
-  background: #5b56bd;
+  background-image: url(../../../public/sendButton.svg);
+  background-size: auto;
   border-radius: 134px;
   width: 144px;
   height: 144px;
-  left: 684px;
-  top: 641px;
-  position: absolute;
+  position: relative;
   overflow: visible;
 }
-.sendIcon{
-  width: 84px;
-  height: 84px;
-  margin-top: 20%;
-  margin-left: 20%;
 
+
+.sendButton:hover,
+.sendButton:focus {
+  cursor: pointer;
+  background-size: auto;
+  opacity: 0.9;
+  background-image: url(../../../public/sendButton.svg);
 }
+
+.sendText {
+  color: #1e1e1e;
+  text-align: center;
+  font: 500 30px "Inter", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 393px){
-
-.contact {
-  display: none;
-}
-
-.contactMobile,
-.contactMobile * {
-  box-sizing: border-box;
-
-}
-.contactMobile {
-  background: #ffffff;
-  width: 393px;
-  height: 1713px;
-  position: relative;
-  display: flex;
-  margin: auto;
-  margin-top: -200px;
-  flex-direction: column;
-
-}
-.heroBackgroundMobile {
-  position: absolute;
-  inset: 0;
-  margin: 0 auto;
-  margin-top: 300px;
-  margin-left: 50px;
-  background: url(../../../public/images/contactHeroImg.png) no-repeat;
-  text-align:center;
-  width:100%;
-  display:block;
+@media only screen and (max-width: 1130px) and (min-width: 393px) {
 
 
-}
+  .contact,
+  .contact * {
+    box-sizing: border-box;
 
-.heroH2Mobile {
-  color: #1e1e1e;
-  text-align: left;
-  color: var(--Primary-Black-1, #1E1E1E);
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  position: absolute;
-  top: 620px;
-  width: 400px;
-  padding: 20px;
-}
-.heroGetInTouchMobile {
-  text-align: center;
-  position: relative;
-  top: 250px;
+  }
 
+  .contact {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 250px;
+  }
 
-}
-.getInMobile {
-  color: #1e1e1e;
-  font: 700 24px "Poppins", sans-serif;
-}
-.touchMobile {
-  color: #5b56bd;
-  font: 700 24px "Poppins", sans-serif;
-}
-
-.contactForm{
-  display: flex;
-  flex-direction: column;
-}
-.contactEmail {
-  position: absolute;
-  inset: 0;
-}
-.yourEmail {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 760px;
-}
-.emailBox {
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 393px;
-  height: 45px;
-  position: absolute;
-  left: 0px;
-  top: 786px;
-}
-.contactSubject {
-  position: absolute;
-  inset: 0;
-}
-.subject {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 849px;
-}
-.subjectBox {
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 393px;
-  height: 45px;
-  position: absolute;
-  left: 0px;
-  top: 875px;
-}
-.contactMessage {
-  position: absolute;
-  inset: 0;
-}
-.yourMessage {
-  color: #1e1e1e;
-  text-align: left;
-  font: 400 15px "Poppins", sans-serif;
-  position: absolute;
-  left: 0px;
-  top: 938px;
-  width: 142px;
-}
-.messageBox {
-  border-style: solid;
-  border-color: #1e1e1e;
-  border-width: 1px;
-  width: 393px;
-  height: 114px;
-  position: absolute;
-  left: 0px;
-  top: 964px;
-}
-.group-33 {
-  position: absolute;
-  inset: 0;
-}
-.group-2 {
-  width: 207px;
-  height: 20px;
-  position: static;
-}
-.send {
-  color: #1e1e1e;
-  text-align: center;
-  font: 500 30px "Inter", sans-serif;
-  text-transform: uppercase;
-  position: absolute;
-  left: 100px;
-  top: 1319px;
-  width: 207px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sendButton {
-  background: #5b56bd;
-  border-radius: 134px;
-  width: 144px;
-  height: 144px;
-  left: 130px;
-  top: 1141px;
-  position: absolute;
-  overflow: visible;
-}
-.sendIcon{
-  width: 84px;
-  height: 84px;
-  margin-top: 20%;
-  margin-left: 20%;
-
-}
+  .heroLeft {
+    box-sizing: border-box;
+    margin-top: 0px;
+    height: 520px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 
-.heroBusinessMobile {
-  width: 447px;
-  height: 447px;
-  position: absolute;
-  top: 343px;
-  overflow: hidden;
-  z-index: 5;
-}
-
-.vector2 {
-  position: absolute;
-  left: 374.87px;
-  top: 186.42px;
-  overflow: visible;
-}
-.vector3 {
-  position: absolute;
-  left: 13.9px;
-  top: 86.31px;
-  overflow: visible;
-}
-.vector4 {
-  position: absolute;
-  left: 316.7px;
-  top: 229.15px;
-  overflow: visible;
-}
-.vector5 {
-  position: absolute;
-  left: 317.25px;
-  top: 238.4px;
-  overflow: visible;
-}
-.vector6 {
-  position: absolute;
-  left: 209.44px;
-  top: 191.17px;
-  overflow: visible;
-}
-.vector7 {
-  position: absolute;
-  left: 249.17px;
-  top: 357.78px;
-  overflow: visible;
-}
-.vector8 {
-  position: absolute;
-  left: 268px;
-  top: 212.99px;
-  overflow: visible;
-}
-.vector9 {
-  position: absolute;
-  left: 284.76px;
-  top: 211.65px;
-  overflow: visible;
-}
-.vector10 {
-  position: absolute;
-  left: 221.38px;
-  top: 138.65px;
-  overflow: visible;
-}
-.vector11 {
-  position: absolute;
-  left: 284.76px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector12 {
-  position: absolute;
-  left: 286.17px;
-  top: 146.62px;
-  overflow: visible;
-}
-.vector13 {
-  position: absolute;
-  left: 285.61px;
-  top: 101.95px;
-  overflow: visible;
-}
-.vector14 {
-  position: absolute;
-  left: 286.44px;
-  top: 119.45px;
-  overflow: visible;
-}
-.vector15 {
-  position: absolute;
-  left: 272.31px;
-  top: 103.28px;
-  overflow: visible;
-}
-.vector16 {
-  position: absolute;
-  left: 291.52px;
-  top: 106.92px;
-  overflow: visible;
-}
-.vector17 {
-  position: absolute;
-  left: 294.69px;
-  top: 123.55px;
-  transform: translate(0.93px, -8.14px);
-  overflow: visible;
-}
-.vector18 {
-  position: absolute;
-  left: 266.98px;
-  top: 91.36px;
-  overflow: visible;
-}
-.vector19 {
-  position: absolute;
-  left: 86.31px;
-  top: 191.17px;
-  overflow: visible;
-}
-.vector20 {
-  position: absolute;
-  left: 100.76px;
-  top: 357.78px;
-  overflow: visible;
-}
-.vector21 {
-  position: absolute;
-  left: 126.64px;
-  top: 212.99px;
-  overflow: visible;
-}
-.vector22 {
-  position: absolute;
-  left: 100.76px;
-  top: 211.65px;
-  overflow: visible;
-}
-.vector23 {
-  position: absolute;
-  left: 84.45px;
-  top: 138.15px;
-  overflow: visible;
-}
-.vector24 {
-  position: absolute;
-  left: 154.09px;
-  top: 144.45px;
-  overflow: visible;
-}
-.vector25 {
-  position: absolute;
-  left: 124.51px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector26 {
-  position: absolute;
-  left: 124.97px;
-  top: 100.85px;
-  overflow: visible;
-}
-.vector27 {
-  position: absolute;
-  left: 130.33px;
-  top: 118.35px;
-  overflow: visible;
-}
-.vector28 {
-  position: absolute;
-  left: 131.7px;
-  top: 102.19px;
-  overflow: visible;
-}
-.vector29 {
-  position: absolute;
-  left: 130.33px;
-  top: 105.82px;
-  overflow: visible;
-}
-.vector30 {
-  position: absolute;
-  left: 128.44px;
-  top: 115.1px;
-  transform: translate(0.93px, -0.77px);
-  overflow: visible;
-}
-.vector31 {
-  position: absolute;
-  left: 126.61px;
-  top: 95.71px;
-  overflow: visible;
-}
-.vector32 {
-  position: absolute;
-  left: 127.13px;
-  top: 137.41px;
-  overflow: visible;
-}
-.vector33 {
-  position: absolute;
-  left: 133.32px;
-  top: 146.62px;
-  overflow: visible;
-}
-.vector34 {
-  position: absolute;
-  left: 210.17px;
-  top: 190.71px;
-  overflow: visible;
-}
-.vector35 {
-  position: absolute;
-  left: 313.89px;
-  top: 67.95px;
-  overflow: visible;
-}
-.vector36 {
-  position: absolute;
-  left: 317.92px;
-  top: 72.47px;
-  overflow: visible;
-}
-.vector37 {
-  position: absolute;
-  left: 60.6px;
-  top: 80.44px;
-  overflow: visible;
-}
-.vector38 {
-  position: absolute;
-  left: 59.15px;
-  top: 83.01px;
-  overflow: visible;
-}
-.vector39 {
-  position: absolute;
-  left: 36.73px;
-  top: 337.39px;
-  overflow: visible;
-}
-.vector40 {
-  position: absolute;
-  left: 37.17px;
-  top: 336.23px;
-  overflow: visible;
-}
-.vector41 {
-  position: absolute;
-  left: 12.06px;
-  top: 255.89px;
-  overflow: visible;
-}
-.vector42 {
-  position: absolute;
-  left: 12.06px;
-  top: 255.89px;
-  overflow: visible;
-}
-.vector43 {
-  position: absolute;
-  left: 16.5px;
-  top: 301px;
-  overflow: visible;
-}
-.vector44 {
-  position: absolute;
-  left: 16.5px;
-  top: 302.42px;
-  overflow: visible;
-}
-.vector45 {
-  position: absolute;
-  left: 55.65px;
-  top: 269.46px;
-  overflow: visible;
-}
-.vector46 {
-  position: absolute;
-  left: 72.49px;
-  top: 271.15px;
-  overflow: visible;
-}
-.vector47 {
-  position: absolute;
-  left: 36.73px;
-  top: 338.36px;
-  overflow: visible;
-}
-.group-42 {
-  position: absolute;
-  left: 339.88px;
-  top: 284.85px;
-  overflow: visible;
-}
+  .heroBackground {
+    display: none;
 
 
+  }
+
+  .heroBackgroundMobile {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+  }
+
+  .heroH2 {
+    color: #1e1e1e;
+    text-align: left;
+    font: 400 14px "Poppins", sans-serif;
+    position: relative;
+    top: 375px;
+    width: 352px;
+  }
+
+  .heroGetInTouch {
+    text-align: center;
+  }
+
+  .getIn {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .touch {
+    font: 700 24px "Poppins", sans-serif;
+  }
+
+  .heroRight {
+    box-sizing: border-box;
+    margin-top: 0px;
+    width: 100vw;
+    height: 852px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm {
+    font: 400 14px "Poppins", sans-serif;
+    align-items: center;
+
+  }
+
+  .contactEmail {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    inset: 0;
+  }
+
+  .contactSubject {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    inset: 0;
+  }
+
+
+  .contactMessage {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 20px;
+    inset: 0;
+  }
+
+
+  .dataBox {
+    width: 352px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .messageBox {
+    border-style: solid;
+    border-color: #1e1e1e;
+    border-width: 1px;
+    width: 352px;
+    height: 157px;
+    margin-top: 10px;
+    position: relative;
+    overflow: auto;
+    resize: none;
+  }
+
+  .errorMessage {
+    color: #ff0000;
+    font-size: 15px;
+  }
+
+
+  .sendGroup {
+    display: flex;
+    position: relative;
+    overflow: visible;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 1px;
+  }
+
+
+
+  .sendText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .sendButton {
+    position: relative;
+    overflow: visible;
+  }
 }
+

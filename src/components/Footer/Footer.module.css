@@ -9,6 +9,11 @@
     overflow-x: hidden;
     margin-top: -200px;
 }
+a { text-decoration: none; color: #dbdad7}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 .footerName {
     align-items: flex-end;
@@ -172,7 +177,7 @@
         margin: auto;
         overflow-x: hidden;
         margin-top: -450px;
-        z-index: 20;
+        z-index: 50;
     }
 
 

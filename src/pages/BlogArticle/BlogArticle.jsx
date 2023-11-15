@@ -8,17 +8,17 @@ const BlogArticle = () => {
         <div className={styles.heroContainer}>
           <img
             className={styles.firstBackground}
-            src='/images/blogArticle_bg1.svg'
+            src='./blogArticle_bg1.svg'
             alt=''
           />
           <img
             className={styles.secondBackground}
-            src='/images/blogArticle_bg2.svg'
+            src='./blogArticle_bg2.svg'
             alt=''
           />
           <img
             className={styles.thirdBackground}
-            src='/images/blogArticle_bg3.svg'
+            src='./blogArticle_bg3.svg'
             alt=''
           />
           <div className={styles.topHeroDiv}>
@@ -32,7 +32,7 @@ const BlogArticle = () => {
               <div className={styles.share}>share </div>
               <img
                 className={styles.shareIcon}
-                src='/images/share.svg'
+                src='./share.svg'
                 alt=''
               />
             </div>
@@ -53,7 +53,7 @@ const BlogArticle = () => {
               <div className={styles.heroReadingTime}>8 min read </div>
               <img
                 className={styles.clock}
-                src='/images/clock.svg'
+                src='./clock.svg'
                 alt=''
               />
             </div>
@@ -189,7 +189,7 @@ const BlogArticle = () => {
           <div className={styles.blogArticleMobileResponsive}>
             <img
               className={styles.blogArticleMobile}
-              src='/images/blog_article_mobile.svg'
+              src='./blog_article_mobile.svg'
               alt=''
             />
           </div>
@@ -326,7 +326,7 @@ const BlogArticle = () => {
                 <div className={styles.cardReadingTime}>8 min read </div>
                 <img
                   className={styles.cardClock}
-                  src='/images/cardClock.svg'
+                  src='./cardClock.svg'
                   alt=''
                 />
               </div>
@@ -351,7 +351,7 @@ const BlogArticle = () => {
                 <div className={styles.cardReadingTime}>8 min read </div>
                 <img
                   className={styles.cardClock}
-                  src='/images/cardClock.svg'
+                  src='./cardClock.svg'
                   alt=''
                 />
               </div>
@@ -373,7 +373,7 @@ const BlogArticle = () => {
                 <div className={styles.sevenRightMobile}>
                   <div className={styles.topFirstSevenMobile}>
                     <img
-                      src='/images/img00001.png'
+                      src='./img00001.png'
                       alt=''
                     />
                     <div className={styles.topLeftSevenBox1Mobile}>
@@ -386,7 +386,7 @@ const BlogArticle = () => {
                         <div>July 19 2023</div>
                         <div className={styles.imgTimeMobile1}>
                           <img
-                            src='/images/Time.png'
+                            src='./Time.png'
                             alt=''
                           />
                           <div className={styles.minReadMobile}>8 min read</div>
@@ -403,7 +403,7 @@ const BlogArticle = () => {
 
                   <div className={styles.belowLeftSevenMobile}>
                     <img
-                      src='/images/img0003.png'
+                      src='./img0003.png'
                       alt=''
                     />
                     <div className={styles.topLeftSevenBox1Mobile}>
@@ -416,7 +416,7 @@ const BlogArticle = () => {
                         <div>July 19 2023</div>
                         <div className={styles.imgTimeMobile2}>
                           <img
-                            src='/images/Time.png'
+                            src='./Time.png'
                             alt=''
                           />
                           <div className={styles.minReadMobile}>8 min read</div>
@@ -454,7 +454,7 @@ const BlogArticle = () => {
             <div className={styles.signUpBackground}></div>
             <img
               className={styles.arrow}
-              src='/images/signUpArrow.svg'
+              src='./signUpArrow.svg'
               alt=''
             />
           </div>

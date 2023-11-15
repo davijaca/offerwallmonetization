@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={styles.footerName}>
         <div
           className={styles.backgroundImage}
-          style={{ backgroundImage: 'url(/images/footer_bg.png)' }}
+          style={{ backgroundImage: 'url(./footer_bg.png)' }}
         >
           <div className={styles.footerInfo}>
             <div className={styles.innerFooterInfo}>
@@ -17,7 +17,7 @@ const Footer = () => {
                   <div className={styles.imgValuable}>
                     <img
                       className={styles.footerLogo}
-                      src='/images/header_logo.png'
+                      src='./header_logo.png'
                       alt=''
                     />
                     <div className={styles.offerwallBox}>
@@ -35,14 +35,14 @@ const Footer = () => {
                   <div className={styles.info}>
                     <div className={styles.rightInfo}>
                       <span>FAQs</span>
-                      <span>BLOG</span>
+                      <a href="/#/blog">BLOG</a>
                       <span>PARTNERSHIPS</span>
                       <span>PRIVACY POLICY</span>
                     </div>
                   </div>
 
                   <div className={styles.leftInfo}>
-                    <img src='/images/lnkdn.svg' />
+                    <img src='./lnkdn.svg' />
                   </div>
                 </div>
               </div>

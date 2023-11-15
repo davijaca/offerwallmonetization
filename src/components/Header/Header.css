@@ -4,7 +4,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 25;
+    z-index: 55;
     overflow: hidden;
     background: linear-gradient(
         90deg,
@@ -13,9 +13,7 @@
         rgba(53, 159, 173, 1) 77.56538987159729%,
         rgba(44, 175, 168, 1) 98.4375%
       );
-      opacity: 0.8999999761581421;
-      
-
+    opacity: 0.8999999761581421;
 }
 .header-bg{
     background: linear-gradient(
@@ -25,8 +23,7 @@
         rgba(53, 159, 173, 1) 77.56538987159729%,
         rgba(44, 175, 168, 1) 98.4375%
       );
-      opacity: 0.8999999761581421;
-      
+    opacity: 0.8999999761581421;
 }
 
 
@@ -146,7 +143,7 @@
       left: 0px;
       top: 0px;
       backdrop-filter: blur(2px);
-      z-index: 20;
+      z-index: 40;
 }
 
 .headerBox {
@@ -309,7 +306,7 @@
 
 
 /*MOBILE RESPONSIVENESS*/
-@media only screen and (max-width: 1130px) and (min-width: 250px){
+@media only screen and (max-width: 1130px) and (min-width: 320px){
 
 
     .mainBox {
@@ -327,13 +324,13 @@
         left: 0px;
         top: 0px;
         backdrop-filter: blur(2px);
-        z-index: 20;
+        z-index: 40;
         
     }
 
     .headerBox {
         height: 100px;
-        width: 393px;
+        width: 320px;
         display: flex;
     }
 
@@ -364,7 +361,7 @@
 
     .headerTitleItem {
         color: var(--White, #FFF);
-        font-family: "NordiquePro-Bold", sans-serif;
+        font-family: NordiquePro-Bold;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -373,7 +370,7 @@
 
     .headerTitleItem2 {
         color: #E0FF22;
-        font-family: "NordiquePro-Bold", sans-serif;
+        font-family: NordiquePro-Bold;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -420,15 +417,3 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -9,7 +9,7 @@
     width: 100vw;
     max-width: 1530px;
     margin: auto;
-    margin-top: -100px;
+    margin-top: -120px;
     
 }
 
@@ -34,8 +34,6 @@
 .mobileFirstHomeContainer {
     display: none;
 }
-
-
 
 .waves {
   transform: rotate(270deg);
@@ -100,7 +98,7 @@
     overflow: visible;
     z-index: 1;
     object-fit: cover;
-    background-image: url(../../../public/images/background3.png);
+    background-image: url(/public/background3.png);
     background-size: 100% 100%;
     
   }
@@ -822,7 +820,7 @@ button:hover {
     display: flex; 
     justify-content: flex-end; 
     align-items: flex-end;
-    background-image: url( ../../../public/images/rect01.png);
+    background-image: url( ../../../public/rect01.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
@@ -2178,7 +2176,7 @@ button:hover {
         height: 150px;
         width: 370px;
         padding-top: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 40px;
     }
 
 
@@ -2281,7 +2279,7 @@ button:hover {
         background-repeat: no-repeat;
         display: flex;
         align-items: flex-end;
-        background-image: url( ../../../public/images/rect01mobile.png);
+        background-image: url( ../../../public/rect01mobile.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size:contain;
@@ -2532,7 +2530,7 @@ button:hover {
     display: flex;
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2543,7 +2541,7 @@ button:hover {
     color: var(--Primary-Black-1, #8764E3);
     text-align: center;
     font-family: Poppins, sans-serif;
-    font-size: 30px;
+    font-size: 7vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2557,7 +2555,7 @@ button:hover {
 .avenueMobile {
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2570,7 +2568,7 @@ button:hover {
     display: flex;
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2591,7 +2589,7 @@ button:hover {
     display: flex;
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2603,7 +2601,7 @@ button:hover {
     display: flex;
     color: var(--Primary-Black-1, #1E1E1E);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: 6vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2994,9 +2992,47 @@ button:hover {
     z-index: 20;
     position: absolute;
     margin-top: -100px;
-
-
 }
 
+
+
+/* THIS SECTION FIXES THE FONT SIZING ISSUES ON SECTION SEVEN */
+
+
+@media only screen and (max-width: 1400px) and (min-width: 400px){
+
+    
+    .implementingSolnMobile {
+        display: flex;
+        color: var(--Primary-Black-1, #1E1E1E);
+        font-family: Poppins, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        justify-content: center;
+    }
+    
+    .implementingMobile {
+        font-size: 30px;
+    }
+    
+    .avenueMobile {
+        font-size: 24px; 
+    }
+    
+    .priceEngageMobile {
+        font-size: 24px;
+
+    }
+
+    .churnMobile {
+        font-size: 24px;
+    }
+
+    .usersDecreaseMobile {
+        font-size: 24px;
+    }
+  }
 
 }
