@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './App.module.css';
 import {
-  createBrowserRouter, RouterProvider, Outlet
+  createHashRouter, RouterProvider, Outlet
 } from "react-router-dom";
 import {AppRoutes} from "./common/routes/AppRoutes";
 import Header from "./components/Header/Header";
@@ -26,7 +26,7 @@ function App() {
 
   };
 
-  const router = createBrowserRouter( [
+  const router = createHashRouter( [
 
       {
           path: AppRoutes.MAIN,
@@ -42,29 +42,29 @@ function App() {
               {
                   path: AppRoutes.BLOG,
                   element: < Blog />,
-                  errorElement: <h1> PAGE NOT FOUND</h1>
+                  errorElement: <h1> PAGE NOT FOUND 3</h1>
               },
 
               {
                   path: AppRoutes.ARTICLES,
                   element: < Articles />,
-                  errorElement: <h1> PAGE NOT FOUND</h1>
+                  errorElement: <h1> PAGE NOT FOUND 4</h1>
               },
 
               {
                   path: AppRoutes.BLOGARTICLE,
                   element: < BlogArticle />,
-                  errorElement: <h1> PAGE NOT FOUND</h1>
+                  errorElement: <h1> PAGE NOT FOUND 5</h1>
               },
 
               {
                   path: AppRoutes.CONTACT,
                   element: < Contact />,
-                  errorElement: <h1> PAGE NOT FOUND</h1>
+                  errorElement: <h1> PAGE NOT FOUND 6</h1>
               },
         ]
       }
-   ] );
+   ], { basename: "/" } );
 
   return (
     <div>

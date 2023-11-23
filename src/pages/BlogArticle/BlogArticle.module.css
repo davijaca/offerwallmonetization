@@ -10,7 +10,7 @@
   max-width: 1530px;
   position: relative;
   margin: auto;
-  margin-top: -100px;
+  margin-top: -120px;
 }
 
 /* First Container */
@@ -617,6 +617,7 @@
 
   .blogArticle {
     overflow: hidden;
+    margin-bottom: 250px;
 
   }
 
@@ -626,13 +627,10 @@
     width: 100vw;
     height: 465px;
     position: relative;
-    background-image: url(/public/images/mobileBG.svg);
+    background-image: url(../../../public/mobileBG.svg);
     background-size: 100vw;
     background-position: center;
-
   }
-
-
 
   .heroContainer {
     background: #ffffff00;
@@ -792,7 +790,7 @@
 
   .heroMobileImg {
     left: -10px;
-    width: 1140px;
+    width: 1110px;
     height: 632px;
     position: relative;
   }

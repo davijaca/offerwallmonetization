@@ -50,13 +50,13 @@ const Contact = () => {
 
           <div className={styles.heroBackground}>
             <img
-              src='/images/contactHeroBackground.svg'
+              src='/contactHeroBackground.svg'
               alt=''
             />
           </div>
           <div className={styles.heroBackgroundMobile}>
             <img
-              src='/images/contactHeroBackgroundMobile.svg'
+              src='/contactHeroBackgroundMobile.svg'
               alt=''
             />
           </div>
@@ -109,7 +109,6 @@ const Contact = () => {
                 </label>
                 <textarea
                   className={styles.messageBox}
-                  maxLength='240'
                   id='contactMessage'
                   name='message'
                   required

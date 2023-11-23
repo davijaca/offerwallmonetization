@@ -4,5 +4,4 @@ export const AppRoutes = {
     ARTICLES: '/articles',
     BLOGARTICLE: '/blogarticle',
     CONTACT: '/contact',
-
 }

@@ -54,7 +54,7 @@ const Blog = () => {
         <div className={styles.blogMain}>
             <div className={styles.webResponsiveMainBlog}>
 
-                <div className={styles.blogBgImage} style={{backgroundImage: "url(/images/blog_top_Bg.png)"}}>
+                <div className={styles.blogBgImage} style={{backgroundImage: "url(./blog_top_Bg.png)"}}>
                     <div className={styles.firstRight}>
                         <div className={styles.firstRight1}>
 
@@ -72,11 +72,11 @@ const Blog = () => {
                             <div className={styles.searchLayout}>
                                 <div className={styles.search}>
                                     {/*<div className={styles.searchBox}> Search blog</div>*/}
-                                    {/*<img src="/images/search.png" alt=""/>*/}
+                                    {/*<img src="./search.png" alt=""/>*/}
 
                                     <input type="text" className={styles.searchBox}
                                     placeholder="Search blog" onChange={searchHandler} value={search}/>
-                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
+                                    <img src="./search.png" alt="" onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
@@ -119,16 +119,8 @@ const Blog = () => {
 
 
 
-                <div style={{backgroundImage: "url(/images/blog_secondBg.png)", width: "100vw", maxWidth: "1512px", height: "982px"}}>
+                <div className={styles.blogSecondContainer}>
 
-                    {/*<div>*/}
-                    {/*    <div className={styles.blogRight}>*/}
-                    {/*        <img src="/images/blog_rightBg.png" alt=""/>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.blogLeft}>*/}
-                    {/*        <img src="/images/blog_leftBg.png" alt=""/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
 
                     <div className={styles.secondBlog}>
                         <div className={styles.subSecondBlog}>
@@ -145,7 +137,7 @@ const Blog = () => {
                                 <div className={styles.dateTime1}>
                                     <div>July 19 2023</div>
                                     <div className={styles.imgTime1}>
-                                        <img src="/images/TimeBlog.png"  alt=""/>
+                                        <img src="./TimeBlog.png"  alt=""/>
                                         <div className={styles.minRead1}>8 min read</div>
                                     </div>
                                 </div>
@@ -186,7 +178,7 @@ const Blog = () => {
                         <div className={styles.innerThird2}>
                             <div className={styles.thirdRight}>
                                 <div className={styles.topRightThird}>
-                                    <img src="/images/img000012.png" alt=""/>
+                                    <img src="./img000012.png" alt=""/>
                                 </div>
                                 <div className={styles.belowRightThird}>
                                     <div className={styles.innerBelowRightThird}>
@@ -198,7 +190,7 @@ const Blog = () => {
                                         <div className={styles.dateTime}>
                                             <div>July 19 2023</div>
                                             <div className={styles.imgTime}>
-                                                <img src="/images/Time.png"  alt=""/>
+                                                <img src="./Time.png"  alt=""/>
                                                 <div className={styles.minRead}>8 min read</div>
                                             </div>
                                         </div>
@@ -215,7 +207,7 @@ const Blog = () => {
                             </div>
                             <div className={styles.thirdLeft}>
                                 <div className={styles.topLeftThird}>
-                                    <img src="/images/img0002.png" alt=""/>
+                                    <img src="./img0002.png" alt=""/>
                                     <div className={styles.topLeftThirdBox1}>
 
                                         <div className={styles.mastering}>
@@ -226,7 +218,7 @@ const Blog = () => {
                                         <div className={styles.leftDateTime}>
                                             <div>July 19 2023</div>
                                             <div className={styles.leftImgTime}>
-                                                <img src="/images/Time.png"  alt=""/>
+                                                <img src="./Time.png"  alt=""/>
                                                 <div className={styles.minRead}>8 min read</div>
                                             </div>
                                         </div>
@@ -243,7 +235,7 @@ const Blog = () => {
 
                                 </div>
                                 <div className={styles.belowLeftThird}>
-                                    <img src="/images/img0003.png" alt=""/>
+                                    <img src="./img0003.png" alt=""/>
                                     <div className={styles.topLeftThirdBox1}>
 
                                         <div className={styles.mastering}>
@@ -254,7 +246,7 @@ const Blog = () => {
                                         <div className={styles.leftDateTime}>
                                             <div>July 19 2023</div>
                                             <div className={styles.leftImgTime}>
-                                                <img src="/images/Time.png"  alt=""/>
+                                                <img src="./Time.png"  alt=""/>
                                                 <div className={styles.minRead}>8 min read</div>
                                             </div>
                                         </div>
@@ -296,7 +288,7 @@ const Blog = () => {
 
                                     <div className={styles.blogNewsImageBox}>
                                         <div className={styles.innerBlogNewsImageBox}>
-                                            <img src="/images/blogDownBtn.png" alt=""/>
+                                            <img src="./blogDownBtn.png" alt=""/>
                                             <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
                                         </div>
                                     </div>
@@ -329,7 +321,7 @@ const Blog = () => {
             {/*MOBILE RESPONSIVENESS*/}
             <div className={styles.mobileResponsiveMainBlog}>
                 <div className={styles.FirstMobileBg} style={{
-                    backgroundImage: "url(/images/home_Mobile_background.png)"}}>
+                    backgroundImage: "url(./home_Mobile_background.png)"}}>
 
                     <div className={styles.mobileBgBox}>
                         <div className={styles.innerMobileBgBox}>
@@ -344,11 +336,11 @@ const Blog = () => {
                                 through offerwall monetisation.
                             </div>
 
-                            <div className={styles.mobileSearchLayout}>
-                                <div className={styles.innerMobileSearchLayout}>
-                                    <input type="text" className={styles.mobileSearch}
+                            <div className={styles.mobileSearch}>
+                                <div className={styles.innerMobileSearch}>
+                                    <input type="text" className={styles.mobileSearchContainer}
                                            placeholder="Search blog" onChange={searchHandler} value={search} />
-                                    <img src="/images/search.png" alt="" onClick={handleClickBlog}/>
+                                    <img src="./search.png" alt=""  onClick={handleClickBlog}/>
                                 </div>
                             </div>
 
@@ -386,8 +378,7 @@ const Blog = () => {
 
 
                 <div className={styles.secondMobileSection}>
-                    <div className={styles.secondMobileBg} style={{
-                        backgroundImage: "url(/images/secondMobileBg.png)"}}>
+                    <div className={styles.secondMobileBg}>
 
                         <div className={styles.secondMobileBgBox}>
                             <div className={styles.mobileRecentArticle}> Recent article </div>
@@ -398,7 +389,7 @@ const Blog = () => {
                             <div className={styles.mobileDateTime}>
                                 <div>July 19 2023</div>
                                 <div className={styles.mobileImgTime}>
-                                    <img src="/images/mobileTime.png"  alt=""/>
+                                    <img src="./mobileTime.png"  alt=""/>
                                     <div className={styles.mobileMinRead}>8 min read</div>
                                 </div>
                             </div>
@@ -430,7 +421,7 @@ const Blog = () => {
 
                     <div className={styles.thirdMobileBox2}>
                         <div className={styles.innerThirdMobileBox2}>
-                            <img src="/images/mobile_blog_image1.png" alt="" />
+                            <img src="./mobile_blog_image1.png" alt="" />
 
                             <div className={styles.innerThirdMobileBox2Container}>
                                 <div className={styles.thirdMobileBox2Explore}>
@@ -441,7 +432,7 @@ const Blog = () => {
                                 <div className={styles.mobileDateTime2}>
                                     <div>July 19 2023</div>
                                     <div className={styles.mobileImgTime2}>
-                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <img src="./mobileTime2.png"  alt=""/>
                                         <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
                                 </div>
@@ -460,7 +451,7 @@ const Blog = () => {
 
                     <div className={styles.thirdMobileBox3}>
                         <div className={styles.innerThirdMobileBox3}>
-                            <img src="/images/mobile_blog_image2.png" alt="" />
+                            <img src="./mobile_blog_image2.png" alt="" />
 
                             <div className={styles.innerThirdMobileBox2SecondContainer}>
                                 <div className={styles.thirdMobileBox2Explore}>
@@ -470,7 +461,7 @@ const Blog = () => {
                                 <div className={styles.mobileDateTime3}>
                                     <div>July 19 2023</div>
                                     <div className={styles.mobileImgTime2}>
-                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <img src="./mobileTime2.png"  alt=""/>
                                         <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
                                 </div>
@@ -489,7 +480,7 @@ const Blog = () => {
 
                     <div className={styles.thirdMobileBox4}>
                         <div className={styles.innerThirdMobileBox4}>
-                            <img src="/images/mobile_blog_image3.png" alt="" />
+                            <img src="./mobile_blog_image3.png" alt="" />
 
                             <div className={styles.innerThirdMobileBox2thirdContainer}>
                                 <div className={styles.thirdMobileBox2Explore}>
@@ -499,7 +490,7 @@ const Blog = () => {
                                 <div className={styles.mobileDateTime4}>
                                     <div>July 19 2023</div>
                                     <div className={styles.mobileImgTime2}>
-                                        <img src="/images/mobileTime2.png"  alt=""/>
+                                        <img src="./mobileTime2.png"  alt=""/>
                                         <div className={styles.mobileMinRead2}>8 min read</div>
                                     </div>
                                 </div>
@@ -523,7 +514,7 @@ const Blog = () => {
 
             <form onSubmit={submitHandler}>
                 <div className={styles.fourthMobileSection}>
-                    <div className={styles.mobileblogSignUpNews}>
+                    <div className={styles.mobileBlogSignUpNews}>
                         <div>Sign Up for</div> &nbsp;
                         <div className={styles.mobileNewsLetter}>Newsletter</div>
                     </div >
@@ -542,7 +533,7 @@ const Blog = () => {
 
                     <div className={styles.mobileBlogNewsImageBox}>
                         <div className={styles.innerMobileBlogNewsImageBox}>
-                            <img src="/images/blogDownBtn.png" alt=""/>
+                            <img src="./blogDownBtn.png" alt=""/>
                             <button type="submit" className={styles.blogSignUpnews}>Sign Up</button>
                         </div>
                     </div>
